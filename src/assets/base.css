@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  @apply box-border font-normal text-white m-0 p-0;
+}
+
+::-moz-selection,
+::selection {
+  @apply text-night bg-white;
+}
+
+body {
+  @apply min-h-[100svh] leading-[1.6] overflow-x-hidden scroll-smooth text-[15px] px-[18px] py-0 bg-night antialiased;
+  font-family: 'PT Sans', sans-serif;
+}
+
+#app {
+  @apply max-w-3xl mx-auto;
+}
+
+code {
+  @apply bg-[gray] px-[5px] py-[3px] rounded-[5px];
+}
+
+header {
+  @apply max-w-[var(--page-width)] h-auto mx-auto my-6;
+}
+
+button:focus {
+  outline: none;
+}
+
+.grad-correct {
+  @apply bg-gradient-to-tr from-yellow to-green;
+}
+
+.grad-wrong {
+  @apply bg-gradient-to-tr from-pink to-red;
+}
+
+.grad-hover {
+  @apply bg-gradient-to-tr from-celeste to-[#8fd3f4];
+}
