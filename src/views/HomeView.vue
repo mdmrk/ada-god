@@ -6,10 +6,10 @@
   </div>
   <Question @set-choice="setChoice" :data="question" :show-result="showResult" />
   <div
-    class="flex flex-row gap-2 [&>button]:w-full [&>button]:flex [&>button]:items-center [&>button]:justify-center [&>button]:h-16 [&>button]:rounded-lg [&>button>svg]:stroke-nightless"
+    class="flex flex-row gap-2 [&>button]:w-full [&>button]:flex [&>button]:items-center [&>button]:justify-center [&>button]:h-16 [&>button]:rounded-lg [&>button>svg]:stroke-dark-room"
   >
     <button
-      class="bg-gradient-to-tr hover:bg-gradient-to-br from-celeste to-[#8fd3f4]"
+      class="bg-gradient-to-tr hover:bg-gradient-to-br from-cyan to-darker-cyan"
       @click="prevQuestion"
     >
       <svg
@@ -27,7 +27,7 @@
       </svg>
     </button>
     <button
-      class="bg-gradient-to-tl hover:bg-gradient-to-bl from-celeste to-[#8fd3f4]"
+      class="bg-gradient-to-tl hover:bg-gradient-to-bl from-cyan to-darker-cyan"
       @click="nextQuestion"
     >
       <svg

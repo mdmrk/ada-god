@@ -14,20 +14,11 @@
 }
 
 body {
-  @apply min-h-[100svh] leading-[1.6] overflow-x-hidden scroll-smooth text-[15px] px-[18px] py-0 bg-night antialiased;
-  font-family: 'PT Sans', sans-serif;
+  @apply min-h-svh leading-[1.6rem] overflow-x-hidden scroll-smooth text-[15px] bg-night antialiased font-sans;
 }
 
 #app {
-  @apply max-w-3xl mx-auto;
-}
-
-code {
-  @apply bg-[gray] px-[5px] py-[3px] rounded-[5px];
-}
-
-header {
-  @apply max-w-[var(--page-width)] h-auto mx-auto my-6;
+  @apply max-w-3xl mx-auto px-4 py-4;
 }
 
 button:focus {
@@ -43,5 +34,5 @@ button:focus {
 }
 
 .grad-hover {
-  @apply bg-gradient-to-tr from-celeste to-[#8fd3f4];
+  @apply bg-gradient-to-tr from-cyan to-darker-cyan;
 }
