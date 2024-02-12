@@ -37,6 +37,14 @@ button:focus {
   outline: none;
 }
 
+.question-title {
+  @apply font-bold text-white;
+
+  span {
+    @apply font-bold text-white;
+  }
+}
+
 .grad-correct {
   @apply bg-gradient-to-tr from-yellow to-green;
 
