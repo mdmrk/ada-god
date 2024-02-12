@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col gap-2">
-    <span class="font-bold">{{ title }}</span>
+    <span class="font-bold text-white" v-katex:auto v-html="title"></span>
     <ul class="list-none">
       <Choice
         v-for="(choice, index) in data.choices"

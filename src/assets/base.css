@@ -30,7 +30,7 @@ footer {
 }
 
 footer > a {
-  @apply opacity-50 hover:underline;
+  @apply text-white opacity-50 hover:underline text-sm;
 }
 
 button:focus {
@@ -39,10 +39,26 @@ button:focus {
 
 .grad-correct {
   @apply bg-gradient-to-tr from-yellow to-green;
+
+  span {
+    @apply text-dark-room;
+  }
 }
 
 .grad-wrong {
   @apply bg-gradient-to-tr from-pink to-red;
+
+  span {
+    @apply text-dark-room;
+  }
+}
+
+.grad-choice {
+  box-shadow: rgba(0, 0, 0, 0.35) inset 0px 0px 0px 3px;
+
+  span {
+    @apply underline decoration-2 underline-offset-2;
+  }
 }
 
 .grad-hover {

@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row gap-2 [&>span]:font-bold [&>span]:text-sm">
-    <span class="opacity-50">{{ question_idx + 1 }} / {{ questions.length }}</span>
+    <span class="text-white opacity-50">{{ question_idx + 1 }} / {{ questions.length }}</span>
     <span class="text-green">{{ hits }}</span>
     <span class="text-red">{{ fails }}</span>
   </div>
