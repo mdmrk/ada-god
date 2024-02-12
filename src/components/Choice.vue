@@ -1,8 +1,5 @@
 <template>
-  <li
-    class="select-none w-[calc(100%+2*0.75rem)] rounded-lg px-3 py-0.5 ml-[-0.75rem] my-1"
-    :class="style"
-  >
+  <li class="select-none rounded-lg px-3 py-1 my-1 bg-dark-room" :class="style">
     <span class="box-decoration-clone">{{ data?.choice }}</span>
   </li>
 </template>
@@ -42,6 +39,7 @@ export default {
           style.push('grad-wrong [&>span]:text-dark-room')
         }
       } else {
+        style.push('hover:bg-opacity-60')
         if (this.data.answer === this.data.id) {
           style.push(
             'grad-hover [&>span]:underline [&>span]:decoration-2 [&>span]:underline-offset-2 [&>span]:font-bold [&>span]:text-dark-room cursor-default'

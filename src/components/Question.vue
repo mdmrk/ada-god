@@ -1,10 +1,10 @@
 <template>
-  <div class="flex flex-col my-5">
+  <div class="flex flex-col gap-2">
     <span class="font-bold">{{ title }}</span>
     <ul class="list-none">
       <Choice
         v-for="(choice, index) in data.choices"
-        @click="setChoice(index, data.id)"
+        @click="setChoice(index)"
         :key="index"
         :data="{ id: index, choice, solution: data!.solution, answer: data.answer }"
         :showResult="showResult"

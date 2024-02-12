@@ -13,4 +13,7 @@ export default {
   <main>
     <HomeView />
   </main>
+  <footer>
+    <a href="https://github.com/mdmrk/ada-god" target="_blank">github.com/mdmrk/ada-god</a>
+  </footer>
 </template>
