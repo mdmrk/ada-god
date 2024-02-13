@@ -48,15 +48,15 @@
 </template>
 
 <script lang="ts">
-import { getQuestions } from '@/utils'
+import { randomizeQuestions } from '@/utils'
 import Question from '@/components/Question.vue'
-const questions = getQuestions()
+import type { IQuestion } from '@/types'
 
 export default {
   data() {
     return {
       question_idx: 0,
-      questions,
+      questions: this.$tm('questions') as IQuestion[],
       hits: 0,
       fails: 0
     }
@@ -76,7 +76,7 @@ export default {
   },
   computed: {
     question() {
-      return this.questions[this.question_idx]
+      return this.questions[this.questionsOrder[this.question_idx]]
     },
     showResult() {
       return this.question.answer !== undefined
@@ -84,6 +84,9 @@ export default {
   },
   components: {
     Question
+  },
+  setup() {
+    return { questionsOrder: randomizeQuestions(1) }
   }
 }
 </script>

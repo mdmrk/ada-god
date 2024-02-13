@@ -1,6 +1,6 @@
 <template>
   <li class="select-none rounded-lg px-3 py-1 my-1 bg-dark-room" :class="style">
-    <span class="box-decoration-clone" v-katex:auto>{{ data?.choice }}</span>
+    <span class="box-decoration-clone" v-katex:auto>{{ $rt(data?.choice) }}</span>
   </li>
 </template>
 

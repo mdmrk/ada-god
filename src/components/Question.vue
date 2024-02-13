@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col gap-2">
-    <span class="question-title" v-katex:auto v-html="title"></span>
+    <span class="question-title" v-katex:auto v-html="$rt(data.title)"></span>
     <ul class="list-none">
       <Choice
         v-for="(choice, index) in data.choices"

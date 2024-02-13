@@ -1,0 +1,13 @@
+{
+  "questions": [
+    {
+      "title": "Sea \\(f(n)\\) la solución de la relación de recurrencia \\(f(n) = 2f(\\frac{'{'}n{'}'}{'{'}2{'}'}) + n, \\,f(1) = 1\\)",
+      "choices": [
+        "\\(f(n)\\in\\Theta(n^{'{'}2{'}'})\\)",
+        "\\(f(n)\\in\\Theta(n\\log(n))\\)",
+        "\\(f(n)\\in\\Theta(n)\\)"
+      ],
+      "solution": 1
+    }
+  ]
+}

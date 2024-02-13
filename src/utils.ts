@@ -1,6 +1,3 @@
-import type { IQuestion } from '@/types'
-import questions from '@/assets/questions.json'
-
 export function shuffle<T>(array: T[]): T[] {
   let currentIndex = array.length,
     randomIndex
@@ -18,20 +15,8 @@ export function randomIntFromInterval(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-export function getQuestions() {
-  return shuffle(
-    questions.map((question, index) => {
-      const solution = question.choices[question.solution]
-      const shuffled = shuffle(question.choices)
-
-      return {
-        id: index,
-        title: question.title,
-        choices: shuffled,
-        solution: shuffled.indexOf(solution)
-      } as IQuestion
-    })
-  )
+export function randomizeQuestions(amount: number) {
+  return shuffle(Array.from({ length: amount }, (_, i) => i))
 }
 
 export function clamp(number: number, min: number, max: number) {
