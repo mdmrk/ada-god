@@ -90,7 +90,7 @@ export default {
     Question
   },
   setup() {
-    return { questionsOrder: randomizeQuestions(1) }
+    return { questionsOrder: randomizeQuestions(2) }
   }
 }
 </script>

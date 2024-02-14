@@ -8,6 +8,19 @@
         "\\(f(n)\\in\\Theta(n)\\)"
       ],
       "solution": 1
+    },
+    {
+      "title": "You want to find the shortest path between two cities. To do this you have a table with the distance between pairs of cities where there are roads or a sentinel value (e.g. -1) if there are no roads, so to go from the initial city to the final city you may have to pass through several cities. The geographic coordinates of each city are also known, and thus the geographic distance (in a straight line) between each pair of cities. It is intended to speed up the search for a branching and pruning algorithm by prioritizing the live nodes (cities) that are at the shortest geographical distance from the target city. Select one: ",
+
+      "choices": [
+        "The new algorithm will always be faster.",
+
+        "This strategy does not ensure that the shortest path will be obtained",
+
+        "The new algorithm will only be faster for some instances of the problem."
+      ],
+
+      "solution": 2
     }
   ]
 }
