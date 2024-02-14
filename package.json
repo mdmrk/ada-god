@@ -15,6 +15,7 @@
   "dependencies": {
     "@hsorby/vue3-katex": "^0.6.0-rc.7",
     "@intlify/unplugin-vue-i18n": "^2.0.0",
+    "@types/node": "^20.11.17",
     "katex": "^0.16.9",
     "vue": "^3.4.19",
     "vue-i18n": "^9.9.1",
