@@ -9,7 +9,8 @@ export default defineConfig({
   plugins: [
     vue(),
     VueI18nPlugin({
-      include: [resolve(__dirname, './src/assets/locales/**')]
+      runtimeOnly: false,
+      include: [resolve(__dirname, './src/i18n/locales/**')]
     })
   ],
   resolve: {

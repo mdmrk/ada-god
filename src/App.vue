@@ -1,15 +1,19 @@
 <script lang="ts">
 import HomeView from '@/views/HomeView.vue'
+import Lang from '@/components/Lang.vue'
 
 export default {
   components: {
-    HomeView
+    HomeView,
+    Lang
   }
 }
 </script>
 
 <template>
-  <header></header>
+  <header>
+    <nav><Lang /></nav>
+  </header>
   <main>
     <HomeView />
   </main>

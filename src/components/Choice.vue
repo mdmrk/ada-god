@@ -23,6 +23,7 @@ export default {
       var style = []
 
       if (this.showResult) {
+        style.push('pointer-events-none')
         if (this.data.answer === this.data.id) {
           style.push('grad-choice')
         }

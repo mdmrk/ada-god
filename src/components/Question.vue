@@ -34,7 +34,6 @@ export default {
   },
   methods: {
     setChoice(choice: number) {
-      if ((this.data.answer !== undefined && this.showResult) || this.disableInteraction) return
       this.$emit('setChoice', choice)
     }
   },
@@ -43,7 +42,7 @@ export default {
   },
   emits: {
     setChoice(choice: number) {
-      return choice >= 0 && choice <= 3
+      return choice >= 0
     }
   }
 }

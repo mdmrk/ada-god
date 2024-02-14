@@ -13,7 +13,10 @@ export default {
         red: '#f5576c',
         pink: '#f093fb',
         night: '#0f172a',
-        'dark-room': '#1e293b'
+        'dark-room': '#1e293b',
+        'gray-light': '#cbd5e1',
+        'gray-dark': '#64748b',
+        'gray-darker': '#334155'
       },
       fontFamily: {
         sans: ['"PT Sans"', ...defaultTheme.fontFamily.sans]
