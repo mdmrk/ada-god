@@ -8,3 +8,8 @@ export default createI18n({
   legacy: false,
   messages
 })
+
+export const availableLanguages = {
+  en: 'English',
+  es: 'Español'
+}

@@ -26,16 +26,17 @@
         v-if="active"
       >
         <button
-          v-for="lang in languages"
-          :key="lang"
-          class="px-1 py-1 hover:bg-night rounded-full items-center justify-start"
-          @click="changeLanguage(lang)"
+          v-for="(lang, langCode) in languages"
+          :key="langCode"
+          class="px-2 py-1 w-36 hover:bg-night rounded-full items-center justify-start flex flex-row gap-2"
+          @click="changeLanguage(langCode)"
         >
           <div
-            class="uppercase text-[10px] text-xs border-gray-darker border rounded-full w-24 flex items-center justify-center text-gray-light py-1"
+            class="uppercase text-[10px] text-xs border-gray-darker border rounded-full w-8 flex items-center justify-center text-gray-light"
           >
-            {{ lang }}
+            {{ langCode }}
           </div>
+          <span class="text-sm text-gray-light">{{ lang }}</span>
         </button>
       </div>
     </transition>
@@ -43,15 +44,14 @@
 </template>
 
 <script lang="ts">
-import i18n from '@/i18n'
-import messages from '@intlify/unplugin-vue-i18n/messages'
+import i18n, { availableLanguages } from '@/i18n'
 
 export default {
   name: 'LangItem',
   data() {
     return {
       active: false,
-      languages: Object.keys(messages)
+      languages: availableLanguages
     }
   },
   methods: {
