@@ -9,7 +9,7 @@ export default createI18n({
   messages
 })
 
-export const availableLanguages = {
+export const availableLocales = {
   en: 'English',
   es: 'Español'
 }

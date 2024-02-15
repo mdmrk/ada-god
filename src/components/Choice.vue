@@ -14,15 +14,13 @@ export default {
     data: {
       type: Object as PropType<IChoice>,
       required: true
-    },
-    showResult: { type: Boolean, required: false },
-    disableInteraction: { type: Boolean, required: false }
+    }
   },
   computed: {
     style() {
       var style = []
 
-      if (this.showResult) {
+      if (this.data.answer !== undefined) {
         style.push('pointer-events-none')
         if (this.data.answer === this.data.id) {
           style.push('grad-choice')

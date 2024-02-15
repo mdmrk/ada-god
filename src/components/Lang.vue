@@ -2,7 +2,7 @@
   <button class="relative" @click="toggle" v-click-away="away">
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="icon icon-tabler icon-tabler-language"
+      class="icon icon-tabler icon-tabler-locale"
       width="24"
       height="24"
       viewBox="0 0 24 24"
@@ -21,22 +21,23 @@
     </svg>
     <transition name="dropdown-content">
       <div
-        class="origin-top-right absolute right-0 mt-4 bg-dark-room rounded-xl p-2 flex flex-col align-center justify-center z-50 border border-gray-darker cursor-default"
+        class="origin-top-right absolute right-0 mt-4 bg-dark-room rounded-xl p-2 flex flex-col align-center justify-center z-50 border border-gray-darker cursor-default gap-0.5"
         @click.stop
         v-if="active"
       >
         <button
-          v-for="(lang, langCode) in languages"
-          :key="langCode"
+          v-for="(locale, localeCode) in locales"
+          :key="localeCode"
           class="px-2 py-1 w-36 hover:bg-night rounded-full items-center justify-start flex flex-row gap-2"
-          @click="changeLanguage(langCode)"
+          :class="{ 'bg-night': localeCode === activeLocale }"
+          @click="changeLocale(localeCode)"
         >
           <div
             class="uppercase text-[10px] text-xs border-gray-darker border rounded-full w-8 flex items-center justify-center text-gray-light"
           >
-            {{ langCode }}
+            {{ localeCode }}
           </div>
-          <span class="text-sm text-gray-light">{{ lang }}</span>
+          <span class="text-sm text-gray-light">{{ locale }}</span>
         </button>
       </div>
     </transition>
@@ -44,14 +45,14 @@
 </template>
 
 <script lang="ts">
-import i18n, { availableLanguages } from '@/i18n'
+import i18n, { availableLocales } from '@/i18n'
 
 export default {
   name: 'LangItem',
   data() {
     return {
       active: false,
-      languages: availableLanguages
+      locales: availableLocales
     }
   },
   methods: {
@@ -61,10 +62,15 @@ export default {
     away() {
       this.active = false
     },
-    changeLanguage(lang: string) {
+    changeLocale(lang: string) {
       i18n.global.locale.value = lang
       document.querySelector('html')!.setAttribute('lang', lang)
       localStorage.setItem('user-locale', lang)
+    }
+  },
+  computed: {
+    activeLocale() {
+      return i18n.global.locale.value
     }
   }
 }
@@ -75,6 +81,7 @@ export default {
 .dropdown-content-leave-active {
   transition: all 0.2s;
 }
+
 .dropdown-content-enter,
 .dropdown-content-leave-to {
   opacity: 0;

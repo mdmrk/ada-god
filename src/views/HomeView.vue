@@ -4,7 +4,16 @@
     <span class="text-green">{{ hits }}</span>
     <span class="text-red">{{ fails }}</span>
   </div>
-  <Question @set-choice="setChoice" :data="question" :show-result="showResult" />
+  <Question
+    @set-answer="setAnswer"
+    :data="{
+      id: questionIdx,
+      title: question.title,
+      choices: question.choices,
+      solution: question.solution,
+      answer
+    }"
+  />
   <div
     class="flex flex-row gap-2 [&>button]:w-full [&>button]:flex [&>button]:items-center [&>button]:justify-center [&>button]:h-16 [&>button]:rounded-xl [&>button>svg]:fill-dark-room [&>button]:bg-green"
   >
@@ -51,6 +60,8 @@
 import { randomizeQuestions } from '@/utils'
 import Question from '@/components/Question.vue'
 import type { IQuestion } from '@/types'
+import { useI18n } from 'vue-i18n'
+import { ref } from 'vue'
 
 export default {
   data() {
@@ -67,9 +78,8 @@ export default {
     prevQuestion() {
       this.questionIdx = this.questionIdx - 1 < 0 ? this.questions.length - 1 : this.questionIdx - 1
     },
-    setChoice(choice: number) {
-      this.questions[this.realIdx].answer = choice
-      this.question.solution === this.question.answer ? this.hits++ : this.fails++
+    setAnswer(answer: number) {
+      this.answers[this.realIdx] = answer
     }
   },
   computed: {
@@ -82,15 +92,21 @@ export default {
     question() {
       return this.questions[this.realIdx]
     },
-    showResult() {
-      return this.question.answer !== undefined
+    answer() {
+      return this.answers[this.realIdx]
     }
   },
   components: {
     Question
   },
   setup() {
-    return { questionsOrder: randomizeQuestions(2) }
+    const { tm } = useI18n()
+    const questionsAmount = tm('questions').length
+
+    return {
+      answers: ref(Array<number>(questionsAmount)),
+      questionsOrder: randomizeQuestions(questionsAmount)
+    }
   }
 }
 </script>

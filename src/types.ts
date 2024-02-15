@@ -1,5 +1,5 @@
 export interface IQuestion {
-  readonly id: number
+  readonly id: string
   readonly title: string
   readonly choices: string[]
   readonly solution: number
