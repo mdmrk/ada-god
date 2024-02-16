@@ -28,12 +28,12 @@
         <button
           v-for="(locale, localeCode) in locales"
           :key="localeCode"
-          class="px-2 py-1 w-36 hover:bg-night rounded-full items-center justify-start flex flex-row gap-2"
+          class="px-2 py-1 w-36 h-8 hover:bg-night rounded-xl items-center justify-start flex flex-row gap-2"
           :class="{ 'bg-night': localeCode === activeLocale }"
           @click="changeLocale(localeCode)"
         >
           <div
-            class="uppercase text-[10px] text-xs border-gray-darker border rounded-full w-8 flex items-center justify-center text-gray-light"
+            class="uppercase text-[9px] text-xs tracking-widest border-gray-darker border rounded-full w-8 flex items-center justify-center text-gray-light"
           >
             {{ localeCode }}
           </div>
