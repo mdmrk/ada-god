@@ -17,6 +17,11 @@
         "El nuevo algoritmo solo será más rápido para algunas instancias del problema"
       ],
       "solution": 2
+    },
+    {
+      "title": "Dadas las siguientes funciones, se quiere reducir la complejidad temporal de la función \\(g\\) usando programación dinámica iterativa. ¿Cuál sería la complejidad espacial?<pre><code>// Precondición: { 0 <= i < v.size(); i < j <= v.size() }\nunsigned f(const vector<unsigned>&v, unsigned i, unsigned j) {\n\tif(i == j+1)\n\t\treturn v[i];\n\tunsigned sum = 0;\n\tfor(unsigned k = 0; k < j - i; k++)\n\t\tsum += f(v, i, i+k+1) + f(v, i+k+1, j);\n\treturn sum;\n}\n\nunsigned g(const vector<unsigned>&v) {\n\treturn f(v, v.begin(), v.end());\n}</code></pre>",
+      "choices": ["Cuadrática", "Exponencial", "Cúbica"],
+      "solution": 0
     }
   ]
 }

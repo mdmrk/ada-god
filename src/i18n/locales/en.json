@@ -17,6 +17,11 @@
         "The new algorithm will only be faster for some instances of the problem."
       ],
       "solution": 2
+    },
+    {
+      "title": "Given the following functions, you want to reduce the time complexity of the function \\(g)\\) using iterative dynamic programming. What would be the space complexity?<pre><code>// Precondición: { 0 <= i < v.size(); i < j <= v.size() }\nunsigned f(const vector<unsigned>&v, unsigned i, unsigned j) {\n\tif(i == j+1)\n\t\treturn v[i];\n\tunsigned sum = 0;\n\tfor(unsigned k = 0; k < j - i; k++)\n\t\tsum += f(v, i, i+k+1) + f(v, i+k+1, j);\n\treturn sum;\n}\n\nunsigned g(const vector<unsigned>&v) {\n\treturn f(v, v.begin(), v.end());\n}</code></pre>",
+      "choices": ["Quadratic", "Exponential", "Cubic"],
+      "solution": 0
     }
   ]
 }
