@@ -80,6 +80,7 @@ export default {
     },
     setAnswer(answer: number) {
       this.answers[this.realIdx] = answer
+      this.question.solution === answer ? this.hits++ : this.fails++
     }
   },
   computed: {
