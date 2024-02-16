@@ -47,7 +47,7 @@ ul {
 }
 
 pre {
-  @apply border-l-[1px] border-gray-light pl-2 ml-3;
+  @apply border-l-[1px] border-gray-light pl-2 ml-3 mt-2;
 }
 
 button:focus {
