@@ -1,5 +1,5 @@
 <template>
-  <button class="relative" @click="toggle" v-click-away="away">
+  <button aria-label="Language" class="relative" @click="toggle" v-click-away="away">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="icon icon-tabler icon-tabler-locale"

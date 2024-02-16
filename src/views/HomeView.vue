@@ -17,7 +17,7 @@
   <div
     class="flex flex-row gap-2 [&>button]:w-full [&>button]:flex [&>button]:items-center [&>button]:justify-center [&>button]:h-16 [&>button]:rounded-xl [&>button>svg]:fill-dark-room [&>button]:bg-green"
   >
-    <button @click="prevQuestion">
+    <button aria-label="Previous Question" @click="prevQuestion">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-arrow-big-left-filled"
@@ -35,7 +35,7 @@
         />
       </svg>
     </button>
-    <button @click="nextQuestion">
+    <button aria-label="Next Question" @click="nextQuestion">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-arrow-big-right-filled"
