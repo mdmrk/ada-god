@@ -1,19 +1,4 @@
 <template>
-  <div class="flex flex-row gap-2 [&>span]:font-bold [&>span]:text-sm">
-    <span class="text-gray-light">{{ questionIdx + 1 }} / {{ questions.length }}</span>
-    <span class="text-green">{{ hits }}</span>
-    <span class="text-red">{{ fails }}</span>
-  </div>
-  <Question
-    @set-answer="setAnswer"
-    :data="{
-      id: questionIdx,
-      title: question.title,
-      choices: question.choices,
-      solution: question.solution,
-      answer
-    }"
-  />
   <div
     class="flex flex-row gap-2 [&>button]:w-full [&>button]:flex [&>button]:items-center [&>button]:justify-center [&>button]:h-16 [&>button]:rounded-xl [&>button>svg]:fill-dark-room [&>button]:bg-green"
   >
@@ -54,6 +39,21 @@
       </svg>
     </button>
   </div>
+  <div class="flex flex-row gap-2 [&>span]:font-bold [&>span]:text-sm">
+    <span class="text-gray-light">{{ questionIdx + 1 }} / {{ questions.length }}</span>
+    <span class="text-green">{{ hits }}</span>
+    <span class="text-red">{{ fails }}</span>
+  </div>
+  <Question
+    @set-answer="setAnswer"
+    :data="{
+      id: questionIdx,
+      title: question.title,
+      choices: question.choices,
+      solution: question.solution,
+      answer
+    }"
+  />
 </template>
 
 <script lang="ts">
