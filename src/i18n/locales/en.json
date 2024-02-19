@@ -19,9 +19,176 @@
       "solution": 2
     },
     {
-      "title": "Given the following functions, you want to reduce the time complexity of the function \\(g\\) using iterative dynamic programming. What would be the space complexity?<pre><code>// Precondición: {'{'} 0 <= i < v.size(); i < j <= v.size() {'}'}\nunsigned f(const vector<unsigned>&v, unsigned i, unsigned j) {'{'}\n\tif(i == j+1)\n\t\treturn v[i];\n\tunsigned sum = 0;\n\tfor(unsigned k = 0; k < j - i; k++)\n\t\tsum += f(v, i, i+k+1) + f(v, i+k+1, j);\n\treturn sum;\n{'}'}\n\nunsigned g(const vector<unsigned>&v) {'{'}\n\treturn f(v, v.begin(), v.end());\n{'}'}</code></pre>",
+      "title": "Given the following functions, you want to reduce the time complexity of the function \\(g\\) using iterative dynamic programming. What would be the space complexity?<pre><code>// Precondición: {'{'} 0 <= i < v.size(); i < j <= v.size() {'}'}\nunsigned f(const vector<unsigned> &v, unsigned i, unsigned j) {'{'}\n\tif(i == j+1)\n\t\treturn v[i];\n\tunsigned sum = 0;\n\tfor(unsigned k = 0; k < j-i; k++)\n\t\tsum += f(v, i, i+k+1) + f(v, i+k+1, j);\n\treturn sum;\n{'}'}\n\nunsigned g(const vector<unsigned> &v) {'{'}\n\treturn f(v, v.begin(), v.end());\n{'}'}</code></pre>",
       "choices": ["Quadratic", "Exponential", "Cubic"],
       "solution": 0
+    },
+    {
+      "title": "Being an optimization problem, in the list of live branching and pruning nodes...",
+      "choices": [
+        "Only promising nodes are introduced, that is, nodes that can improve the best solution available at that moment.",
+        "There may be nodes that are not promising",
+        "The other two options are true"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "We want to obtain all the permutations of a list composed of \\(n\\) elements, which scheme is the most appropriate?",
+      "choices": [
+        "Divide and conquer, since the division into sublists could be done in constant time",
+        "Branching and pruning, since with good boundary functions it is more efficient for this problem than going back",
+        "Going back, for this problem there is no more efficient scheme"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "When solving the traveling salesman problem by backtracking and assuming a fully connected graph of \\(n\\) vertices, which of these is a good pessimistic bound to start the search?",
+      "choices": [
+        "The remaining edges are ordered from shortest to greatest distance and the sum of the shortest \\(n\\) edges is calculated",
+        "The problem is solved using a greedy algorithm that adds each time to the path the vertex closest to the last added one.",
+        "Multiply \\(n\\) by the distance of the shortest edge that remains to be considered"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "For which of these optimization problems is there a greedy solution?",
+      "choices": [
+        "The minimum covering tree for an undirected graph with weights.",
+        "The problem of the discreet backpack.",
+        "The problem of minimum cost assignment of \\(n\\) tasks to \\(n\\) workers when the cost of assigning task \\(i\\) to worker \\(j\\), \\(c_{'{'} ij{'}'}\\) is tabulated in an array."
+      ],
+      "solution": 0
+    },
+    {
+      "title": "If to solve the same problem we use a branch and pruning algorithm and modify it minimally to turn it into a backtracking algorithm, what do we really change?",
+      "choices": [
+        "We cause optimistic levels to lose effectiveness",
+        "We change the function we give to the pessimistic bound",
+        "It would be necessary to check whether the solutions are feasible or not since branching and pruning only generates feasible nodes"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "What is the main difference between a backtracking solution and a branch and pruning solution for the knapsack problem?",
+      "choices": [
+        "The order of exploration of the solutions",
+        "The fact that the branching and pruning solution can start with a greedy suboptimal solution and the one backtracking does not",
+        "The asymptotic cost in the worst case"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "You want to find the shortest path between two cities. ",
+      "choices": [
+        "A pessimistic quote",
+        "An optimistic point",
+        "It would not be pruning since it is possible that this heuristic does not find a feasible solution."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "The advantage of the branching and pruning strategy over backtracking is that the former generates possible solutions to the problem by...",
+      "choices": [
+        "The other two options are true",
+        "A guided walk through a priority queue from which the nodes representing the most promising subtrees of the solution space are first extracted.",
+        "A tour guided by estimates of the best branches of the tree that represents the solution space"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "The backtracking strategy is applicable to selection and optimization problems in which:",
+      "choices": [
+        "The solution space is an infinite set",
+        "The solution space is a finite set",
+        "The solution space can be either finite or infinite, but in the latter case it must be at least countable."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "You want to find the shortest path between two cities.\n",
+      "choices": [
+        "No, since it does not ensure that a feasible solution will be found",
+        "No, since in some cases it can give distances less than the optimal one.",
+        "Yes, since geographical distance ensures that another better solution is not possible"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "When we solve a problem we use a branching and pruning scheme...",
+      "choices": [
+        "Decisions can only be binary",
+        "The values ​​between which we choose in each of the decisions can form an infinite set",
+        "The values ​​between which we choose in each of the decisions have to form a finite set"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "When a backtracking algorithm solves a \\(n\\) decision problem, in which there are always at least two options for each decision, which of the following worst-case complexities is the best we can find?",
+      "choices": ["\\(2^n\\)", "\\(\\Omicron(n^2)\\)", "\\(\\Omicron(n!)\\)"],
+      "solution": 0
+    },
+    {
+      "title": "The worst-case complexity of a branch and pruning algorithm...",
+      "choices": [
+        "It can be exponential with the number of alternatives for each decision",
+        "It is exponential with the number of decisions to make",
+        "It can be polynomial with the number of decisions to make"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "In the absence of optimistic and pessimistic limits, the backtracking strategy...",
+      "choices": [
+        "Cannot be used to solve optimization problems",
+        "Does not traverse the entire tree if there is a way to discard subtrees that represent infeasible solution sets",
+        "It must always go through the entire tree"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "You want to find the shortest path between two cities. ",
+      "choices": [
+        "It would be a pessimistic estimate as long as we are certain that this approximation finds a feasible solution.",
+        "It would be an optimistic estimate as long as there is certainty that this approach finds a feasible solution.",
+        "None of the other two options"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Decide which of these three does not serve as an optimistic bound to obtain the optimal value of the discrete backpack:",
+      "choices": [
+        "The discrete backpack value obtained using a greedy algorithm based on the specific value of the objects",
+        "The value of the corresponding continuous backpack",
+        "The value of a backpack that contains all the objects even if it exceeds the maximum weight allowed"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "The complexity in the smallest case of a branching and pruning algorithm...",
+      "choices": [
+        "It is usually polynomial with the number of alternatives for each decision",
+        "It is always exponential with the number of decisions to make",
+        "It can be polynomial with the number of decisions to make"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "What are pessimistic limits for branching and pruning?",
+      "choices": [
+        "To discard nodes based on preference for some other already completed node",
+        "To be sure that the optimistic limit is well calculated",
+        "To discard nodes based on expected profit"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "What is the correct definition of \\(\\Omicron(g)\\)? ",
+      "choices": [
+        "\\(\\Omicron(g)={'{'}f:\\N\\to\\Reals^+ \\vert\\exist c\\in\\Reals^+ ,\\exist n_0\\in\\N,\\forall n \\geq n_0,g( n)\\leq cf(n){'}'}\\)",
+        "\\(\\Omicron(g)={'{'}f:\\N\\to\\Reals^+ \\vert\\exist c\\in\\Reals^+ ,\\exist n_0\\in\\N,\\forall n \\geq n_0,f( n)\\leq cg(n){'}'}\\)",
+        "\\(\\Omicron(g)={'{'}f:\\N\\to\\Reals^+ \\vert\\forall c\\in\\Reals^+ ,\\exist n_0\\in\\N,\\forall n \\geq n_0,g( n)\\leq cf(n){'}'}\\)"
+      ],
+      "solution": 1
     }
   ]
 }

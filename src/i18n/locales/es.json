@@ -19,9 +19,176 @@
       "solution": 2
     },
     {
-      "title": "Dadas las siguientes funciones, se quiere reducir la complejidad temporal de la función \\(g\\) usando programación dinámica iterativa. ¿Cuál sería la complejidad espacial?<pre><code>// Precondición: {'{'} 0 <= i < v.size(); i < j <= v.size() {'}'}\nunsigned f(const vector<unsigned>&v, unsigned i, unsigned j) {'{'}\n\tif(i == j+1)\n\t\treturn v[i];\n\tunsigned sum = 0;\n\tfor(unsigned k = 0; k < j - i; k++)\n\t\tsum += f(v, i, i+k+1) + f(v, i+k+1, j);\n\treturn sum;\n{'}'}\n\nunsigned g(const vector<unsigned>&v) {'{'}\n\treturn f(v, v.begin(), v.end());\n{'}'}</code></pre>",
+      "title": "Dadas las siguientes funciones, se quiere reducir la complejidad temporal de la función \\(g\\) usando programación dinámica iterativa. ¿Cuál sería la complejidad espacial?<pre><code>// Precondición: {'{'} 0 <= i < v.size(); i < j <= v.size() {'}'}\nunsigned f(const vector<unsigned> &v, unsigned i, unsigned j) {'{'}\n\tif(i == j+1)\n\t\treturn v[i];\n\tunsigned sum = 0;\n\tfor(unsigned k = 0; k < j-i; k++)\n\t\tsum += f(v, i, i+k+1) + f(v, i+k+1, j);\n\treturn sum;\n{'}'}\n\nunsigned g(const vector<unsigned> &v) {'{'}\n\treturn f(v, v.begin(), v.end());\n{'}'}</code></pre>",
       "choices": ["Cuadrática", "Exponencial", "Cúbica"],
       "solution": 0
+    },
+    {
+      "title": "Tratándose de un problema de optimización, en la lista de nodos vivos de ramificación y poda...",
+      "choices": [
+        "Sólo se introducen nodos prometedores, es decir, nodos que pueden mejorar la mejor solución que se tiene en ese momento",
+        "Puede haber nodos que no son prometedores",
+        "Las otras dos opciones son ciertas"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Se desea obtener todas las permutaciones de una lista compuesta por \\(n\\) elementos, ¿qué esquema es el más adecuado?",
+      "choices": [
+        "Divide y vencerás, puesto que la división en sublistas se podría hacer en tiempo constante",
+        "Ramificación y poda, puesto que con buenas funciones de cota es más eficiente para este problema que vuelta atrás",
+        "Vuelta atrás, para este problema no hay un esquema más eficiente"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Al resolver el problema del viajante de comercio mediante vuelta atrás y asumiendo un grafo de \\(n\\) vértices totalmente conexo, ¿cuál de estas es una buena cota pesimista al iniciar la búsqueda?",
+      "choices": [
+        "Se ordenan las aristas restantes de menor a mayor distancia y se calcula la suma de las \\(n\\) aristas más cortas",
+        "Se resuelve el problema usando un algoritmo voraz que añade cada vez al camino el vértice más cercano al último añadido",
+        "Se multiplica \\(n\\) por la distancia de la arista más corta que nos queda por considerar"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "¿Para cuál de estos problemas de optimización existe una solución voraz?",
+      "choices": [
+        "El árbol de recubrimiento mínimo para un grafo no dirigido con pesos.",
+        "El problema de la mochila discreta.",
+        "El problema de la asignación de coste mínimo de \\(n\\) tareas a \\(n\\) trabajadores cuando el coste de asignar la tarea \\(i\\) al trabajador \\(j\\), \\(c_{'{'}ij{'}'}\\) está tabulado en una matriz."
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Si para resolver un mismo problema usamos un algoritmo de ramificación y poda y lo modificamos mínimamente para convertirlo en un algoritmo de vuelta atrás, ¿qué cambiamos realmente?",
+      "choices": [
+        "Provocamos que las cotas optimistas pierdan eficacia",
+        "Cambiamos la función que damos a la cota pesimista",
+        "Sería necesario comprobar si las soluciones son factibles o no puesto que ramificación y poda solo genera nodos factibles"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "¿Cuál es la diferencia principal entre una solución de vuelta atrás y una solución de ramificación y poda para el problema de la mochila?",
+      "choices": [
+        "El orden de exploración de las soluciones",
+        "El hecho de que la solución de ramificación y poda puede empezar con una solución subóptima voraz y la de vuelta atrás no",
+        "El coste asintótico en el peor caso"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Se desea encontrar el camino más corto entre dos ciudades. para ello se dispone de una tabla con la distancia entre los pares de ciudades en los que hay carreteras o un valor centinela (por ejemplo, -1) si no hay, por lo que para ir de la ciudad inicial a la final es posible que haya que pasar por varias ciudades. como también se conocen las coordenadas geográficas de cada ciudad se quiere usar la distancia geográfica (en línea recta) entre cada par de ciudades como cota para limitar la búsqueda en un algoritmo de vuelta atrás. ¿qué tipo de cota sería?",
+      "choices": [
+        "Una cota pesimista",
+        "Una cota optimista",
+        "No se trataría de ninguna poda puesto que es posible que esa heurística no encuentre una solución factible."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "La ventaja de la estrategia de ramificación y poda sobre la vuelta atrás es que la primera genera las posibles soluciones al problema mediante...",
+      "choices": [
+        "Las otras dos opciones son verdaderas",
+        "Un recorrido guiado por una cola de prioridad de la cual se extraen primero los nodos que representan los subárboles más prometedores del espacio de soluciones.",
+        "Un recorrido guiado por estimaciones de las mejores ramas del árbol que representa el espacio de soluciones"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "La estrategia de vuelta atrás es aplicable a problemas de selección y optimización en los que:",
+      "choices": [
+        "El espacio de soluciones es un conjunto infinito",
+        "El espacio de soluciones es un conjunto finito",
+        "El espacio de soluciones puede ser tanto finito como infinito pero en este último caso debe ser al menos numerable"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Se desea encontrar el camino más corto entre dos ciudades.\npara ello se dispone de una tabla con la distancia entre los pares de ciudades en los que hay carreteras o un valor centinela (por ejemplo, -1) si no hay, por lo que para ir de la ciudad inicial a la final es posible que haya que pasar por varias ciudades. también se conocen las coordenadas geográficas de cada ciudad y por tanto la distancia geográfica (en línea recta) entre cada par de ciudades. para limitar la búsqueda en un algoritmo de vuelta atrás, se utiliza la solución de un algoritmo voraz basado en moverse en cada paso a la ciudad, de entre las posibles según el mapa de carreteras, que esté más cercana al destino según su distancia geográfica.\neste algoritmo voraz, ¿serviría como cota pesimista?",
+      "choices": [
+        "No, ya que no asegura que se encuentre una solución factible",
+        "No, ya que en algunos casos puede dar distancias menores que la optima",
+        "Sí, puesto que la distancia geográfica asegura que otra solución mejor no es posible"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Cuando resolvemos un problema medialilte un esquema de ramificación y poda...",
+      "choices": [
+        "Las decisiones sólo pueden ser binarias",
+        "Los valores entre los cuales se elige en cada una de las decisiones pueden formar un conjunto infinito",
+        "Los valores entre los cuales se elige en cada una de las decisiones tienen que formar un conjunto finito"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Cuando se resuelve un algoritmo de vuelta atrás un problema de \\(n\\) decisiones, en el que siempre hay como mínimo dos opciones para cada decisión, ¿cuál de las siguientes complejidades en el caso peor es la mejor que nos podemos encontrar?",
+      "choices": ["\\(2^n\\)", "\\(\\Omicron(n^2)\\)", "\\(\\Omicron(n!)\\)"],
+      "solution": 0
+    },
+    {
+      "title": "La complejidad en el peor de los casos de un algoritmo de ramificación y poda...",
+      "choices": [
+        "Puede ser exponencial con el número de alternativas por cada decisión",
+        "Es exponencial con el número de decisiones a tomar",
+        "Puede ser polinómica con el número de decisiones a tomar"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "En ausencia de cotas optimista y pesimistas, la estrategia de vuelta atrás...",
+      "choices": [
+        "No se puede usar para resolver problemas de optimización",
+        "No recorre todo el árbol si hay manera de descartar subárboles que representan conjuntos de soluciones no factibles",
+        "Debe recorrer siempre todo el árbol"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Se desea encontrar el camino más corto entre dos ciudades. Para ello se dispone de una tabla con la distancia entre los pares de ciudades en los que hay carreteras o un valor centinela (por ejemplo, -1) si no hay, por lo que para ir de la ciudad inicial a la final es posible que haya que pasar por varias ciudades. Para limitar la búsqueda en un algoritmo de vuelta atrás, se utiliza la solución de un algoritmo voraz basado en moverse en cada paso a la ciudad, de entre las posibles según el mapa de carreteras, que esté más cercana al destino en línea recta. ¿qué tipo de cota sería?",
+      "choices": [
+        "Sería una cota pesimista siempre que se tenga la certeza de que esa aproximación encuentra la solución factible",
+        "Sería una cota optimista siempre que se tenga la certeza de que esa aproximación encuentra una solución factible",
+        "Ninguna de las otras dos opciones"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Decid cuál de estas tres no sirve como cota optimista para obtener el valor óptimo de la mochila discreta:",
+      "choices": [
+        "El valor de la mochila discreta que se obtiene usando un algoritmo voraz basado en el valor específico de los objetos",
+        "El valor de la mochila continua correspondiente",
+        "El valor de una mochila que contiene todos los objetos aunque se pase del peso máximo permitido"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "La complejidad en el menor de los casos de un algoritmo de ramificación y poda...",
+      "choices": [
+        "Suele ser polinómica con el número de alternativas por cada decisión",
+        "Es siempre exponencial con el número de decisiones a tomar",
+        "Puede ser polinómica con el número de decisiones a tomar"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "¿Para qué sirven las cotas pesimistas en ramificación y poda?",
+      "choices": [
+        "Para descartar nodos basándose en la preferencia por algún otro nodo ya completado",
+        "Para tener la certeza de que la cota optimista está bien calculada",
+        "Para descartar nodos basándose en el beneficio esperado"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "¿Cuál es la definición correcta de \\(\\Omicron(g)\\)? (TODO)",
+      "choices": [
+        "\\(\\Omicron(g)={'{'}f:\\N\\to\\Reals^+\\vert\\exist c\\in\\Reals^+,\\exist n_0\\in\\N,\\forall n \\geq n_0,g(n)\\leq cf(n){'}'}\\)",
+        "\\(\\Omicron(g)={'{'}f:\\N\\to\\Reals^+\\vert\\exist c\\in\\Reals^+,\\exist n_0\\in\\N,\\forall n \\geq n_0,f(n)\\leq cg(n){'}'}\\)",
+        "\\(\\Omicron(g)={'{'}f:\\N\\to\\Reals^+\\vert\\forall c\\in\\Reals^+,\\exist n_0\\in\\N,\\forall n \\geq n_0,g(n)\\leq cf(n){'}'}\\)"
+      ],
+      "solution": 1
     }
   ]
 }
