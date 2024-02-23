@@ -55,7 +55,7 @@ button:focus {
 }
 
 .arrow-button {
-  @apply fill-night bg-green flex items-center justify-center h-14 transition duration-150 w-full shadow-[0em_-0.3rem_0em_rgba(0,0,0,0.25)_inset] rounded-xl active:scale-95;
+  @apply fill-night bg-green flex items-center justify-center h-14 transition duration-150 w-full shadow-[0em_-0.3rem_0em_rgba(0,0,0,0.25)_inset] rounded-xl active:scale-95 touch-manipulation;
 }
 
 .question-title {

@@ -1,5 +1,5 @@
 <template>
-  <li class="select-none rounded-lg px-3 py-1 my-1 bg-dark-room" :class="style">
+  <li class="select-none rounded-xl px-3 py-1 my-1 bg-dark-room" :class="style">
     <span class="box-decoration-clone" v-katex:auto v-html="$rt(data?.choice)"></span>
   </li>
 </template>

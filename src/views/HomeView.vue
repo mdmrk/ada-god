@@ -64,7 +64,7 @@ import { ref } from 'vue'
 export default {
   data() {
     return {
-      questionIdx: 0,
+      questionIdx: 21,
       hits: 0,
       fails: 0
     }

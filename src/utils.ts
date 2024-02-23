@@ -16,7 +16,7 @@ export function randomIntFromInterval(min: number, max: number) {
 }
 
 export function randomizeQuestions(amount: number) {
-  return shuffle(Array.from({ length: amount }, (_, i) => i))
+  return Array.from({ length: amount }, (_, i) => i)
 }
 
 export function clamp(number: number, min: number, max: number) {
