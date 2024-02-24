@@ -182,13 +182,103 @@
       "solution": 2
     },
     {
-      "title": "What is the correct definition of \\(\\Omicron(g)\\)? ",
+      "title": "In branching and pruning algorithms, is the value of a pessimistic bound less than the value of an optimistic bound?",
       "choices": [
-        "\\(\\Omicron(g)={'{'}f:\\N\\to\\Reals^+ \\vert\\exist c\\in\\Reals^+ ,\\exist n_0\\in\\N,\\forall n \\geq n_0,g( n)\\leq cf(n){'}'}\\)",
-        "\\(\\Omicron(g)={'{'}f:\\N\\to\\Reals^+ \\vert\\exist c\\in\\Reals^+ ,\\exist n_0\\in\\N,\\forall n \\geq n_0,f( n)\\leq cg(n){'}'}\\)",
-        "\\(\\Omicron(g)={'{'}f:\\N\\to\\Reals^+ \\vert\\forall c\\in\\Reals^+ ,\\exist n_0\\in\\N,\\forall n \\geq n_0,g( n)\\leq cf(n){'}'}\\)"
+        "Yes, it's always like this",
+        "In general yes, if it is a maximization problem, although sometimes both values ​​can coincide",
+        "In general yes, if it is a minimization problem, although sometimes both values ​​can coincide"
       ],
       "solution": 1
+    },
+    {
+      "title": "The branching and pruning strategy needs pessimistic limits...",
+      "choices": [
+        "To determine the visiting order of nodes in the solution tree",
+        "To verify the feasibility of a solution",
+        "Only if used to solve optimization problems"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "In the scheme going back, the pruning mechanisms based on the best solution so far...",
+      "choices": [
+        "Both statements above are true.",
+        "They assure that not all the possible solutions space will be explored",
+        "They can eliminate partial solutions that are feasible"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Using dimension functions in branching and pruning...",
+      "choices": [
+        "It ensures that the algorithm will be more efficient in any instance of the problem.",
+        "Can decrease the number of problem instances that fall into the worst case",
+        "Convert prior exponential complexities to polynomial"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Choose which of these three is the tightest pessimistic bound for the optimal value of the discrete backpack:",
+      "choices": [
+        "The value of the corresponding continuous backpack",
+        "The value of a backpack that contains all the objects even if it exceeds the maximum weight allowed",
+        "The value of the discrete backpack obtained using a greedy algorithm based on the specific value of the objects"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "In the branching and pruning strategy...",
+      "choices": [
+        "Each node has its own optimistic bound, while the pessimistic bound is common for all nodes.",
+        "Each node has its own pessimistic bound and also its own optimistic bound.",
+        "Each node has its own pessimistic bound, the optimistic bound being common for all nodes."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "In branching and pruning algorithms...",
+      "choices": [
+        "An optimistic bound is necessarily an unattainable upper limit; ",
+        "An optimistic limit is necessarily an achievable value; ",
+        "The use of pessimistic bounds is only effective when there is a possible initial solution."
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Decide which of these three is the optimistic bound that prunes most efficiently when using the backtracking strategy to solve the knapsack problem:",
+      "choices": [
+        "The value of a backpack",
+        "The optimal value of the corresponding continuous backpack",
+        "The value of the discrete backpack obtained using a greedy algorithm based on the specific value of the object"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "In branching and pruning algorithms, is the value of a pessimistic bound greater than the value of an optimistic bound? ",
+      "choices": [
+        "No, it's never like that",
+        "In general yes, if it is a maximization problem, although sometimes both values ​​can coincide",
+        "In general yes, if it is a minimization problem, although sometimes both values ​​can coincide"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Given any optimization problem, does the backtracking strategy guarantee the optimal solution?",
+      "choices": [
+        "It is a necessary condition that the decision domain is discrete or discretizable and that the number of decisions to be made is limited.",
+        "Yes, as long as the decision domain is discrete or discretizable and pruning mechanisms based on the best solution so far are used.",
+        "Yes, since this method analyzes all the possibilities"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "The shift assignment problem. We are at the beginning of the course, and students want to find partners to form practice groups. To solve this problem, it is suggested that they select several people and assign them a priority. The number of students is \\(\\Nu\\). There is a square matrix \\(\\Mu\\) with \\(\\Nu\\) rows, where each student has written an integer (between \\(-1\\) and \\(\\Nu-1\\)) in their corresponding row indicating this priority (a value of \\(-1\\) indicates they do not wish or cannot be with the person in the corresponding column. \\(0\\) indicates indifference, and the higher the value, the greater the preference for that person). No student can form a group with themselves. The goal is to find a solution that satisfies the maximum number of students according to their order of preference. Assuming that matrix \\(\\Mu\\) is already created, design an algorithm that solves the problem optimally.",
+      "choices": [
+        "Optimized through backtracking",
+        "Approximate (suboptimal) using greedy algorithm",
+        "Both"
+      ],
+      "solution": 2
     }
   ]
 }

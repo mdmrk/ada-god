@@ -182,13 +182,103 @@
       "solution": 2
     },
     {
-      "title": "¿Cuál es la definición correcta de \\(\\Omicron(g)\\)? (TODO)",
+      "title": "En los algoritmos de ramificación y poda, ¿el valor de una cota pesimista es menor que el valor de una cota optimista?",
       "choices": [
-        "\\(\\Omicron(g)={'{'}f:\\N\\to\\Reals^+\\vert\\exist c\\in\\Reals^+,\\exist n_0\\in\\N,\\forall n \\geq n_0,g(n)\\leq cf(n){'}'}\\)",
-        "\\(\\Omicron(g)={'{'}f:\\N\\to\\Reals^+\\vert\\exist c\\in\\Reals^+,\\exist n_0\\in\\N,\\forall n \\geq n_0,f(n)\\leq cg(n){'}'}\\)",
-        "\\(\\Omicron(g)={'{'}f:\\N\\to\\Reals^+\\vert\\forall c\\in\\Reals^+,\\exist n_0\\in\\N,\\forall n \\geq n_0,g(n)\\leq cf(n){'}'}\\)"
+        "Sí, siempre es así",
+        "En general sí, si se trata de un problema de maximización, aunque en ocasiones ambos valores pueden coincidir",
+        "En general sí, si se trata de un problema de minimización, aunque en ocasiones ambos valores pueden coincidir"
       ],
       "solution": 1
+    },
+    {
+      "title": "La estrategia de ramificación y poda necesita cotas pesimistas...",
+      "choices": [
+        "Para determinar el orden de visita de los nodos en el árbol de soluciones",
+        "Para verificar la factibilidad de una solución",
+        "Solo si se utiliza para resolver problemas de optimización"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "En el esquema de vuelta atrás, los mecanismos de poda basados en la mejor solución hasta el momento...",
+      "choices": [
+        "Ambas afirmaciones anteriores son verdaderas",
+        "Aseguran que no se explorará todo el espacio de soluciones posible",
+        "Pueden eliminar soluciones parciales que son factibles"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "El uso de funciones de cota en ramificación y poda...",
+      "choices": [
+        "Asegura que el algoritmo será más eficiente en cualquier instancia del problema",
+        "Puede disminuir el número de instancias del problema que caen en el peor caso",
+        "Convierte complejidades exponenciales previas en polinómicas"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Elige cuál de estas tres es la cota pesimista más ajustada para el valor óptimo de la mochila discreta:",
+      "choices": [
+        "El valor de la mochila continua correspondiente",
+        "El valor de una mochila que contiene todos los objetos aunque exceda el peso máximo permitido",
+        "El valor de la mochila discreta obtenido usando un algoritmo voraz basado en el valor específico de los objetos"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "En la estrategia de ramificación y poda...",
+      "choices": [
+        "Cada nodo tiene su propia cota optimista, mientras que la cota pesimista es común para todos los nodos",
+        "Cada nodo tiene su propia cota pesimista y también su propia cota optimista",
+        "Cada nodo tiene su propia cota pesimista, siendo la cota optimista común para todos los nodos"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "En los algoritmos de ramificación y poda...",
+      "choices": [
+        "Una cota optimista es necesariamente un límite superior inalcanzable; de lo contrario, se podría podar el nodo que lleva a la solución óptima",
+        "Una cota optimista es necesariamente un valor alcanzable; de lo contrario, no se garantiza encontrar la solución óptima",
+        "El uso de cotas pesimistas solo es efectivo cuando se cuenta con una posible solución inicial"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Decide cuál de estas tres es la cota optimista que poda de manera más eficiente al utilizar la estrategia de vuelta atrás para resolver el problema de la mochila:",
+      "choices": [
+        "El valor de una mochila",
+        "El valor óptimo de la mochila continua correspondiente",
+        "El valor de la mochila discreta obtenido usando un algoritmo voraz basado en el valor específico del objeto"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "En los algoritmos de ramificación y poda, ¿el valor de una cota pesimista es mayor que el valor de una cota optimista? (considerando que ambas cotas se aplican al mismo nodo)",
+      "choices": [
+        "No, nunca es así",
+        "En general sí, si se trata de un problema de maximización, aunque en ocasiones ambos valores pueden coincidir",
+        "En general sí, si se trata de un problema de minimización, aunque en ocasiones ambos valores pueden coincidir"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Dado cualquier problema de optimización, ¿la estrategia de vuelta atrás garantiza la solución óptima?",
+      "choices": [
+        "Es una condición necesaria que el dominio de decisiones sea discreto o discretizable y que el número de decisiones a tomar esté acotado",
+        "Sí, siempre que el dominio de decisiones sea discreto o discretizable además y se empleen mecanismos de poda basados en la mejor solución hasta el momento",
+        "Sí, ya que este método analiza todas las posibilidades"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "El problema de la asignación de turnos. Estamos al inicio del curso y los alumnos desean encontrar compañeros para formar grupos de práctica. Para resolver este problema, se sugiere que seleccionen a varias personas y les asignen una prioridad. El número de alumnos es \\(\\Nu\\). Se cuenta con una matriz cuadrada \\(\\Mu\\) con \\(\\Nu\\) filas, donde cada alumno ha escrito en su fila correspondiente un número entero (entre \\(-1\\) y \\(\\Nu-1\\) que indica dicha prioridad (un valor \\(-1\\) indica que no desea o no puede estar con la persona de la columna correspondiente. \\(0\\) indica indiferencia y, cuanto mayor sea el valor, mayor es la preferencia por esa persona). Ningún alumno puede formar grupo consigo mismo. Se busca encontrar una solución que satisfaga el máximo número de alumnos según su orden de preferencia. Suponiendo que la matriz \\(\\Mu\\) ya está creada, diseñar un algoritmo que resuelva el problema de manera óptima",
+      "choices": [
+        "Óptima mediante backtracking",
+        "Aproximada (subóptima) mediante algoritmo voraz",
+        "Ambas"
+      ],
+      "solution": 2
     }
   ]
 }
