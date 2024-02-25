@@ -78,7 +78,7 @@
       "solution": 0
     },
     {
-      "title": "Se desea encontrar el camino más corto entre dos ciudades. para ello se dispone de una tabla con la distancia entre los pares de ciudades en los que hay carreteras o un valor centinela (por ejemplo, -1) si no hay, por lo que para ir de la ciudad inicial a la final es posible que haya que pasar por varias ciudades. como también se conocen las coordenadas geográficas de cada ciudad se quiere usar la distancia geográfica (en línea recta) entre cada par de ciudades como cota para limitar la búsqueda en un algoritmo de vuelta atrás. ¿qué tipo de cota sería?",
+      "title": "Se desea encontrar el camino más corto entre dos ciudades. Para ello, se dispone de una tabla con la distancia entre los pares de ciudades en los que hay carreteras, o un valor centinela (por ejemplo, -1) si no las hay. Por lo tanto, para ir de la ciudad inicial a la final, es posible que haya que pasar por varias ciudades. Además, se conocen las coordenadas geográficas de cada ciudad y se desea utilizar la distancia geográfica (en línea recta) entre cada par de ciudades como cota para limitar la búsqueda en un algoritmo de vuelta atrás. ¿Qué tipo de cota sería?",
       "choices": [
         "Una cota pesimista",
         "Una cota optimista",

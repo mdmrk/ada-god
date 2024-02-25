@@ -78,10 +78,10 @@
       "solution": 0
     },
     {
-      "title": "You want to find the shortest path between two cities. ",
+      "title": "You want to find the shortest path between two cities. To do this, a table is available with the distance between city pairs in which there are roads, or a sentinel value (for example, -1) if there are none. Therefore, to get from the starting city to the final city, you may have to go through several cities. Furthermore, the geographic coordinates of each city are known and we want to use the geographic distance (in a straight line) between each pair of cities as a bound to limit the search in a backtracking algorithm. What type of height would it be?",
       "choices": [
-        "A pessimistic quote",
-        "An optimistic point",
+        "A pessimistic bound",
+        "An optimistic bound",
         "It would not be pruning since it is possible that this heuristic does not find a feasible solution."
       ],
       "solution": 1
@@ -344,7 +344,7 @@
       "solution": 2
     },
     {
-      "title": "In the Voracious method, although the decisions are irreversible, we can ensure that:",
+      "title": "In the greedy method, although the decisions are irreversible, we can ensure that:",
       "choices": [
         "We will always obtain a feasible solution",
         "We will always obtain the optimal solution",
@@ -368,7 +368,7 @@
     },
     {
       "title": "The problem of shift assignment.\nWe are at the beginning of the course, and students want to find partners to form practice groups. To solve this problem, it is suggested that they select several people and assign them a priority. The number of students is \\(\\Nu\\). There is a square matrix \\(\\Mu\\) with \\(\\Nu\\) rows, where each student has written an integer (between \\(-1\\) and \\(\\Nu-1\\)) in their corresponding row indicating this priority (a value of \\(-1\\) indicates they do not wish or cannot be with the person in the corresponding column. \\(0\\) indicates indifference, and the higher the value, the greater the preference for that person). No student can form a group with themselves.\nThe aim is to find a solution to satisfy the maximum number of students according to their order of preference. Assuming that the matrix \\(\\Mu\\) already exists, design an algorithm that solves the problem optimally.",
-      "choices": ["Backtracking", "Voracious", "Both"],
+      "choices": ["Backtracking", "Greedy", "Both"],
       "solution": 0
     },
     {
@@ -406,7 +406,7 @@
     {
       "title": "Given an optimization problem and a greedy algorithm that solves it, when can we be sure that the solution obtained will be optimal?:",
       "choices": [
-        "Voracious always finds optimal solution",
+        "Greedy always finds optimal solution",
         "In both cases",
         "When we formally prove that the criterion leads to an optimal solution for any instance of the problem"
       ],
