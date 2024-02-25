@@ -59,7 +59,7 @@ button:focus {
 }
 
 .question-title {
-  @apply font-bold text-white;
+  @apply font-bold text-white whitespace-pre-wrap;
 
   span {
     @apply font-bold text-white;

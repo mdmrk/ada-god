@@ -272,11 +272,175 @@
       "solution": 0
     },
     {
-      "title": "El problema de la asignación de turnos. Estamos al inicio del curso y los alumnos desean encontrar compañeros para formar grupos de práctica. Para resolver este problema, se sugiere que seleccionen a varias personas y les asignen una prioridad. El número de alumnos es \\(\\Nu\\). Se cuenta con una matriz cuadrada \\(\\Mu\\) con \\(\\Nu\\) filas, donde cada alumno ha escrito en su fila correspondiente un número entero (entre \\(-1\\) y \\(\\Nu-1\\) que indica dicha prioridad (un valor \\(-1\\) indica que no desea o no puede estar con la persona de la columna correspondiente. \\(0\\) indica indiferencia y, cuanto mayor sea el valor, mayor es la preferencia por esa persona). Ningún alumno puede formar grupo consigo mismo. Se busca encontrar una solución que satisfaga el máximo número de alumnos según su orden de preferencia. Suponiendo que la matriz \\(\\Mu\\) ya está creada, diseñar un algoritmo que resuelva el problema de manera óptima",
+      "title": "El problema de la asignación de turnos.\nEstamos al inicio del curso y los alumnos desean encontrar compañeros para formar grupos de práctica. Para resolver este problema, se sugiere que seleccionen a varias personas y les asignen una prioridad. El número de alumnos es \\(\\Nu\\). Se cuenta con una matriz cuadrada \\(\\Mu\\) con \\(\\Nu\\) filas, donde cada alumno ha escrito en su fila correspondiente un número entero (entre \\(-1\\) y \\(\\Nu-1\\) que indica dicha prioridad (un valor \\(-1\\) indica que no desea o no puede estar con la persona de la columna correspondiente. \\(0\\) indica indiferencia y, cuanto mayor sea el valor, mayor es la preferencia por esa persona). Ningún alumno puede formar grupo consigo mismo.\nSe busca encontrar una solución que satisfaga el máximo número de alumnos según su orden de preferencia. Suponiendo que la matriz \\(\\Mu\\) ya está creada, diseñar un algoritmo que resuelva el problema de manera óptima.",
       "choices": [
         "Óptima mediante backtracking",
         "Aproximada (subóptima) mediante algoritmo voraz",
         "Ambas"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "El tiempo de ejecución de un algoritmo de ramificación y poda depende de",
+      "choices": [
+        "La instancia del problema",
+        "La función de selección de nodos para su expansión",
+        "De ambos"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Es un problema de optimización, si el dominio de las decisiones es un conjunto infinito.",
+      "choices": [
+        "Podemos aplicar el esquema vuelta atrás siempre que se trate de un conjunto infinito numerable",
+        "Una estrategia voraz puede ser la única alternativa",
+        "Es probable que a través de programación dinámica se obtenga un algoritmo eficaz que lo solucione"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Backtracking es aplicable a problemas de selección y optimización en los que:",
+      "choices": [
+        "El espacio de soluciones es un conjunto finito",
+        "En cualquiera de los casos",
+        "El espacio de soluciones es un conjunto infinito"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Bactracking es una técnica de resolución general de problemas basada en:",
+      "choices": [
+        "La búsqueda sistemática de soluciones",
+        "La construcción directa de la solución",
+        "Ninguna de las anteriores"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Voraz siempre da solución óptima:",
+      "choices": [
+        "A los dos",
+        "Al problema de la mochila sin fraccionamiento",
+        "Al problema de la mochila con fraccionamiento"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "El problema de la mochila, ¿encuentra su solución óptima empleando la estrategia voraz?:",
+      "choices": [
+        "Sólo para el caso de la mochila sin fraccionamiento",
+        "En cualquiera de los casos anteriores",
+        "Sólo para el caso de la mochila con fraccionamiento"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "El problema del viajante de comercio puede resolverse correctamente empleando estos esquemas de programación:",
+      "choices": [
+        "Sólo programación dinámica",
+        "Empleando cualquiera de estos: Voraz y backtracking.",
+        "Solo backtracking"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "En el método Voraz, aunque las decisiones son irreversibles, podemos asegurar que:",
+      "choices": [
+        "Siempre obtendremos una solución factible",
+        "Siempre obtendremos la solución óptima",
+        "Sólo obtendremos la solución óptima para algunos problemas"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Al aplicar backtracking obtenemos la solución óptima a un problema:",
+      "choices": [
+        "Siempre",
+        "Sólo cuando el problema cumple el principio de Optimalidad",
+        "En algunos casos"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Dado un problema resuelto mediante backtracking y mediante ramificación y poda, el coste computacional de la solución por ramificación y poda, en comparación con la de backtracking es:",
+      "choices": ["Menor", "Igual", "Mayor"],
+      "solution": 1
+    },
+    {
+      "title": "El problema de la asignación de turnos.\nEstamos al inicio del curso y los alumnos desean encontrar compañeros para formar grupos de práctica. Para resolver este problema, se sugiere que seleccionen a varias personas y les asignen una prioridad. El número de alumnos es \\(\\Nu\\). Se cuenta con una matriz cuadrada \\(\\Mu\\) con \\(\\Nu\\) filas, donde cada alumno ha escrito en su fila correspondiente un número entero (entre \\(-1\\) y \\(\\Nu-1\\) que indica dicha prioridad (un valor \\(-1\\) indica que no desea o no puede estar con la persona de la columna correspondiente. \\(0\\) indica indiferencia y, cuanto mayor sea el valor, mayor es la preferencia por esa persona). Ningún alumno puede formar grupo consigo mismo.\nSe pretende encontrar una solución para satisfacer el número máximo de alumnos según su orden de preferencia. Suponiendo que la matriz \\(\\Mu\\) ya existe, ¿qué algoritmo se debe diseñar para resolver el problema de forma óptima?",
+      "choices": ["Backtracking", "Voraz", "Ambos"],
+      "solution": 0
+    },
+    {
+      "title": "Al aplicar vuelta atrás a la solución de problemas, obtenemos algoritmos con costes computacionales:",
+      "choices": ["Exponenciales", "Polinómicos", "Los dos son correctos. Depende del problema"],
+      "solution": 0
+    },
+    {
+      "title": "Vuelta atrás se emplea en la resolución de problemas de optimización en los que se pretende encontrar:",
+      "choices": [
+        "La dos respuestas anteriores son correctas",
+        "Una solución que satisfaga unas restricciones y optimice una cierta función objetivo",
+        "Todas las soluciones que satisfagan unas restricciones"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "El problema de la asignación de turnos tiene solución óptima voraz aplicando la siguiente estrategia.\nEstamos al inicio del curso y los alumnos desean encontrar compañeros para formar grupos de práctica. Para resolver este problema, se sugiere que seleccionen a varias personas y les asignen una prioridad. El número de alumnos es \\(\\Nu\\). Se cuenta con una matriz cuadrada \\(\\Mu\\) con \\(\\Nu\\) filas, donde cada alumno ha escrito en su fila correspondiente un número entero (entre \\(-1\\) y \\(\\Nu-1\\) que indica dicha prioridad (un valor \\(-1\\) indica que no desea o no puede estar con la persona de la columna correspondiente. \\(0\\) indica indiferencia y, cuanto mayor sea el valor, mayor es la preferencia por esa persona). Ningún alumno puede formar grupo consigo mismo.\nSe pretende encontrar una solución para satisfacer el número máximo de alumnos según su orden de preferencia. Suponiendo que la matriz \\(\\Mu\\) ya existe, diseñar un algoritmo que reroelva el problema de forma óptima.",
+      "choices": [
+        "El problema no tiene solución óptima voraz",
+        "Seleccionamos los alumnos en orden descendente de preferencia respetando las restricciones de cabida de cada turno",
+        "Seleccionamos los alumnos en orden ascendente de preferencia respetando las restricciones de cabida de cada turno"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "El problema de la mochila puede solucionarse empleando vuelta atrás:",
+      "choices": [
+        "Sólo para el caso de la mochila con fraccionamiento",
+        "Sólo para el caso de la mochila sin fraccionamiento",
+        "Se puede aplicar para ambos casos"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Dado un problema de optimización y un algoritmo voraz que lo soluciona, ¿cuándo podemos estar seguros de que la solución obtenida será óptima?:",
+      "choices": [
+        "Voraz siempre encuentra solución óptima",
+        "En ambos casos. Las dos son correctas",
+        "Cuando demostremos formalmente que el criterio conduce a una solución óptima para cualquier instancia del problema"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "El problema de la asignación de turnos resuelto mediante backtracking tiene una complejidad:\nEstamos al inicio del curso y los alumnos desean encontrar compañeros para formar grupos de práctica. Para resolver este problema, se sugiere que seleccionen a varias personas y les asignen una prioridad. El número de alumnos es \\(\\Nu\\). Se cuenta con una matriz cuadrada \\(\\Mu\\) con \\(\\Nu\\) filas, donde cada alumno ha escrito en su fila correspondiente un número entero (entre \\(-1\\) y \\(\\Nu-1\\) que indica dicha prioridad (un valor \\(-1\\) indica que no desea o no puede estar con la persona de la columna correspondiente. \\(0\\) indica indiferencia y, cuanto mayor sea el valor, mayor es la preferencia por esa persona). Ningún alumno puede formar grupo consigo mismo.\nSe pretende encontrar una solución para satisfacer el número máximo de alumnos según su orden de preferencia. Suponiendo que la matriz \\(\\Mu\\) ya existe, diseñar un algoritmo que resuelva el problema de forma óptima.",
+      "choices": ["Exponencial", "Polinómica", "Ninguna de las dos"],
+      "solution": 0
+    },
+    {
+      "title": "¿Cuál de las siguientes estrategias procede a obtener la solución a un problema de optimización mediante backtracking?",
+      "choices": [
+        "Genera todas las combinaciones de la solución y selecciona la que optimiza la función objetivo",
+        "Genera todas las soluciones factibles y selecciona la que optimiza la función objetivo",
+        "Genera una solución factible empleando un criterio óptimo"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Dado un grafo G que representa las poblaciones de la provincia de Alicante de más de 20.000 habitantes junto con todas las carreteras de conexión entre ellas. Queremos obtener el recorrido que nos permita pasar por todas estas ciudades una única vez y volver al punto de origen recorriendo el mínimo número de kilómetros. Si aplicamos una estrategia voraz sobre este grafo obtendremos...",
+      "choices": [
+        "Puede que no encuentre ninguna solución aunque ésta exista",
+        "Una solución factible",
+        "La solución óptima"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Si aplicamos un algoritmo voraz que no nos garantiza la solución óptima sobre un problema entonces...",
+      "choices": [
+        "Si el problema tiene solución óptima, el esquema voraz nos garantiza que la encuentra",
+        "Obtendremos una solución factible",
+        "Puede que no encuentre ninguna solución aunque ésta exista"
       ],
       "solution": 2
     }

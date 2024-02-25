@@ -257,8 +257,8 @@
       "title": "In branching and pruning algorithms, is the value of a pessimistic bound greater than the value of an optimistic bound? ",
       "choices": [
         "No, it's never like that",
-        "In general yes, if it is a maximization problem, although sometimes both values ​​can coincide",
-        "In general yes, if it is a minimization problem, although sometimes both values ​​can coincide"
+        "In general yes, if it is a maximization problem, although sometimes both values can coincide",
+        "In general yes, if it is a minimization problem, although sometimes both values can coincide"
       ],
       "solution": 2
     },
@@ -272,11 +272,175 @@
       "solution": 0
     },
     {
-      "title": "The shift assignment problem. We are at the beginning of the course, and students want to find partners to form practice groups. To solve this problem, it is suggested that they select several people and assign them a priority. The number of students is \\(\\Nu\\). There is a square matrix \\(\\Mu\\) with \\(\\Nu\\) rows, where each student has written an integer (between \\(-1\\) and \\(\\Nu-1\\)) in their corresponding row indicating this priority (a value of \\(-1\\) indicates they do not wish or cannot be with the person in the corresponding column. \\(0\\) indicates indifference, and the higher the value, the greater the preference for that person). No student can form a group with themselves. The goal is to find a solution that satisfies the maximum number of students according to their order of preference. Assuming that matrix \\(\\Mu\\) is already created, design an algorithm that solves the problem optimally.",
+      "title": "The shift assignment problem.\nWe are at the beginning of the course, and students want to find partners to form practice groups. To solve this problem, it is suggested that they select several people and assign them a priority. The number of students is \\(\\Nu\\). There is a square matrix \\(\\Mu\\) with \\(\\Nu\\) rows, where each student has written an integer (between \\(-1\\) and \\(\\Nu-1\\)) in their corresponding row indicating this priority (a value of \\(-1\\) indicates they do not wish or cannot be with the person in the corresponding column. \\(0\\) indicates indifference, and the higher the value, the greater the preference for that person). No student can form a group with themselves.\nThe goal is to find a solution that satisfies the maximum number of students according to their order of preference. Assuming that matrix \\(\\Mu\\) is already created, design an algorithm that solves the problem optimally.",
       "choices": [
         "Optimized through backtracking",
         "Approximate (suboptimal) using greedy algorithm",
         "Both"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "The execution time of a branch and pruning algorithm depends on",
+      "choices": [
+        "The problem instance",
+        "The function of selecting nodes for expansion",
+        "From both"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "It is an optimization problem, if the decision domain is an infinite set.",
+      "choices": [
+        "We can apply the backtracking scheme whenever it is a countable infinite set",
+        "A greedy strategy may be the only alternative",
+        "It is likely that through dynamic programming an efficient algorithm will be obtained to solve it"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Backtracking is applicable to selection and optimization problems in which:",
+      "choices": [
+        "The solution space is a finite set",
+        "Anyways",
+        "The solution space is an infinite set"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Bactracking is a general problem solving technique based on:",
+      "choices": [
+        "The systematic search for solutions",
+        "Direct construction of the solution",
+        "None of the above"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Greedy algorithm always gives optimal solution:",
+      "choices": [
+        "To both",
+        "To the problem of the backpack without fractionation",
+        "To the problem of the backpack with fractionation"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Does the backpack problem find its optimal solution using the greedy strategy?:",
+      "choices": [
+        "Only for the case of the backpack without fractionation",
+        "In any of the above cases",
+        "Only in the case of the backpack with division"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "The traveling salesman problem can be solved correctly using these programming schemes:",
+      "choices": [
+        "Dynamic programming only",
+        "Using any of these: Ravenous and backtracking.",
+        "Backtracking only"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "In the Voracious method, although the decisions are irreversible, we can ensure that:",
+      "choices": [
+        "We will always obtain a feasible solution",
+        "We will always obtain the optimal solution",
+        "We will only obtain the optimal solution for some problems"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "By applying backtracking we obtain the optimal solution to a problem:",
+      "choices": [
+        "Always",
+        "Only when the problem meets the principle of Optimality",
+        "In some cases"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Given a problem solved by backtracking and by branching and pruning, the computational cost of the branching and pruning solution, compared to that of backtracking, is:",
+      "choices": ["Minor", "Equal", "Elderly"],
+      "solution": 1
+    },
+    {
+      "title": "The problem of shift assignment.\nWe are at the beginning of the course, and students want to find partners to form practice groups. To solve this problem, it is suggested that they select several people and assign them a priority. The number of students is \\(\\Nu\\). There is a square matrix \\(\\Mu\\) with \\(\\Nu\\) rows, where each student has written an integer (between \\(-1\\) and \\(\\Nu-1\\)) in their corresponding row indicating this priority (a value of \\(-1\\) indicates they do not wish or cannot be with the person in the corresponding column. \\(0\\) indicates indifference, and the higher the value, the greater the preference for that person). No student can form a group with themselves.\nThe aim is to find a solution to satisfy the maximum number of students according to their order of preference. Assuming that the matrix \\(\\Mu\\) already exists, design an algorithm that solves the problem optimally.",
+      "choices": ["Backtracking", "Voracious", "Both"],
+      "solution": 0
+    },
+    {
+      "title": "By applying backtracking to problem solving, we obtain algorithms with computational costs:",
+      "choices": ["Exponentials", "Polynomials", "Both are correct. "],
+      "solution": 0
+    },
+    {
+      "title": "Backtracking is used to solve optimization problems in which the aim is to find:",
+      "choices": [
+        "The two previous answers are correct",
+        "A solution that satisfies some constraints and optimizes a certain objective function",
+        "All solutions that satisfy some constraints"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "The shift allocation problem has a greedy optimal solution by applying the following strategy.\n\nWe are at the beginning of the course, and students want to find partners to form practice groups. To solve this problem, it is suggested that they select several people and assign them a priority. The number of students is \\(\\Nu\\). There is a square matrix \\(\\Mu\\) with \\(\\Nu\\) rows, where each student has written an integer (between \\(-1\\) and \\(\\Nu-1\\)) in their corresponding row indicating this priority (a value of \\(-1\\) indicates they do not wish or cannot be with the person in the corresponding column. \\(0\\) indicates indifference, and the higher the value, the greater the preference for that person). No student can form a group with themselves.\nThe aim is to find a solution to satisfy the maximum number of students according to their order of preference. Assuming that the matrix \\(\\Mu\\) already exists, design an algorithm that solves the problem optimally.",
+      "choices": [
+        "The problem does not have an optimal solution",
+        "We select the students in descending order of preference, respecting the space restrictions of each shift",
+        "We select students in ascending order of preference, respecting the space restrictions of each shift"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "The backpack problem can be solved by using backtracking:",
+      "choices": [
+        "Only in the case of the backpack with division",
+        "Only for the case of the backpack without fractionation",
+        "It can be applied for both cases"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Given an optimization problem and a greedy algorithm that solves it, when can we be sure that the solution obtained will be optimal?:",
+      "choices": [
+        "Voracious always finds optimal solution",
+        "In both cases",
+        "When we formally prove that the criterion leads to an optimal solution for any instance of the problem"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "The shift assignment problem solved through backtracking has a complexity:\nWe are at the beginning of the course, and students want to find partners to form practice groups. To solve this problem, it is suggested that they select several people and assign them a priority. The number of students is \\(\\Nu\\). There is a square matrix \\(\\Mu\\) with \\(\\Nu\\) rows, where each student has written an integer (between \\(-1\\) and \\(\\Nu-1\\)) in their corresponding row indicating this priority (a value of \\(-1\\) indicates they do not wish or cannot be with the person in the corresponding column. \\(0\\) indicates indifference, and the higher the value, the greater the preference for that person). No student can form a group with themselves.\nThe aim is to find a solution to satisfy the maximum number of students according to their order of preference. Assuming that the matrix \\(\\Mu\\) already exists, design an algorithm that solves the problem optimally.",
+      "choices": ["Exponential", "Polynomial", "Neither of the two"],
+      "solution": 0
+    },
+    {
+      "title": "Which of the following strategies proceeds to obtain the solution to an optimization problem through backtracking?",
+      "choices": [
+        "Generate all combinations of the solution and select the one that optimizes the objective function",
+        "Generate all feasible solutions and select the one that optimizes the objective function",
+        "Generate a feasible solution using an optimal criterion"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Given a graph G that represents the towns of the province of Alicante with more than 20,000 inhabitants along with all the connecting roads between them. ",
+      "choices": [
+        "You may not find a solution even if it exists",
+        "A feasible solution",
+        "The optimal solution"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "If we apply a greedy algorithm that does not guarantee us the optimal solution to a problem then...",
+      "choices": [
+        "If the problem has an optimal solution, the greedy scheme guarantees that it will be found.",
+        "We will obtain a feasible solution",
+        "You may not find a solution even if it exists"
       ],
       "solution": 2
     }
