@@ -443,6 +443,88 @@
         "Puede que no encuentre ninguna solución aunque ésta exista"
       ],
       "solution": 2
+    },
+    {
+      "title": "El método voraz se emplea en la resolución de problemas de selección y optimización en los que se pretende encontrar:",
+      "choices": [
+        "Las dos respuestas anteriores son correctas",
+        "Todas las soluciones que satisfagan unas restricciones",
+        "Una solución que satisfaga unas restricciones y optimice una cierta función objetivo"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Si aplicamos un esquema backtracking que no nos garantiza la solución óptima sobre un problema entonces:",
+      "choices": [
+        "Obtendremos una solución factible",
+        "Puede que no encuentre ninguna solución aunque ésta exista",
+        "Ninguna de las anteriores"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "La estrategia de ramificación y poda genera las soluciones posibles al problema mediante:",
+      "choices": [
+        "Un recorrido en profundidad del árbol que representa el espacio de soluciones",
+        "Un recorrido en anchura que representa el espacio de soluciones",
+        "Un recorrido guiado por estimaciones de las mejores ramas del árbol que representa el espacio de soluciones"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Dada la solución recursiva mediante vuelta atrás al problema de la asignación de turnos, ¿cuántas nuevas llamadas recursivas genera cada llamada recursiva?\nEstamos al inicio del curso y los alumnos desean encontrar compañeros para formar grupos de práctica. Para resolver este problema, se sugiere que seleccionen a varias personas y les asignen una prioridad. El número de alumnos es \\(\\Nu\\). Se cuenta con una matriz cuadrada \\(\\Mu\\) con \\(\\Nu\\) filas, donde cada alumno ha escrito en su fila correspondiente un número entero (entre \\(-1\\) y \\(\\Nu-1\\) que indica dicha prioridad (un valor \\(-1\\) indica que no desea o no puede estar con la persona de la columna correspondiente. \\(0\\) indica indiferencia y, cuanto mayor sea el valor, mayor es la preferencia por esa persona). Ningún alumno puede formar grupo consigo mismo.\nSe pretende encontrar una solución para satisfacer el número máximo de alumnos según su orden de preferencia. Suponiendo que la matriz M ya existe, diseñar un algoritmo que resuelva el problema de forma óptima.",
+      "choices": ["Una o dos", "Una o ninguna", "Ninguna de las anteriores"],
+      "solution": 2
+    },
+    {
+      "title": "¿Cuál de estas afirmaciones es falsa?",
+      "choices": [
+        "La complejidad en el peor caso de las soluciones Backtracking y ramificación y poda a un mismo problema es la misma",
+        "Para un mismo problema, ramificación y poda explora siempre un número de nodos menor o igual que backtracking",
+        "Backtracking inspecciona todo el espacio de soluciones de un problema mientras que Ramificación y poda no"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Si para resolver un mismo problema usamos un algoritmo de vuelta atrás y lo modificamos mínimamente para convertirlo en un algoritmo de ramificación y poda, ¿qué cambiamos realmente?",
+      "choices": [
+        "Cambiamos la función que damos a la cota pesimista",
+        "La comprobación de las soluciones factibles: en ramificación y poda no es necesario puesto que sólo genera nodos factibles",
+        "Aprovechamos mejor las cotas optimistas"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Backtracking genera las soluciones posibles al problema:",
+      "choices": [
+        "Mediante el recorrido en profundidad del árbol que representa el espacio de soluciones",
+        "Mediante el recorrido en anchura del árbol que representa el espacio de soluciones",
+        "Ninguna de las anteriores"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "En un problema resuelto por backtracking, el conjunto de valores que pueden tomar las componentes de la tupla solución, ha de ser:",
+      "choices": ["Infinito", "Continuo", "Finito"],
+      "solution": 2
+    },
+    {
+      "title": "Cuando la descomposición recursiva de un problema da lugar a subproblemas de tamaño similar, ¿qué esquema promete ser más apropiado?",
+      "choices": [
+        "Programación dinámica",
+        "Divide y vencerás, siempre que se garantice que los subproblemas no son del mismo tamaño",
+        "El método voraz"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "El uso de funciones de cota en ramificación y poda:",
+      "choices": [
+        "Puede reducir el número de instancias del problema que pertenecen al caso peor",
+        "No garantiza que el algoritmo va a ser más eficiente ante cualquier instancia del problema",
+        "No transforma en polinómicas complejidades que antes eran exponenciales"
+      ],
+      "solution": 0
     }
   ]
 }

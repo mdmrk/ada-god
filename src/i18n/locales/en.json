@@ -443,6 +443,88 @@
         "You may not find a solution even if it exists"
       ],
       "solution": 2
+    },
+    {
+      "title": "The greedy method is used in solving selection and optimization problems where the aim is to find:",
+      "choices": [
+        "Both of the above answers are correct",
+        "All solutions that satisfy certain constraints",
+        "A solution that satisfies certain constraints and optimizes a certain objective function"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "If we apply a backtracking scheme that does not guarantee the optimal solution to a problem, then:",
+      "choices": [
+        "We will obtain a feasible solution",
+        "It may not find any solution even if one exists",
+        "None of the above"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "The branch and bound strategy generates possible solutions to the problem by:",
+      "choices": [
+        "A depth-first traversal of the tree representing the solution space",
+        "A breadth-first traversal representing the solution space",
+        "A traversal guided by estimates of the best branches of the tree representing the solution space"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Given the recursive backtracking solution to the shift assignment problem, how many new recursive calls does each recursive call generate?\nAt the beginning of the course, students want to find study partners to form practice groups. To solve this problem, it is suggested that they select several people and assign them a priority. The number of students is \\(\\Nu\\). There is a square matrix \\(\\Mu\\) with \\(\\Nu\\) rows, where each student has written an integer in their corresponding row (between \\(-1\\) and \\(\\Nu-1\\) indicating their priority (a value of \\(-1\\) indicates they do not want or cannot be with the person in the corresponding column. \\(0\\) indicates indifference and, the higher the value, the greater the preference for that person). No student can form a group with themselves.\nThe goal is to find a solution to maximize the number of students according to their preference order. Assuming matrix M already exists, design an algorithm that solves the problem optimally.",
+      "choices": ["One or two", "One or none", "None of the above"],
+      "solution": 2
+    },
+    {
+      "title": "Which of these statements is false?",
+      "choices": [
+        "The worst-case complexity of Backtracking and Branch and Bound solutions to the same problem is the same",
+        "For the same problem, Branch and Bound always explores fewer or equal nodes than backtracking",
+        "Backtracking examines all solution space of a problem while Branch and Bound does not"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "If we use a backtracking algorithm to solve a problem and minimally modify it to convert it into a branch and bound algorithm, what do we actually change?",
+      "choices": [
+        "We change the function used for pessimistic estimation",
+        "The checking of feasible solutions: in branch and bound it is not necessary as it only generates feasible nodes",
+        "We make better use of optimistic bounds"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Backtracking generates possible solutions to the problem by:",
+      "choices": [
+        "Traversing depth-first through the tree representing the solution space",
+        "Traversing breadth-first through the tree representing the solution space",
+        "None of the above"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "In a problem solved by backtracking, the set of values that components of the solution tuple can take must be:",
+      "choices": ["Infinite", "Continuous", "Finite"],
+      "solution": 2
+    },
+    {
+      "title": "When recursive decomposition of a problem leads to subproblems of similar size, which scheme promises to be more appropriate?",
+      "choices": [
+        "Dynamic programming",
+        "Divide and conquer, provided subproblems are not of equal size",
+        "The greedy method"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "The use of bounding functions in branch and bound:",
+      "choices": [
+        "Can reduce instances belonging to worst-case scenarios",
+        "Does not guarantee that the algorithm will be more efficient for any instance of the problem",
+        "Does not transform complexities from exponential to polynomial that were previously exponential"
+      ],
+      "solution": 0
     }
   ]
 }

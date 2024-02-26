@@ -16,7 +16,7 @@
     "@hsorby/vue3-katex": "^0.6.0-rc.7",
     "@types/node": "^20.11.20",
     "katex": "^0.16.9",
-    "vue": "^3.4.19",
+    "vue": "^3.4.20",
     "vue-i18n": "^9.9.1",
     "vue-router": "^4.3.0",
     "vue3-click-away": "^1.2.4"
