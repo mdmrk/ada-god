@@ -61,10 +61,12 @@ import type { IQuestion } from '@/types'
 import { useI18n } from 'vue-i18n'
 import { ref } from 'vue'
 
+const questionIdx = import.meta.env.PROD ? 0 : 0
+
 export default {
   data() {
     return {
-      questionIdx: 179,
+      questionIdx,
       hits: 0,
       fails: 0
     }
