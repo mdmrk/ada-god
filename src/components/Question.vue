@@ -4,7 +4,7 @@
     <ul>
       <Choice
         v-for="(choice, index) in data.choices"
-        :key="index"
+        :key="data.id + index"
         :data="{ id: index, choice, solution: data.solution, answer: data.answer }"
         @click="setAnswer(index)"
       />
