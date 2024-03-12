@@ -1,0 +1,1850 @@
+{
+  "questions": [
+    {
+      "title": "Das Ziel besteht darin, mithilfe einer Tabelle mit Entfernungen zwischen Städtepaaren den kürzesten Weg zwischen zwei Städten zu finden, wobei -1 das Fehlen einer Straße angibt. ",
+      "choices": [
+        "Garantiert nicht immer, dass man schneller ist",
+        "Garantiert nicht, dass der kürzeste Weg erreicht wird",
+        "Es wird nur in bestimmten Fällen des Problems schneller sein"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Da es sich um ein Optimierungsproblem in der Liste der Live-Verzweigungs- und Pruning-Knoten handelt ...",
+      "choices": [
+        "Es werden nur vielversprechende Knoten eingeführt, also Knoten, die die derzeit beste verfügbare Lösung verbessern können.",
+        "Möglicherweise gibt es Knoten, die nicht vielversprechend sind",
+        "Die anderen beiden Optionen sind wahr"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Wir wollen alle Permutationen einer Liste bestehend aus erhalten \\(n\\) Welches Schema ist am besten geeignet?",
+      "choices": [
+        "Teile und herrsche, da die Aufteilung in Unterlisten in konstanter Zeit erfolgen könnte",
+        "Verzweigen und Beschneiden, da es bei guten Randfunktionen für dieses Problem effizienter ist als das Zurückgehen",
+        "Für dieses Problem gibt es kein effizienteres Schema"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Durch Lösen des Problems des Handlungsreisenden durch Zurückverfolgen und Annehmen eines Diagramms von \\(n\\) Vollständig verbundene Scheitelpunkte. Welche davon ist eine gute pessimistische Grenze, wenn mit der Suche begonnen wird?",
+      "choices": [
+        "Die verbleibenden Kanten werden vom kleinsten zum größten Abstand geordnet und die Summe der Kanten berechnet. \\(n\\) kürzere Kanten",
+        "Das Problem wird mithilfe eines Greedy-Algorithmus gelöst, der dem Pfad jedes Mal den Scheitelpunkt hinzufügt, der dem zuletzt hinzugefügten am nächsten liegt.",
+        "Es vervielfacht sich \\(n\\) durch den Abstand der kürzesten Kante, die wir noch berücksichtigen müssen"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Was ändern wir wirklich, wenn wir einen Verzweigungs- und Bereinigungsalgorithmus verwenden und ihn leicht anpassen, um ihn in einen Backtracking-Algorithmus umzuwandeln?:",
+      "choices": [
+        "Wir führen dazu, dass optimistische Grenzen an Wirksamkeit verlieren",
+        "Wir ändern die gegebene Funktion in die pessimistische Schranke",
+        "Es müsste überprüft werden, ob die Lösungen realisierbar sind oder nicht, da durch Verzweigung und Beschneidung nur realisierbare Knoten generiert werden."
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Was ist der Hauptunterschied zwischen einer Backtracking-Lösung und einer Branch and Pruning-Lösung für das Rucksackproblem?",
+      "choices": [
+        "Die Reihenfolge der Erkundung der Lösungen",
+        "Die Tatsache, dass die Verzweigungs- und Beschneidungslösung mit einer gierigen suboptimalen Lösung beginnen kann, das Zurückverfolgen jedoch nicht",
+        "Die asymptotischen Kosten im schlimmsten Fall"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Sie möchten den kürzesten Weg zwischen zwei Städten finden.\n",
+      "choices": [
+        "Ein pessimistisches Zitat",
+        "Ein optimistischer Punkt",
+        "Dies wäre keine Beschneidung, da es möglich ist, dass diese Heuristik keine praktikable Lösung findet."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Der Vorteil der Branching- und Pruning-Strategie gegenüber dem Backtracking besteht darin, dass erstere mögliche Lösungen für das Problem generiert, indem ...",
+      "choices": [
+        "Ein geführter Spaziergang durch eine Prioritätswarteschlange, aus der zunächst die Knoten extrahiert werden, die die vielversprechendsten Teilbäume des Lösungsraums darstellen",
+        "Die anderen beiden Optionen sind wahr",
+        "Eine Tour, die durch Schätzungen der besten Zweige des Baums geführt wird, der den Lösungsraum darstellt"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Die Backtracking-Strategie ist auf Auswahl- und Optimierungsprobleme anwendbar, bei denen:",
+      "choices": [
+        "Der Lösungsraum ist eine unendliche Menge",
+        "Der Lösungsraum ist eine endliche Menge",
+        "Der Lösungsraum kann entweder endlich oder unendlich sein, im letzteren Fall muss er jedoch mindestens abzählbar sein."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Sie möchten den kürzesten Weg zwischen zwei Städten finden.\n",
+      "choices": [
+        "Nein, denn es stellt nicht sicher, dass eine praktikable Lösung gefunden wird.",
+        "Nein, da es in manchen Fällen zu Abständen kommen kann, die unter dem optimalen Wert liegen.",
+        "Ja, da aufgrund der geografischen Entfernung keine andere bessere Lösung möglich ist"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Wenn wir ein Problem mithilfe eines Verzweigungs- und Bereinigungsschemas lösen ...",
+      "choices": [
+        "Entscheidungen können nur binär sein",
+        "Die Werte, zwischen denen wir bei jeder Entscheidung wählen, können eine unendliche Menge bilden",
+        "Die Werte, zwischen denen wir bei jeder Entscheidung wählen, müssen eine endliche Menge bilden."
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Wenn ein Backtracking-Algorithmus ein Problem löst \\(n\\) Entscheidungen, bei denen es immer mindestens zwei Optionen für jede Entscheidung gibt. Welche der folgenden Worst-Case-Komplexitäten ist die beste, der wir begegnen können?",
+      "choices": ["\\(\\Omicron(2^n)\\)", "\\(\\Omicron(n^2)\\)", "\\(\\Omicron(n!)\\)"],
+      "solution": 0
+    },
+    {
+      "title": "Die Worst-Case-Komplexität eines Verzweigungs- und Bereinigungsalgorithmus:",
+      "choices": [
+        "Sie kann exponentiell mit der Anzahl der Alternativen für jede Entscheidung sein",
+        "Es ist exponentiell mit der Anzahl der zu treffenden Entscheidungen",
+        "Es kann ein Polynom mit der Anzahl der zu treffenden Entscheidungen sein"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "In Ermangelung optimistischer und pessimistischer Grenzen ist die Backtracking-Strategie...",
+      "choices": [
+        "Kann nicht zur Lösung von Optimierungsproblemen verwendet werden",
+        "Durchläuft nicht den gesamten Baum, wenn es eine Möglichkeit gibt, Teilbäume zu verwerfen, die unzulässige Lösungsmengen darstellen",
+        "Es muss immer durch den gesamten Baum gehen"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Sie möchten den kürzesten Weg zwischen zwei Städten finden.\n",
+      "choices": [
+        "Es wäre eine pessimistische Schätzung, solange wir sicher sind, dass diese Näherung eine praktikable Lösung findet.",
+        "Es wäre eine optimistische Schätzung, solange Gewissheit besteht, dass dieser Ansatz eine praktikable Lösung findet.",
+        "Keine der beiden anderen Optionen"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Entscheiden Sie, welche dieser drei nicht als optimistische Grenze dient, um den optimalen Wert des diskreten Rucksacks zu erzielen:",
+      "choices": [
+        "Der diskrete Rucksackwert, der mithilfe eines Greedy-Algorithmus basierend auf dem spezifischen Wert der Objekte ermittelt wird",
+        "Der Wert des entsprechenden Dauerrucksacks",
+        "Der Wert eines Rucksacks, der alle Gegenstände enthält, auch wenn er das maximal zulässige Gewicht überschreitet"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Die Komplexität im kleinsten Fall eines Verzweigungs- und Bereinigungsalgorithmus ...",
+      "choices": [
+        "Normalerweise ist es ein Polynom mit der Anzahl der Alternativen für jede Entscheidung",
+        "Es ist immer exponentiell mit der Anzahl der zu treffenden Entscheidungen",
+        "Es kann ein Polynom mit der Anzahl der zu treffenden Entscheidungen sein"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Was sind pessimistische Grenzen für Verzweigung und Beschneidung?",
+      "choices": [
+        "Um Knoten zu verwerfen, basierend auf der Präferenz für einen anderen bereits abgeschlossenen Knoten",
+        "Stellen Sie sicher, dass die optimistische Grenze gut berechnet ist",
+        "Knoten basierend auf dem erwarteten Gewinn verwerfen"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Ist in Verzweigungs- und Pruning-Algorithmen der Wert einer pessimistischen Grenze kleiner als der Wert einer optimistischen Grenze?",
+      "choices": [
+        "Ja, das ist immer so",
+        "Im Allgemeinen ja, wenn es sich um ein Maximierungsproblem handelt, obwohl manchmal beide Werte übereinstimmen können",
+        "Im Allgemeinen ja, wenn es sich um ein Minimierungsproblem handelt, obwohl manchmal beide Werte übereinstimmen können"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Die Verzweigungs- und Beschneidungsstrategie...",
+      "choices": [
+        "Sie benötigen pessimistische Grenzen, um die Reihenfolge des Besuchs der Knoten des Lösungsbaums zu bestimmen",
+        "Um festzustellen, ob eine Lösung machbar ist",
+        "Nur wenn es zur Lösung von Optimierungsproblemen verwendet wird"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Im zurückgehenden Schema basieren die Beschneidungsmechanismen auf der bisher besten Lösung ...",
+      "choices": [
+        "Die beiden vorherigen sind wahr",
+        "Sie garantieren, dass niemals der gesamte Raum möglicher Lösungen ausgeschöpft wird.",
+        "Sie können mögliche Teillösungen eliminieren"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Verwendung von Dimensionsfunktionen beim Verzweigen und Bereinigen ...",
+      "choices": [
+        "Es garantiert, dass der Algorithmus in jedem Fall des Problems effizienter ist",
+        "Kann die Anzahl der Probleminstanzen reduzieren, die zum Worst Case gehören",
+        "Transformieren Sie Komplexitäten, die zuvor exponentiell waren, in Polynome"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Entscheiden Sie, welche dieser drei pessimistischen Grenzen dem optimalen Wert des diskreten Rucksacks am nächsten kommt:",
+      "choices": [
+        "Der Wert des entsprechenden Dauerrucksacks",
+        "Der Wert eines Rucksacks, der alle Gegenstände enthält, auch wenn er das maximal zulässige Gewicht überschreitet",
+        "Der diskrete Rucksackwert, der mithilfe eines Greedy-Algorithmus basierend auf dem spezifischen Wert der Objekte ermittelt wird"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Bei der Verzweigungs- und Beschneidungsstrategie...",
+      "choices": [
+        "Jeder Knoten hat seine eigene optimistische Grenze, die pessimistische Grenze gilt jedoch für alle Knoten.",
+        "Jeder Knoten hat seine eigene pessimistische Grenze und auch seine eigene optimistische Grenze.",
+        "Jeder Knoten hat seine eigene pessimistische Grenze, die optimistische Grenze gilt jedoch für alle Knoten."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "In Verzweigungs- und Bereinigungsalgorithmen:",
+      "choices": [
+        "Eine optimistische Grenze ist zwangsläufig ein unüberwindbarer Wert, aber wenn dies nicht der Fall wäre, könnte der Knoten, der zur optimalen Lösung führt, beschnitten werden.",
+        "Eine optimistische Grenze ist notwendigerweise ein erreichbarer Wert. Wenn dies jedoch nicht der Fall ist, ist nicht garantiert, dass die optimale Lösung gefunden wird.",
+        "Die Verwendung pessimistischer Grenzen ist nur dann wirksam, wenn eine mögliche Ausgangslösung verfügbar ist."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Entscheiden Sie, welche dieser drei die optimistische Grenze ist, wenn Sie die Backtracking-Strategie zur Lösung des Rucksackproblems verwenden:",
+      "choices": [
+        "Wert eines Rucksacks",
+        "Optimaler Wert des entsprechenden Dauerrucksacks",
+        "Diskreter Rucksackwert, der mit einem Greedy-Algorithmus basierend auf dem spezifischen Wert des Objekts ermittelt wird"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Ist in Verzweigungs- und Pruning-Algorithmen der Wert einer pessimistischen Grenze größer als der Wert einer optimistischen Grenze? ",
+      "choices": [
+        "Nein, das ist nie so",
+        "Im Allgemeinen ja, wenn es sich um ein Maximierungsproblem handelt, obwohl manchmal beide Werte übereinstimmen können",
+        "Im Allgemeinen ja, wenn es sich um ein Minimierungsproblem handelt, obwohl manchmal beide Werte übereinstimmen können"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Garantiert die Backtracking-Strategie bei jedem Optimierungsproblem die optimale Lösung?",
+      "choices": [
+        "Eine notwendige Bedingung ist, dass der Entscheidungsbereich diskret oder diskretisierbar ist und dass die Anzahl der zu treffenden Entscheidungen begrenzt ist.",
+        "Ja, solange die Entscheidungsdomäne diskret oder diskretisierbar ist und Pruning-Mechanismen verwendet werden, die auf der bisher besten Lösung basieren.",
+        "Ja, da diese Methode alle Möglichkeiten analysiert"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Für das Problem der Schichtzuweisung gibt es eine Lösung:\n \\(\\Nu\\).  \\(\\Mu\\) mit \\(\\Nu\\) Zeilen, in denen jeder Schüler in die entsprechende Zeile eine Ganzzahl geschrieben hat (zwischen \\(-1\\) Und \\(\\Nu-1\\) das gibt besagte Priorität an (einen Wert). \\(-1\\) zeigt an, dass Sie nicht mit der Person in der entsprechenden Spalte zusammen sein wollen oder können. \\(0\\) zeigt Gleichgültigkeit an und je höher der Wert, desto größer die Präferenz für diese Person.  \\(\\Mu\\) bereits erstellt ist, entwerfen Sie einen Algorithmus, der das Problem optimal löst.",
+      "choices": [
+        "Optimieren Sie durch Backtracking",
+        "Ungefähr (suboptimal) über Greedy",
+        "Beide"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Die Ausführungszeit eines Verzweigungs- und Bereinigungsalgorithmus hängt ab von:",
+      "choices": [
+        "Die Probleminstanz",
+        "Die Funktion, Knoten für die Erweiterung auszuwählen",
+        "Von beiden"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Es handelt sich um ein Optimierungsproblem, wenn der Entscheidungsbereich eine unendliche Menge ist",
+      "choices": [
+        "Wir können das Backtracking-Schema immer dann anwenden, wenn es sich um eine abzählbare unendliche Menge handelt.",
+        "Eine gierige Strategie könnte die einzige Alternative sein",
+        "Es ist wahrscheinlich, dass durch dynamische Programmierung ein effizienter Algorithmus zur Lösung dieses Problems erhalten wird."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Backtracking ist auf Auswahl- und Optimierungsprobleme anwendbar, bei denen:",
+      "choices": [
+        "Der Lösungsraum ist eine endliche Menge",
+        "Wie auch immer",
+        "Der Lösungsraum ist eine unendliche Menge"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Backtracking ist eine allgemeine Problemlösungstechnik, die auf Folgendem basiert:",
+      "choices": [
+        "Die systematische Suche nach Lösungen",
+        "Direkter Aufbau der Lösung",
+        "Nichts des oben Genannten"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Voraz bietet immer die optimale Lösung:",
+      "choices": [
+        "Zu beiden",
+        "Zum Problem des Rucksacks ohne Fraktionierung",
+        "Zum Problem des Rucksacks mit Fraktionierung"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Findet das Rucksackproblem mit der Greedy-Strategie seine optimale Lösung?:",
+      "choices": [
+        "Nur für den Fall des Rucksacks ohne Fraktionierung",
+        "In jedem der oben genannten Fälle",
+        "Nur beim Rucksack mit Unterteilung"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Das Problem des Handlungsreisenden kann mit diesen Programmierschemata korrekt gelöst werden:",
+      "choices": [
+        "Nur dynamische Programmierung",
+        "Verwenden Sie eines davon: Greedy und Backtracking",
+        "Nur Backtracking"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Obwohl die Entscheidungen irreversibel sind, können wir bei der unersättlichen Methode Folgendes sicherstellen:",
+      "choices": [
+        "Wir werden immer eine praktikable Lösung finden",
+        "Wir erhalten immer die optimale Lösung",
+        "Nur für einige Probleme erhalten wir die optimale Lösung"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Durch die Anwendung von Backtracking erhalten wir die optimale Lösung für ein Problem:",
+      "choices": [
+        "Stets",
+        "Nur wenn das Problem dem Optimalitätsprinzip entspricht",
+        "In manchen Fällen"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Bei einem durch Backtracking sowie Branching und Pruning gelösten Problem beträgt der Rechenaufwand der Lösung durch Branching und Pruning im Vergleich zu dem von Backtracking:",
+      "choices": ["Unerheblich", "Gleich", "Alten"],
+      "solution": 1
+    },
+    {
+      "title": "Das Schichtzuweisungsproblem hat eine optimale Lösung mit:\n \\(\\Nu\\).  \\(\\Mu\\) mit \\(\\Nu\\) Zeilen, in denen jeder Schüler in die entsprechende Zeile eine Ganzzahl geschrieben hat (zwischen \\(-1\\) Und \\(\\Nu-1\\) das gibt besagte Priorität an (einen Wert). \\(-1\\) zeigt an, dass Sie nicht mit der Person in der entsprechenden Spalte zusammen sein wollen oder können. \\(0\\) zeigt Gleichgültigkeit an und je höher der Wert, desto größer die Präferenz für diese Person.  \\(\\Mu\\) bereits erstellt ist, entwerfen Sie einen Algorithmus, der das Problem optimal löst.",
+      "choices": ["Zurückverfolgen", "Gefräßig", "Beide"],
+      "solution": 0
+    },
+    {
+      "title": "Durch die Anwendung von Backtracking auf die Problemlösung erhalten wir Algorithmen mit Rechenaufwand:",
+      "choices": ["Exponentialfunktionen", "Polynome", "Beide sind richtig. "],
+      "solution": 0
+    },
+    {
+      "title": "Backtracking wird zur Lösung von Optimierungsproblemen eingesetzt, bei denen das Ziel darin besteht, Folgendes zu finden:",
+      "choices": [
+        "Die beiden vorherigen Antworten sind richtig",
+        "Eine Lösung, die einige Einschränkungen erfüllt und eine bestimmte Zielfunktion optimiert",
+        "Alle Lösungen, die einige Einschränkungen erfüllen"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Das Schichtzuweisungsproblem hat eine gierige optimale Lösung durch Anwendung der folgenden Strategie:\n \\(\\Nu\\).  \\(\\Mu\\) mit \\(\\Nu\\) Zeilen, in denen jeder Schüler in die entsprechende Zeile eine Ganzzahl geschrieben hat (zwischen \\(-1\\) Und \\(\\Nu-1\\) das gibt besagte Priorität an (einen Wert). \\(-1\\) zeigt an, dass Sie nicht mit der Person in der entsprechenden Spalte zusammen sein wollen oder können. \\(0\\) zeigt Gleichgültigkeit an und je höher der Wert, desto größer die Präferenz für diese Person.  \\(\\Mu\\) bereits erstellt ist, entwerfen Sie einen Algorithmus, der das Problem optimal löst.",
+      "choices": [
+        "Für das Problem gibt es keine optimale Lösung",
+        "Wir wählen die Schüler in absteigender Reihenfolge ihrer Präferenz aus und berücksichtigen dabei die Platzbeschränkungen jeder Schicht.",
+        "Wir wählen die Studierenden in aufsteigender Reihenfolge ihrer Präferenz aus und respektieren dabei die Platzbeschränkungen jeder Schicht"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Kann das Rucksackproblem durch Backtracking gelöst werden?:",
+      "choices": [
+        "Nur beim Rucksack mit Unterteilung",
+        "Nur für den Fall des Rucksacks ohne Fraktionierung",
+        "Es kann in beiden Fällen angewendet werden"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Wann können wir bei einem Optimierungsproblem und einem Greedy-Algorithmus, der es löst, sicher sein, dass die erhaltene Lösung optimal ist?:",
+      "choices": [
+        "Voracious findet immer die optimale Lösung",
+        "In beiden Fällen. ",
+        "Wenn wir formal beweisen, dass das Kriterium für jeden Fall des Problems zu einer optimalen Lösung führt"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Das durch Backtracking gelöste Schichtzuweisungsproblem weist eine Komplexität auf:\n \\(\\Nu\\).  \\(\\Mu\\) mit \\(\\Nu\\) Zeilen, in denen jeder Schüler in die entsprechende Zeile eine Ganzzahl geschrieben hat (zwischen \\(-1\\) Und \\(\\Nu-1\\) das gibt besagte Priorität an (einen Wert). \\(-1\\) zeigt an, dass Sie nicht mit der Person in der entsprechenden Spalte zusammen sein wollen oder können. \\(0\\) zeigt Gleichgültigkeit an und je höher der Wert, desto größer die Präferenz für diese Person.  \\(\\Mu\\) bereits erstellt ist, entwerfen Sie einen Algorithmus, der das Problem optimal löst.",
+      "choices": ["Exponentiell", "Polynom", "Keines von beidem"],
+      "solution": 0
+    },
+    {
+      "title": "Beim Backtracking wird versucht, die Lösung eines Optimierungsproblems durch die folgende Strategie zu erhalten:",
+      "choices": [
+        "Generieren Sie alle Lösungskombinationen und wählen Sie diejenige aus, die die Zielfunktion optimiert",
+        "Generieren Sie alle möglichen Lösungen und wählen Sie diejenige aus, die die Zielfunktion optimiert",
+        "Generieren Sie eine realisierbare Lösung anhand eines optimalen Kriteriums"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Gegeben sei ein Diagramm G, das die Städte der Provinz Alicante mit mehr als 20.000 Einwohnern sowie alle Verbindungsstraßen zwischen ihnen darstellt. ",
+      "choices": [
+        "Möglicherweise finden Sie keine Lösung, selbst wenn es eine gibt",
+        "Eine praktikable Lösung",
+        "Die optimale Lösung"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Wenn wir einen Greedy-Algorithmus anwenden, der uns nicht die optimale Lösung eines Problems garantiert, dann ...",
+      "choices": [
+        "Wenn das Problem eine optimale Lösung hat, garantiert das Greedy-Schema, dass diese gefunden wird.",
+        "Wir werden eine praktikable Lösung finden",
+        "Möglicherweise finden Sie keine Lösung, selbst wenn es eine gibt"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Die Greedy-Methode wird zur Lösung von Auswahl- und Optimierungsproblemen verwendet, bei denen das Ziel darin besteht, Folgendes zu finden:",
+      "choices": [
+        "Die beiden vorherigen Antworten sind richtig",
+        "Alle Lösungen, die einige Einschränkungen erfüllen",
+        "Eine Lösung, die einige Einschränkungen erfüllt und eine bestimmte Zielfunktion optimiert"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Wenn wir ein Backtracking-Schema anwenden, das nicht die optimale Lösung eines Problems garantiert, dann",
+      "choices": [
+        "Wir werden eine praktikable Lösung finden",
+        "Möglicherweise finden Sie keine Lösung, selbst wenn es eine gibt",
+        "Nichts des oben Genannten"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Die Branching- und Pruning-Strategie generiert mögliche Lösungen für das Problem durch:",
+      "choices": [
+        "Eine tiefe Durchquerung des Baums, der den Lösungsraum darstellt",
+        "Ein Breitenpfad, der den Lösungsraum darstellt",
+        "Eine Tour, die durch Schätzungen der besten Zweige des Baums geführt wird, der den Lösungsraum darstellt"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Angesichts des rekursiven Backtracking-Problems generiert jeder rekursive Aufruf wie viele neue rekursive Aufrufe?:\n \\(\\Nu\\).  \\(\\Mu\\) mit \\(\\Nu\\) Zeilen, in denen jeder Schüler in die entsprechende Zeile eine Ganzzahl geschrieben hat (zwischen \\(-1\\) Und \\(\\Nu-1\\) das gibt besagte Priorität an (einen Wert). \\(-1\\) zeigt an, dass Sie nicht mit der Person in der entsprechenden Spalte zusammen sein wollen oder können. \\(0\\) zeigt Gleichgültigkeit an und je höher der Wert, desto größer die Präferenz für diese Person.  \\(\\Mu\\) bereits erstellt ist, entwerfen Sie einen Algorithmus, der das Problem optimal löst.",
+      "choices": ["Ein oder zwei", "Einer oder keiner", "Nichts des oben Genannten"],
+      "solution": 2
+    },
+    {
+      "title": "Welche dieser Aussagen ist falsch?",
+      "choices": [
+        "Die Komplexität von Backtracking- und Branching- und Pruning-Lösungen für dasselbe Problem ist im schlimmsten Fall dieselbe",
+        "Für das gleiche Problem wird beim Verzweigen und Beschneiden immer eine Anzahl von Knoten untersucht, die kleiner oder gleich dem Backtracking ist",
+        "Beim Backtracking wird der gesamte Lösungsraum eines Problems untersucht, beim Branching und Pruning jedoch nicht."
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Wenn wir zur Lösung desselben Problems einen Backtracking-Algorithmus verwenden und ihn minimal modifizieren, um ihn in einen Branch-and-Pruning-Algorithmus umzuwandeln, was ändern wir dann wirklich?",
+      "choices": [
+        "Wir ändern die Funktion, die wir der pessimistischen Schranke geben",
+        "Überprüfung realisierbarer Lösungen: Verzweigung und Bereinigung sind nicht erforderlich, da dadurch nur realisierbare Knoten generiert werden",
+        "Wir nutzen optimistische Niveaus besser aus"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Backtracking generiert mögliche Lösungen für das Problem:",
+      "choices": [
+        "Durch die Tiefendurchquerung des Baums, der den Lösungsraum darstellt",
+        "Durch Durchlaufen der Breite des Baums, der den Lösungsraum darstellt",
+        "Nichts des oben Genannten"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Bei einem durch Backtracking gelösten Problem muss die Wertemenge, die die Komponenten des Lösungstupels annehmen können, sein:",
+      "choices": ["Unendlich", "Kontinuierlich", "Endlich"],
+      "solution": 2
+    },
+    {
+      "title": "Wenn die rekursive Zerlegung eines Problems zu Teilproblemen ähnlicher Größe führt, welches Schema verspricht am besten geeignet zu sein?",
+      "choices": [
+        "Dynamische Programmierung",
+        "Teile und herrsche, solange gewährleistet ist, dass die Teilprobleme nicht gleich groß sind",
+        "Die unersättliche Methode"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Verwendung von Dimensionsfunktionen beim Verzweigen und Bereinigen ...",
+      "choices": [
+        "Kann die Anzahl der Probleminstanzen reduzieren, die zum Worst Case gehören",
+        "Es garantiert, dass der Algorithmus in jedem Fall des Problems effizienter ist",
+        "Transformieren Sie Komplexitäten, die zuvor exponentiell waren, in Polynome"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Wenn es sich bei einem Optimierungsproblem um eine Funktion handelt, die kontinuierliche Werte annimmt",
+      "choices": [
+        "Iterative dynamische Programmierung ist hinsichtlich der Speichernutzung immer viel effizienter als rekursive dynamische Programmierung",
+        "Die Speichernutzung der iterativen dynamischen Programmierung und der rekursiven dynamischen Programmierung ist gleich, unabhängig davon, ob die Domäne diskret oder kontinuierlich ist.",
+        "Rekursive dynamische Programmierung kann hinsichtlich der Speichernutzung viel effizienter sein als iterative dynamische Programmierung"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Ja \\(f(n)\\in\\Omicron(n^3)\\), kann das passieren \\(f(n)\\in\\Omicron(n^2)\\)?",
+      "choices": [
+        "Nicht weil \\(n^3\\) NEIN \\(\\in\\Omicron(n^2)\\)",
+        "Es ist durchaus möglich, denn \\(\\Omicron(n^2)\\sube\\Omicron(n^3)\\)",
+        "Nur für niedrige Werte von \\(n\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Es sei die folgende Wiederholungsrelation\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ 2T(\\frac{'{'}n{'}'}{'{'}2{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\nJa \\(T(n)\\in\\Omicron(n^2)\\)In welchem ​​dieser drei Fälle können wir uns wiederfinden?",
+      "choices": ["\\(g(n)=1\\)", "\\(g(n)=n^2\\)", "\\(g(n)=n\\)"],
+      "solution": 1
+    },
+    {
+      "title": "Die naive (aber korrekte) rekursive Lösung eines Optimierungsproblems ruft die Funktion mit denselben Parametern mehr als einmal auf. ",
+      "choices": [
+        "Die Effizienz des Algorithmus kann verbessert werden, indem der Wert, der für jeden Parametersatz von jedem Aufruf zurückgegeben wird, wenn er zum ersten Mal auftritt, in einer Tabelle gespeichert wird.",
+        "Die Effizienz des Algorithmus kann verbessert werden, indem der rekursive Algorithmus direkt in einen iterativen Algorithmus umgewandelt wird, ohne seine Grundoperation zu ändern",
+        "Die Effizienz des Algorithmus kann verbessert werden, indem im Voraus die Reihenfolge festgelegt wird, in der die Lösungen der Teilprobleme berechnet werden sollen, und eine Tabelle in dieser Reihenfolge ausgefüllt wird."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Ein Größenproblem \\(n\\) lässt sich in Zeit umwandeln \\(\\Omicron(n^2)\\) in einer anderen Größe \\(n-1\\). ",
+      "choices": ["\\(\\Omicron(n^3)\\)", "\\(\\Omicron(2^n)\\)", "\\(\\Omicron(n^2)\\)"],
+      "solution": 0
+    },
+    {
+      "title": "Wenn ein Greedy-Algorithmus verwendet wird, um die Lösung eines diskreten Auswahloptimierungsproblems anzugehen (d. h. ein Problem, dessen Lösung darin besteht, eine Teilmenge der Menge von Elementen zu finden, die eine gegebene Funktion optimiert), welche dieser drei Dinge sind unmöglich passieren?",
+      "choices": [
+        "Dass die Lösung nicht optimal ist",
+        "Dass der Algorithmus keine Lösung findet",
+        "Dass die bereits zuvor getroffene Entscheidung bezüglich der Auswahl eines Elements im Hinblick auf die Entscheidung, die zum jetzigen Zeitpunkt getroffen werden muss, noch einmal überdacht wird"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Für eines dieser drei Probleme gibt es keine effiziente Lösung, die dem dynamischen Programmierschema folgt",
+      "choices": [
+        "Das diskrete Rucksackproblem",
+        "Das Problem der Türme von Hanoi",
+        "Das Problem, ein Rohr abzulängen \\(n\\) in ganzzahlige Längensegmente zwischen 1 und \\(n\\) sodass der Preis gemäß einer Tabelle maximiert wird, die den Preis für jede Länge angibt"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Für welches dieser drei Optimierungsprobleme gibt es keine gierige Lösung, die optimal ist, oder es ist nicht bekannt, dass sie eine solche hat?",
+      "choices": [
+        "Das diskrete Rucksackproblem",
+        "Der Baum der minimalen Kostenabdeckung eines verbundenen Netzwerks",
+        "Das Problem des kontinuierlichen Rucksacks oder der Fraktionierung"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Welcher der folgenden Algorithmen würde eine pessimistische Grenze für das Problem liefern, den kürzesten Weg zwischen zwei Städten zu finden (es wird davon ausgegangen, dass der Graph verbunden ist)?",
+      "choices": [
+        "Berechnen Sie die geometrische Entfernung (in einer geraden Linie) zwischen der Herkunfts- und der Zielstadt",
+        "Addieren Sie für alle Städte, die in einem Schritt von der Startstadt aus erreichbar sind, die Entfernung zu dieser Stadt und die geometrische Entfernung zur Zielstadt",
+        "Berechnen Sie die zurückgelegte Strecke, indem Sie sich zufällig durch die Grafik bewegen, bis Sie (zufällig) die Zielstadt erreichen"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Garantiert die Backtracking-Strategie bei jedem Optimierungsproblem die optimale Lösung?",
+      "choices": [
+        "Ja, solange die Entscheidungsdomäne diskret oder diskretisierbar ist und Pruning-Mechanismen verwendet werden, die auf der bisher besten Lösung basieren.",
+        "Ja, da diese Methode alle Möglichkeiten analysiert",
+        "Eine notwendige Bedingung ist, dass der Entscheidungsbereich diskret oder diskretisierbar ist und dass die Anzahl der zu treffenden Entscheidungen begrenzt ist."
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Für welches dieser Optimierungsprobleme gibt es eine gierige Lösung?",
+      "choices": [
+        "Der minimale Überdeckungsbaum für einen ungerichteten Graphen mit Gewichten",
+        "Das diskrete Rucksackproblem",
+        "Das Problem der Mindestkostenzuordnung \\(n\\) Aufgaben an Arbeitnehmer, wenn die Kosten für die Zuweisung der Aufgabe anfallen \\(i\\) an den Arbeiter \\(j\\), \\(C_{'{'}ij{'}'}\\) wird in einer Matrix tabellarisch dargestellt"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Bestenfalls zeitliche Komplexität",
+      "choices": [
+        "Dies ist die Zeit, die der Algorithmus benötigt, um das Größenproblem oder das kleinste Größenproblem zu lösen, das dargestellt werden kann.",
+        "Es handelt sich um eine Funktion der Größe bzw. Größe des Problems, die für alle möglichen Werte davon definiert werden muss",
+        "Die anderen beiden Optionen sind wahr"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Garantiert die Verwendung einer „Teile und herrsche“-Strategie die Existenz einer polynomialen Zeitkomplexitätslösung für jedes Problem?",
+      "choices": [
+        "Ja, aber solange die gemeinsame zeitliche Komplexität der Problemzerlegungsoperationen und der Kombination von Lösungen polynomial ist",
+        "NEIN",
+        "ja auf jeden Fall"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Entscheiden Sie, welche dieser drei pessimistischen Grenzen dem optimalen Wert des diskreten Rucksacks am nächsten kommt:",
+      "choices": [
+        "Der diskrete Rucksackwert, der mithilfe eines Greedy-Algorithmus basierend auf dem spezifischen Wert der Objekte ermittelt wird",
+        "Der Wert eines Rucksacks, der alle Gegenstände enthält, auch wenn er das maximal zulässige Gewicht überschreitet",
+        "Der Wert des entsprechenden Dauerrucksacks"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Welche dieser optimistischen Grenzen können wir erwarten, um den Suchbaum zu verbessern, wenn wir das Problem des Handlungsreisenden durch Backtracking lösen?",
+      "choices": [
+        "Der Rest des Problems wird mithilfe eines Greedy-Algorithmus gelöst, der dem Pfad jedes Mal den Scheitelpunkt hinzufügt, der dem zuletzt hinzugefügten am nächsten liegt.",
+        "Die verbleibenden Kanten werden vom kürzesten zum größten Abstand geordnet und die Summe der k kürzesten Kanten wird berechnet, wobei k die Anzahl der Sprünge ist, die uns noch zur Verfügung stehen.",
+        "K wird mit der Distanz der kürzesten noch zu berücksichtigenden Kante multipliziert, wobei k die Anzahl der noch zu bewältigenden Sprünge ist."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Sie möchten den kürzesten Weg zwischen zwei Städten finden. ",
+      "choices": [
+        "Der neue Algorithmus garantiert nicht, dass er bei allen möglichen Probleminstanzen schneller ist.",
+        "Diese Strategie stellt nicht sicher, dass der kürzeste Weg erreicht wird.",
+        "Der neue Algorithmus wird immer schneller sein"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "In Verzweigungs- und Bereinigungsalgorithmen:",
+      "choices": [
+        "Eine optimistische Grenze ist nicht unbedingt ein unüberwindbarer Wert; ",
+        "Eine optimistische Grenze ist notwendigerweise ein erreichbarer Wert; ",
+        "Eine pessimistische Grenze ist der Maximalwert, den jeder mögliche Knoten erreichen kann, der nicht optimal ist."
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Die optimale Komplexität eines Verzweigungs- und Bereinigungsalgorithmus",
+      "choices": [
+        "Es ist immer exponentiell mit der Anzahl der zu treffenden Entscheidungen",
+        "Normalerweise ist es ein Polynom mit der Anzahl der Alternativen für jede Entscheidung",
+        "Es kann ein Polynom mit der Anzahl der zu treffenden Entscheidungen sein"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Der mit der Greedy-Methode für das diskrete Rucksackproblem erhaltene Wert ist...",
+      "choices": [
+        "Eine Obergrenze für den optimalen Wert",
+        "Eine untere Grenze für den optimalen Wert, die jedoch nie mit diesem übereinstimmt",
+        "Eine Untergrenze für den optimalen Wert, die manchmal diesem Wert entsprechen kann"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Im Schema wird die Reihenfolge, in der die verschiedenen Werte den Komponenten des Vektors zugewiesen werden, den die Lösung enthalten wird, zurückgesetzt.",
+      "choices": [
+        "Die anderen beiden Optionen sind wahr",
+        "Kann relevant sein, wenn Bereinigungsmechanismen verwendet werden, die auf optimistischen Schätzungen basieren",
+        "Es ist unerheblich, wenn keine Bereinigungsmechanismen verwendet werden, die auf der bisher besten Lösung basieren"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Die bekannteste Lösung des kontinuierlichen Rucksackproblems folgt dem Schema",
+      "choices": ["Teile und herrsche", "Gefräßig", "Verzweigen und Beschneiden"],
+      "solution": 1
+    },
+    {
+      "title": "Sei A eine quadratische Matrix \\(n\\times n\\). ",
+      "choices": [
+        "Wenn eine Lösung für das Problem auf der Grundlage des Verzweigungs- und Bereinigungsschemas konstruiert wird, könnte eine gute Wahl optimistischer und pessimistischer Grenzen die Untersuchung aller möglichen Permutationen vermeiden.",
+        "Die zeitliche Komplexität der bestmöglichen Lösung des Problems beträgt \\(\\Omicron(n^2)\\)",
+        "Die zeitliche Komplexität der bestmöglichen Lösung des Problems beträgt \\(\\Omicron(n!)\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Auf einem Raster möchten Sie den Umriss eines Quadrats zeichnen \\(n\\) Seitenkästen. ",
+      "choices": [
+        "\\(\\Omicron(\\sqrt{'{'}n{'}'})\\)",
+        "\\(\\Omicron(n^2)\\)",
+        "\\(\\Omicron(n)\\)"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Bei einem Optimierungsproblem ist die Greedy-Methode...",
+      "choices": [
+        "Sie erhalten immer die optimale Lösung",
+        "Sie erhalten immer eine praktikable Lösung",
+        "Garantiert die optimale Lösung nur für bestimmte Probleme"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Sagen Sie, welcher dieser drei Algorithmen kein „Teile-und-herrsche“-Algorithmus ist:",
+      "choices": ["Schnelle Sorte", "Zusammenführen, sortieren", "Prims Algorithmus"],
+      "solution": 2
+    },
+    {
+      "title": "Könnte es bei der Lösung des diskreten Rucksackproblems mithilfe der Backtracking-Strategie weniger Zeit in Anspruch nehmen, die optimale Lösung zu finden, wenn Sie zunächst versuchen, jedes Objekt hineinzulegen, bevor Sie es nicht hineinlegen?",
+      "choices": [
+        "Nein, da in jedem Fall alle möglichen Lösungen untersucht werden müssen",
+        "Ja, aber nur, wenn zum Beschneiden des Suchbaums optimistische Grenzen verwendet werden",
+        "Ja, unabhängig davon, ob optimistische Grenzen zum Beschneiden des Suchbaums verwendet werden oder nicht"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Angesichts der folgenden Funktionen möchten wir die zeitliche Komplexität der Funktion reduzieren \\(g\\) unter Verwendung iterativer dynamischer Programmierung. <pre><code>// Precondición: {'{'} 0 <= i < v.size(); i < j <= v.size() {'}'}\nunsigned f(const vector<unsigned> &v, unsigned i, unsigned j) {'{'}\n\tif(i == j+1)\n\t\treturn v[i];\n\tunsigned sum = 0;\n\tfor(unsigned k = 0; k < j-i; k++)\n\t\tsum += f(v, i, i+k+1) + f(v, i+k+1, j);\n\treturn sum;\n{'}'}\n\nunsigned g(const vector<unsigned> &v) {'{'}\n\treturn f(v, v.begin(), v.end());\n{'}'}</code></pre>",
+      "choices": ["Quadratisch", "Exponentiell", "kubisch"],
+      "solution": 0
+    },
+    {
+      "title": "Wenn bei einem Optimierungsproblem der Entscheidungsbereich eine unendliche Menge ist,",
+      "choices": [
+        "Es ist wahrscheinlich, dass durch dynamische Programmierung ein effizienter Algorithmus zur Lösung dieses Problems erhalten wird.",
+        "Eine gierige Strategie könnte die einzige Alternative sein",
+        "Wir können das Rückwärtsschema immer dann anwenden, wenn es sich um eine abzählbare unendliche Menge handelt."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Wenn wir zur Lösung desselben Problems einen Backtracking-Algorithmus verwenden und ihn minimal modifizieren, um ihn in einen Branch-and-Pruning-Algorithmus umzuwandeln, was ändern wir dann wirklich?",
+      "choices": [
+        "Der Algorithmus kann optimistische Grenzen besser nutzen",
+        "Wir ändern die Funktion, die wir der pessimistischen Schranke geben",
+        "Überprüfung realisierbarer Lösungen: Verzweigung und Bereinigung sind nicht erforderlich, da dadurch nur realisierbare Knoten generiert werden"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Für welches dieser Probleme gibt es eine effiziente Lösung durch dynamische Programmierung?",
+      "choices": [
+        "Der diskrete Rucksack ohne zusätzliche Einschränkungen",
+        "Das Problem der Veränderung",
+        "Das Aufgabenzuweisungsproblem"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Das folgende Programm löst das Problem des Ablängens eines Rohrs \\(n\\) in ganzzahlige Längensegmente zwischen 1 und \\(n\\) so dass der Preis gemäß einer Tabelle maximiert wird, die den Preis für jede Länge angibt, aber ein Stück fehlt. <pre><code>void fill(price r[]) {'{'}\n\tfor (index i=0; i <= n; i++) r[i] = -1;\n{'}'}\n\nprice cutrod(price p[], r[], length n) {'{'}\nprice q;\nif (r[n]>=0) return r[n];\nif (n==0) q=0;\nelse {'{'}\n\tq=-1;\n\tfor (index i=1; i<=n; i++)\n\tq=max(q,p[i]+cutrod(XXXXXXX));\n{'}'}\nr[n]=q;\nreturn q;\n{'}'}</code></pre>",
+      "choices": ["p,r.n-r[n]", "p,r-1,1", "p,r,n-i"],
+      "solution": 2
+    },
+    {
+      "title": "Ist in Verzweigungs- und Pruning-Algorithmen der Wert einer pessimistischen Grenze größer als der Wert einer optimistischen Grenze? ",
+      "choices": [
+        "Nein, das ist nie so",
+        "Im Allgemeinen ja, wenn es sich um ein Maximierungsproblem handelt, obwohl manchmal beide Werte übereinstimmen können",
+        "Im Allgemeinen ja, wenn es sich um ein Minimierungsproblem handelt, obwohl manchmal beide Werte übereinstimmen können"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Eine dieser drei Situationen ist nicht möglich:",
+      "choices": [
+        "\\(f(n)\\in\\Omicron(n)\\) Und \\(f(n)\\in\\Omega(1)\\)",
+        "\\(f(n)\\in\\Omega(n^2)\\) Und \\(f(n)\\in\\Omicron(n)\\)",
+        "\\(f(n)\\in\\Omicron(n)\\) Und \\(f(n)\\in\\Omicron(n^2)\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Die Verbesserung, die die dynamische Programmierung im Allgemeinen gegenüber der naiven Lösung bietet, wird dadurch erreicht",
+      "choices": [
+        "Bei der naiven Lösung wird selten eine relativ große Anzahl unterschiedlicher Teilprobleme gelöst.",
+        "Die Häufigkeit, mit der Teilprobleme gelöst werden, hat nichts mit der Effizienz der mithilfe dynamischer Programmierung gelösten Probleme zu tun.",
+        "Bei der naiven Lösung werden häufig relativ wenige unterschiedliche Teilprobleme gelöst."
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Die Version von Quicksort, die das Element des Vektors, das die erste Position einnimmt, als Pivot verwendet ...",
+      "choices": [
+        "Es verhält sich besser, wenn der Vektor bereits sortiert ist",
+        "Stellt nicht den besten und schlechtesten Fall für Instanzen derselben Größe dar",
+        "Es verhält sich schlechter, wenn der Vektor bereits sortiert ist"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Im zurückgehenden Schema basieren die Beschneidungsmechanismen auf der bisher besten Lösung ...",
+      "choices": [
+        "Die anderen beiden Optionen sind wahr",
+        "Sie garantieren, dass niemals der gesamte Raum möglicher Lösungen ausgeschöpft wird.",
+        "Sie können mögliche Teillösungen eliminieren"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Ein rekursiver Algorithmus, der auf dem Divide-and-Conquer-Schema basiert ...",
+      "choices": [
+        "Es wird niemals eine exponentielle Komplexität haben.",
+        "Die beiden vorherigen sind wahr.",
+        "Es ist umso effizienter, je gerechter die Aufteilung in Teilprobleme ist."
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Sie möchten unterschiedliche Zahlen zwischen 1 und bestellen \\(n\\).  \\(n\\) Boolesche Werte, die zuerst mit „false“ initialisiert werden. ",
+      "choices": [
+        "Ja, da der Mergesort ist \\(\\Omicron(n\\log(n))\\) und das ist \\(\\Omicron(n)\\)",
+        "Nein, da dieser Algorithmus den Vektor der booleschen Werte mehrmals durchlaufen muss",
+        "Nur wenn \\(d\\log(d)>kn\\) (Wo \\(k\\) ist eine Konstante, die von der Implementierung abhängt)"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Ist es beim Branching und Pruning sinnvoll, die optimistische Grenze der Knoten als Kriterium für die Reihenfolge der Liste der aktiven Knoten zu verwenden?",
+      "choices": [
+        "Nein, die optimistische Grenze wird nur verwendet, um zu bestimmen, ob ein n-Tupel vielversprechend ist.",
+        "Ja, obwohl dies keine Garantie dafür ist, dass es sich um eine gute Suchstrategie handelt",
+        "Ja, wenn die Liste der Live-Knoten sortiert wird, muss dies immer nach dem optimistischen Bindungskriterium erfolgen"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Im zurückgehenden Schema basieren die Beschneidungsmechanismen auf der bisher besten Lösung:",
+      "choices": [
+        "Sie können Vektoren eliminieren, die mögliche realisierbare Lösungen darstellen",
+        "Sie gewährleisten, dass nicht der gesamte Raum möglicher Lösungen ausgeschöpft wird",
+        "Die beiden anderen Optionen sind beide wahr"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Wir wollen alle Permutationen einer Liste bestehend aus erhalten \\(n\\) Artikel. ",
+      "choices": [
+        "Teile und herrsche, da die Aufteilung in Unterlisten in konstanter Zeit erfolgen könnte",
+        "Zurückblickend ist es das effizienteste Schema für dieses Problem",
+        "Verzweigen und Beschneiden, da es bei guten Höhenfunktionen effizienter ist als das Zurückgehen"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "In Ermangelung optimistischer und pessimistischer Niveaus ist die Backtracking-Strategie ...",
+      "choices": [
+        "Durchläuft nicht den gesamten Baum, wenn es eine Möglichkeit gibt, Teilbäume zu verwerfen, die unzulässige Lösungsmengen darstellen",
+        "Es muss immer durch den gesamten Baum gehen",
+        "Kann nicht zur Lösung von Optimierungsproblemen verwendet werden"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Der unersättliche Plan...",
+      "choices": [
+        "Garantiert, für jedes Problem eine Lösung zu finden, auch wenn diese möglicherweise nicht optimal ist",
+        "Möglicherweise finden Sie keine Lösung, aber wenn Sie sie finden, ist sie garantiert optimal",
+        "Die anderen beiden Optionen sind beide falsch"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Ein rekursiver Algorithmus, der auf dem Divide-and-Conquer-Schema basiert",
+      "choices": [
+        "Die beiden anderen Optionen sind beide wahr",
+        "Es erreicht seine maximale Effizienz, wenn das Größenproblem auftritt \\(n\\) ist in Größenprobleme unterteilt \\(\\frac{'{'}n{'}'}{'{'}a{'}'}\\)",
+        "Es wird niemals einen exponentiellen asymptotischen Zeitaufwand geben (Zeitkomplexität 0)."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Wenn die Zerlegung eines Problems zu Teilproblemen ähnlicher Größe wie das Original führt, von denen sich viele wiederholen, welches Schema ist a priori angemessener?",
+      "choices": ["Dynamische Programmierung", "Teile und herrsche", "Verzweigen und Beschneiden"],
+      "solution": 0
+    },
+    {
+      "title": "Kann angesichts des Drei-Zug-Labyrinthproblems ein dynamisches Programmierschema angewendet werden, um einen Ausgangspfad zu erhalten?",
+      "choices": [
+        "Nein, um sicherzustellen, dass ein Ausstiegspfad gefunden wird, müssen umfassende Suchmethoden wie Backtracking oder Branching und Pruning angewendet werden.",
+        "Ja, wenn Sie mit diesem Schema arbeiten, können Sie immer einen Ausstiegspfad finden",
+        "Nein, mit diesem Schema können Sie die Gesamtzahl der verschiedenen Pfade kennen, die zum Ausgang führen, aber Sie können nicht die Zusammensetzung eines dieser Pfade kennen."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Wir wollen das Problem der n-ten Potenz lösen (\\(x^n\\)), vorausgesetzt, dass \\(n\\) ist gerade und die folgende Wiederholung wird verwendet:\n\\(pot(x, n) = pot(x, \\frac{'{'}n{'}'}{'{'}2{'}'}) * pot(x, \\frac{'{'}n{'}'}{'{'}2{'}'})\\) Welches Schema erweist sich im Hinblick auf den Zeitaufwand als effizienter?",
+      "choices": [
+        "In diesem Fall erweisen sich sowohl die dynamische Programmierung als auch das Teilen und Erobern hinsichtlich der zeitlichen Komplexität als gleichwertig.",
+        "Dynamische Programmierung",
+        "Teile und herrsche"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Entscheiden Sie, welche dieser drei optimistischen Grenzen dem optimalen Wert des diskreten Rucksacks am nächsten kommt:",
+      "choices": [
+        "Der Wert eines Rucksacks, der alle Gegenstände enthält, auch wenn er das maximal zulässige Gewicht überschreitet",
+        "Der Wert des entsprechenden Dauerrucksacks",
+        "Der diskrete Rucksackwert, der mithilfe eines Greedy-Algorithmus basierend auf dem spezifischen Wert der Objekte ermittelt wird"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Eine der Laborpraktiken bestand in der empirischen Berechnung der durchschnittlichen Zeitkomplexität des Quicksort-Vektorsortieralgorithmus, wobei das Element des Vektors, das die zentrale Position einnimmt, als Sentinel verwendet wurde. ",
+      "choices": ["\\(n^2\\)", "\\(n\\log(n)\\)", "\\(n\\log^2(n)\\)"],
+      "solution": 1
+    },
+    {
+      "title": "Woraus wird abgeleitet \\(f(n)\\) Und \\(g(n)\\) wenn es erfüllt ist \\(\\lim\\limits_{'{'}n\\rarr\\infin{'}'}(\\frac{'{'}f(n){'}'}{'{'}g(n){'}'})=k\\)?",
+      "choices": [
+        "\\(g(n)\\in\\Omicron(f(n))\\) Aber \\(f(n)\\notin\\Omicron(g(n))\\)",
+        "\\(f(n)\\in\\Omicron(g(n))\\) Und \\(g(n)\\in\\Omicron(f(n))\\)",
+        "\\(f(n)\\in\\Omicron(g(n))\\) Aber \\(g(n)\\notin\\Omicron(f(n))\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Angesichts des Labyrinthproblems mit drei Bewegungen möchten wir die Anzahl der verschiedenen Pfade vom Anfangsquadrat wissen \\((1, 1)\\) bis zur Kiste \\((n, m)\\) und dafür wird ein „Teile-und-herrsche“-Schema angewendet. ",
+      "choices": [
+        "\\(nc(n, m) = nc(n - 1, m) + nc(n, m - 1) + nc(n - 1, m - 1)\\)",
+        "\\(nc(n, m) = nc(n - 1, m) + nc(m - 1, n) + nc(n - 1, m - 1)\\)",
+        "Keine der beiden anderen Wiederholungen entspricht einem Teile-und-herrsche-Schema"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Es sei die folgende Wiederholungsrelation:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ 2T(\\frac{'{'}n{'}'}{'{'}2{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\nJa \\(T(n)\\in\\Omicron(n)\\)In welchem ​​dieser drei Fälle können wir uns wiederfinden?",
+      "choices": [
+        "\\(g(n)=\\sqrt{'{'}n{'}'}\\)",
+        "\\(g(n)=\\log(n)\\)",
+        "Die beiden anderen Optionen sind beide wahr"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Der Plan, zurückzugehen...",
+      "choices": [
+        "Garantiert, dass Sie für jedes diskrete Auswahlproblem die optimale Lösung finden",
+        "Die beiden anderen Optionen sind beide wahr",
+        "Es kann auf jede Art von Problem angewendet werden, obwohl der Zeitaufwand hoch ist."
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Was passiert, wenn die pessimistische Grenze eines Knotens einer Lösung entspricht, die nicht realisierbar ist?",
+      "choices": [
+        "Dass der Algorithmus langsamer wäre, weil mehr Knoten als nötig untersucht würden",
+        "Nichts Besonderes, die pessimistischen Grenzen müssen nicht mit realisierbaren Lösungen übereinstimmen",
+        "Dass der Algorithmus falsch wäre, weil ein Knoten, der zur optimalen Lösung führt, verworfen werden könnte"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Angesichts des Labyrinthproblems mit drei Bewegungen möchten wir die Anzahl der verschiedenen Pfade von der ursprünglichen Box (1, 1) bis zur Box (n, m) kennen und hierfür ein dynamisches Programmierschema anwenden. ",
+      "choices": [
+        "Eine Verbesserung kann nicht garantiert werden, da die rekursive Version mit Memoisierung schlechter sein könnte als die, die mit dem Divide-and-Conquer-Schema erzielt wird.",
+        "Aus einer quadratischen Komplexität, die mit der naiven Komplexität erhalten würde, würde sie mit der Memoisierungskomplexität auf eine lineare reduziert.",
+        "Aus einer exponentiellen Komplexität, die mit der naiven Komplexität erhalten würde, würde sie mit der Memoisierungskomplexität auf eine Polynomkomplexität reduziert."
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Angesichts des Labyrinthproblems mit drei Bewegungen besteht das Ziel darin, die Länge des kürzesten Austrittswegs zu kennen. ",
+      "choices": [
+        "Was in Wirklichkeit kein unersättlicher Algorithmus ist, weil das Auswahlkriterium es nicht ist",
+        "Das ist ein unersättlicher Algorithmus, aber ohne Garantie, das Problem zu lösen",
+        "Dass es sich in Wirklichkeit nicht um einen unersättlichen Algorithmus handelt, da die getroffenen Entscheidungen nicht überdacht werden sollten"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Gegeben sei die folgende Funktion:<pre><code>int exa(vector<int> &v) {'{'}\n\tint j, i=1, n=v.size();\n\n\tif (n>1) do {'{'}\n\t\tint x = v[i];\n\t\tfor(j=i; j>0 && v[j-1] > x; j++)\n\t\t\tv[j]=v[j-1];\n\t\tv[j]=x;\n\t\ti++;\n\t{'}'} while(i<n);\n\treturn 0;\n{'}'}</code></pre>",
+      "choices": [
+        "Zeitliche Komplexität ist bestenfalls \\(\\Omega(n)\\)",
+        "Zeitliche Komplexität ist bestenfalls \\(\\Omega(1)\\)",
+        "Die genaue zeitliche Komplexität beträgt \\(\\Theta(n^2)\\)"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Welche Suchstrategie ist in einem Backtracking-Schema a priori am besten geeignet?",
+      "choices": [
+        "Erkunden Sie zuerst die Knoten mit der besten optimistischen Grenze.",
+        "Erkunden Sie zuerst die Knoten, die am vollständigsten sind",
+        "Suchstrategien können im Backtracking-Schema nicht definiert werden."
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Welche der folgenden Wiederholungsbeziehungen drückt angesichts des durch „Teile und Herrsche“ gelösten Problems der Türme von Hanoi ihre Zeitkomplexität für den allgemeinen Fall am besten aus? \\(n\\) die Anzahl der Festplatten?",
+      "choices": ["\\(T(n)=T(n-1)+n\\)", "\\(T(n)=2T(n-1)+1\\)", "\\(T(n)=2T(n-1)+n\\)"],
+      "solution": 1
+    },
+    {
+      "title": "Wenn der Zeitaufwand eines Algorithmus beträgt \\(T(n)\\), welche der folgenden Situationen ist unmöglich?",
+      "choices": [
+        "\\(T(n)\\in\\Omicron(n)\\) Und \\(T(n)\\in\\Theta(n)\\)",
+        "\\(T(n)\\in\\Theta(n)\\) Und \\(T(n)\\in\\Omega(n^2)\\)",
+        "\\(T(n)\\in\\Omega(n)\\) Und \\(T(n)\\in\\Theta(n^2)\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Ein Rohr aus \\(n\\) Zentimeter lange Stücke können in Segmente von 1 Zentimeter, 2 Zentimeter usw. geschnitten werden. ",
+      "choices": [
+        "Ein Vektor boolescher Werte",
+        "Eine Tabelle, die für jede Position, an der geschnitten werden soll, jeden der möglichen akkumulierten Werte angibt",
+        "Ein Paar ganzer Zahlen, die die vorgenommenen Schnitte und den akkumulierten Wert angeben"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Wie hoch wäre die zeitliche Komplexität der folgenden Funktion nach Anwendung der dynamischen Programmierung?<pre><code>double f(int n, int m) {'{'}\n\tif(n == 0) return 1;\n\treturn m * f(n-1,m) * f(n-2,m);\n{'}'}</code></pre>",
+      "choices": ["\\(\\Theta(n^2)\\)", "\\(\\Theta(n\\times m)\\)", "\\(\\Theta(n)\\)"],
+      "solution": 2
+    },
+    {
+      "title": "Gegeben sei die folgende Funktion: <pre><code>int exa(vector<int> &v) {'{'}\n\tint i, sum=0, n=v.size();\n\n\tif (n>0) {'{'}\n\t\tint j=n;\n\t\twhile (sum<100) {'{'}\n\t\t\tj=j/2;\n\t\t\tsum=0;\n\t\t\tfor(i=j;i<n;i++)\n\t\t\t\tsum+=v[i];\n\t\t\tif(j==0) sum=100;\n\t\t{'}'}\n\t\treturn j;\n\t{'}'}\n\telse return -1;\n{'}'}</code></pre>",
+      "choices": [
+        "Zeitliche Komplexität ist bestenfalls \\(\\Omega(n)\\)",
+        "Der schlimmste Fall ist die Zeitkomplexität \\(\\Omega(1)\\)",
+        "Der schlimmste Fall ist die Zeitkomplexität \\(\\Omega(n\\log(n))\\)"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Der asymptotische Zeitaufwand für das Einfügen eines Elements in einen geordneten Vektor, damit dieser geordnet bleibt, beträgt:",
+      "choices": ["\\(\\Omicron(\\log(n))\\)", "\\(\\Omega(n^2)\\)", "\\(\\Omicron(n)\\)"],
+      "solution": 2
+    },
+    {
+      "title": "Was passiert angesichts eines Maximierungsproblems, das mithilfe eines Branch-and-Prune-Schemas gelöst wird, wenn sich herausstellt, dass die optimistische Grenze einen übermäßig hohen Wert hat?",
+      "choices": [
+        "Dass weniger Knoten als nötig erkundet werden könnten",
+        "Sie könnten den Knoten beschneiden, der zur optimalen Lösung führt",
+        "Dass Sie mehr Knoten als nötig erkunden könnten"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Ja \\(f\\in\\Omega(g1)\\) Und \\(f\\in\\Omega(g2)\\) Also:",
+      "choices": [
+        "\\(f\\in\\Omega(g1*g2)\\)",
+        "\\(f\\notin\\Omega(\\min(g1*g2))\\)",
+        "\\(f\\in\\Omega(g1+g2)\\)"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Welche Komplexität ergibt sich aus der Wiederholungsrelation? \\(T(n)=8T(\\frac{'{'}n{'}'}{'{'}2{'}'})+n^3\\) mit \\(T(1)=\\Omicron(1)\\)?",
+      "choices": [
+        "\\(\\Omicron(n\\log(n))\\)",
+        "\\(\\Omicron(n^3)\\)",
+        "\\(\\Omicron(n^3\\log(n))\\)"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Im Problem des Handlungsreisenden wollen wir alle möglichen Lösungen auflisten.",
+      "choices": [
+        "Das Wichtigste ist, eine angemessene pessimistische Grenze zu finden",
+        "Die Reihenfolge, in der Teillösungen untersucht werden, ist nicht relevant; ",
+        "Am geeignetsten wäre die Verwendung einer Verzweigungs- und Beschneidungstechnik, da die Reihenfolge, in der die Teillösungen untersucht werden, sehr wichtig ist."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Gegeben sei die folgende Funktion where \\(\\max(a,b)\\in\\Theta(1)\\):<pre><code>float exa(vector<float> &v, vector<int> &p, int P, int i) {'{'}\n\tfloat a, b;\n\tif (i>=0) {'{'}\n\t\tif (p[i] <= P)\n\t\t\ta = v[i]*exa(v,p,P-p[i],i-1);\n\t\telse a=0;\n\t\tb=exa(v,p,P,i-1);\n\t\treturn max(a,b);\n\t{'}'}\n\treturn 0;\n{'}'}</code></pre>",
+      "choices": [
+        "Zeitliche Komplexität ist bestenfalls \\(\\Omega(n^2)\\)",
+        "Der schlimmste Fall ist die Zeitkomplexität \\(\\Omicron(n^2)\\)",
+        "Zeitliche Komplexität ist bestenfalls \\(\\Omicron(2^n)\\)"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Welche Struktur ist im Branching- und Pruning-Schema am besten geeignet, wenn wir eine Level-Erkundung durchführen möchten?",
+      "choices": ["Prioritätswarteschlange", "Linie", "Stapel"],
+      "solution": 1
+    },
+    {
+      "title": "Gegeben sei die folgende Funktion:<pre><code>int exa(string &cad, int pri, int ult) {'{'}\n\tif(pri>=ult)\n\t\treturn 1;\n\telse\n\t\tif (cad[pri]==cad[ult])\n\t\t\treturn exa(cad, pri+1, ult-1);\n\t\telse\n\t\t\treturn 0;\n{'}'}</code></pre>Was ist seine asymptotische Zeitkomplexität?",
+      "choices": ["\\(\\Omicron(n)\\)", "\\(\\Omicron(\\log(n))\\)", "\\(\\Omicron(n^2)\\)"],
+      "solution": 0
+    },
+    {
+      "title": "Welche der folgenden Strategien würde angesichts des Drei-Zug-Labyrinthproblems eine optimistische Grenze für Verzweigung und Beschneidung bieten?",
+      "choices": [
+        "Gehen Sie davon aus, dass von nun an alle Räume im Labyrinth zugänglich sind",
+        "Gehen Sie davon aus, dass keine Bewegungen mehr ausgeführt werden",
+        "Die beiden anderen Strategien sind beide gültig"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Von den folgenden Ausdrücken sind entweder zwei wahr und einer falsch, oder zwei sind falsch und einer ist wahr. ",
+      "choices": [
+        "\\(n+n\\log(n)\\in\\Omega(n)\\)",
+        "\\(\\Omicron(2^{\\log(n)}\\sub\\Omicron(n^2))\\)",
+        "\\(\\Theta(n)\\sub\\Theta(n^2)\\)"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Was gibt uns der Durchschnitt zwischen den asymptotischen Zeitkosten im schlechtesten Fall und den asymptotischen Zeitkosten im besten Fall?",
+      "choices": [
+        "Der durchschnittliche Zeitaufwand",
+        "Die asymptotischen Zeitkosten im Durchschnittsfall",
+        "Nichts Interessantes"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Sie möchten eine verknüpfte Liste von sortieren \\(n\\) Elemente mithilfe des Mergesort-Algorithmus. ",
+      "choices": [
+        "\\(\\Theta(n^2)\\)",
+        "\\(\\Theta(n\\log(n))\\)",
+        "Keine der beiden anderen Optionen ist wahr"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Angesichts des Labyrinthproblems mit drei Bewegungen möchten wir die Anzahl der verschiedenen Pfade von der ursprünglichen Box (1,1) bis zur Box (n, m) kennen und dafür das dynamische Programmierschema anwenden, um den effizientesten Algorithmus zu erhalten. hinsichtlich der zeitlichen und räumlichen Komplexität möglich. ",
+      "choices": [
+        "Vorübergehend \\(\\Theta(n\\times m)\\) und räumlich \\(\\Theta(n\\times m)\\)",
+        "Vorübergehend \\(\\Theta(\\max{n}{m})\\) und räumlich \\(\\Theta(\\max{n}{m})\\)",
+        "Vorübergehend \\(\\Theta(n\\times m)\\) und räumlich \\(\\Theta(\\min{'{'}n{'}'}{'{'}m{'}'})\\)"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Geben Sie an, welche der folgenden Aussagen wahr ist.",
+      "choices": [
+        "Pessimistische Grenzwerte sind mit einem Backtracking-Schema nicht kompatibel",
+        "In einem Rückwärtsschema machen pessimistische Grenzen keinen Sinn, wenn das Ziel darin besteht, alle möglichen Lösungen zu erhalten.",
+        "Das Backtracking-Schema ist nicht mit der gemeinsamen Verwendung pessimistischer und optimistischer Grenzen vereinbar."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Welche Eigenschaft erfüllt eine optimistische Schranke bei einem Minimierungsproblem, das mithilfe eines Branch-and-Prune-Schemas gelöst wird?",
+      "choices": [
+        "Sie ist immer größer oder gleich der bestmöglichen erreichten Lösung",
+        "Sorgt für Einsparungen beim Testen aller möglichen Lösungen",
+        "Die anderen beiden Optionen sind beide falsch"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Gegeben sei die folgende Funktion <pre><code>int exa(vector<int> &v) {'{'}\n\tint i, sum=0, n=v.size();\n\n\t if(n>0) {'{'}\n\t\tint j=n;\n\t\twhile (sum<100) {'{'}\n\t\t\tj=j/2;\n\t\t\tsum=0;\n\t\t\tfor(i=j; i<n; i++)\n\t\t\t\tsum=v[i];\n\t\t\tif (j==0) sum=100;\n\t\t{'}'};\n\t\treturn j;\n\t{'}'}\n\telse return -1;\n{'}'}</code></pre>Markiere die richtige Antwort:",
+      "choices": [
+        "Die genaue zeitliche Komplexität beträgt \\(\\Theta(n\\log(n))\\)",
+        "Zeitliche Komplexität ist bestenfalls \\(\\Omega(n)\\)",
+        "Zeitliche Komplexität ist bestenfalls \\(\\Omega(1)\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Kann der Zeitaufwand eines rekursiven Algorithmus reduziert werden, indem die von rekursiven Aufrufen zurückgegebenen Ergebnisse gespeichert werden?",
+      "choices": [
+        "Nein, Sie können die Kosten nur reduzieren, indem Sie den rekursiven Algorithmus in einen iterativen umwandeln",
+        "Ja, wenn Funktionsaufrufe mit denselben Argumenten wiederholt werden",
+        "Nein, der Zeitaufwand wird dadurch nicht reduziert, da ohnehin rekursive Aufrufe durchgeführt werden müssen"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Von den folgenden Ausdrücken sind entweder zwei wahr und einer falsch, oder zwei sind falsch und einer ist wahr. ",
+      "choices": [
+        "\\(\\Theta(f)=\\Omicron(f)\\cap\\Omega(f)\\)",
+        "\\(\\Omega(f)=\\Theta(f)\\cap\\Omicron(f)\\)",
+        "\\(\\Omicron(f)=\\Omega(f)\\cap\\Theta(f)\\)"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Der Quicksort-Algorithmus unterteilt das Problem in zwei Teilprobleme. ",
+      "choices": [
+        "\\(\\Omega(n)\\) Und \\(\\Omicron(n^2)\\)",
+        "\\(\\Omicron(n)\\)",
+        "\\(\\Omicron(n\\log(n))\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Die zeitliche Komplexität der Backtracking-Lösung für das diskrete Rucksackproblem beträgt:",
+      "choices": [
+        "Im schlimmsten Fall exponentiell",
+        "Im schlimmsten Fall quadratisch",
+        "Exponentiell auf jeden Fall"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Bei dem durch Verzweigung und Beschneidung gelösten Diagrammfärbungsproblem (Mindestanzahl an Farben, die zum Färben aller Eckpunkte eines Diagramms erforderlich sind, sodass keine zwei benachbarten Eckpunkte dieselbe Farbe haben) ist eine optimistische Grenze das Ergebnis der Annahme, dass:",
+      "choices": [
+        "Es werden so viele andere Farben als die bereits verwendeten verwendet, wie noch Scheitelpunkte zum Einfärben übrig sind.",
+        "Es wird nur noch eine Farbe benötigt",
+        "Andere als die bereits verwendeten Farben werden nicht verwendet."
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Die Quicksort-Version, die das Vektorelement, das die zentrale Position einnimmt, als Drehpunkt verwendet",
+      "choices": [
+        "Stellt nicht den besten und schlechtesten Fall für Instanzen derselben Größe dar",
+        "Es verhält sich schlechter, wenn der Vektor bereits sortiert ist",
+        "Es verhält sich besser, wenn der Vektor sortiert ist"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Ja \\(\\lim\\limits_{'{'}n\\rarr\\infin{'}'}(\\frac{'{'}f(n){'}'}{'{'}n^2{'}'})=k\\) Und \\(k\\ne0\\) Welche dieser drei Aussagen ist falsch?",
+      "choices": [
+        "\\(f(n)\\in\\Omicron(n^3)\\)",
+        "\\(f(n)\\in\\Theta(n^2)\\)",
+        "\\(f(n)\\in\\Theta(n^3)\\)"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Wir haben eine Reihe von \\(n\\) positive ganze Zahlen und wir wollen die Teilmenge der Größe finden \\(m\\) Mindestbetrag",
+      "choices": [
+        "Eine Greedy-Technik würde eine optimale Lösung liefern",
+        "Am geeignetsten wäre die Verwendung einer Verzweigungs- und Bereinigungstechnik, obwohl im schlimmsten Fall der asymptotische Zeitaufwand (Zeitkomplexität 0) exponentiell wäre",
+        "Um die Lösung zu finden, müssten Sie alle möglichen Kombinationen ausprobieren \\(m\\) Ganzheitlich, sodass die Verzweigungs- und Beschneidungstechnik in Bezug auf die Rückkehr nichts beiträgt"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Welcher Algorithmus ist asymptotisch schneller, Quicksort oder Mergesort?",
+      "choices": [
+        "Sie sind beide gleich schnell, da die asymptotischen Zeitkosten beider gleich sind \\(\\Omicron(n\\log(n))\\)",
+        "Wie der Name schon sagt: Quicksort",
+        "Mergesort ist immer schneller oder gleich (mit Ausnahme einer Konstante) als Quicksort"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Sei \\(f(n)\\) die Lösung der Wiederholungsrelation \\(f(n)=2f(\\frac{'{'}n{'}'}{'{'}2{'}'})+n; f(1)\\) Geben Sie an, welcher dieser drei Ausdrücke wahr ist:",
+      "choices": [
+        "\\(f(n)\\in\\Theta(n^2)\\)",
+        "\\(f(n)\\in\\Theta(n\\log(n))\\)",
+        "\\(f(n)\\in\\Theta(n)\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Welche dieser Aussagen ist wahr?",
+      "choices": [
+        "Die Memoisierung verhindert, dass ein rekursiver Algorithmus wiederholt dasselbe Problem löst",
+        "Der Vorteil der iterativen dynamischen Programmierlösung für das diskrete Rucksackproblem besteht darin, dass niemals unnötige Berechnungen durchgeführt werden.",
+        "Iterative dynamische Programmieralgorithmen verwenden Memoisierung, um zu vermeiden, dass dieselben Teilprobleme erneut gelöst werden."
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Sei \\(g(n)= \\sum_{'{'}i=0{'}'}^{'{'}K{'}'}a_in^i\\). ",
+      "choices": [
+        "\\(g(n)\\in\\Omega(n^k)\\)",
+        "Die anderen beiden Aussagen sind falsch.",
+        "\\(g(n)\\in\\Theta(n^k)\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Geben Sie an, welcher dieser drei Ausdrücke falsch ist:",
+      "choices": [
+        "\\(\\Theta(n)\\cap\\Theta(n^2)\\)",
+        "\\(\\Theta(n)\\cap\\Omicron(n)\\)",
+        "\\(\\Theta(\\frac{'{'}n{'}'}{'{'}2{'}'})=\\Theta(n)\\)"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Gibt den asymptotischen Zeitaufwand (oder die Zeitkomplexität) des folgenden Programms als Funktion von n an: <pre><code>s=0; for(i=0; i<n; i++) for(j=i; j<n; j++) s+=n*i*j;</code></pre>",
+      "choices": [
+        "Ist \\(\\Theta(n^2)\\)",
+        "Ist \\(\\Theta(n)\\)",
+        "Ist \\(\\Omicron(n^2)\\) aber nicht \\(\\Omega(n^2)\\)"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Gehört es dazu \\(3n^2\\) \\(\\Omicron(n^3)\\)?",
+      "choices": ["NEIN", "Ja", "Nur für c = 1 und n = 5"],
+      "solution": 1
+    },
+    {
+      "title": "Backtracking-Algorithmen, die optimistische Grenzen nutzen, generieren mögliche Lösungen für das Problem, indem sie...",
+      "choices": [
+        "Eine Tour, die durch Schätzungen der besten Zweige des Baums geführt wird, die den Lösungsraum darstellen",
+        "Ein geführter Spaziergang durch eine Prioritätswarteschlange, aus der zunächst die Knoten extrahiert werden, die die vielversprechendsten Teilbäume des Lösungsraums darstellen",
+        "Eine tiefe Durchquerung des Baums, der den Lösungsraum darstellt"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Ja \\(\\lim\\limits_{'{'}n\\rarr\\infin{'}'}(\\frac{'{'}f(n){'}'}{'{'}g(n){'}'})=0\\)",
+      "choices": [
+        "\\(f(n)\\in\\Theta(g(n))\\)",
+        "\\(g(n)\\in\\Omicron(f(n))\\)",
+        "\\(f(n)\\in\\Omicron(g(n))\\)"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Ja \\(f\\in\\Theta(g1)\\) Und \\(f\\in\\Theta(g2)\\)",
+      "choices": [
+        "\\(f\\in\\Theta(g1*g2)\\)",
+        "\\(f\\in\\Theta(g1+g2)\\)",
+        "\\(f\\notin\\Theta(\\max{g1,g2})\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Wir wollen die zeitliche Komplexität der folgenden Funktion durch dynamische Programmierung reduzieren. <pre><code>unsigned g(unsigned n, unsigned r) {'{'}\n\tif (r==0 || r==n)\n\t\treturn 1;\n\treturn g(n-1, r-1) + g(n-1, r);\n{'}'}</code></pre>",
+      "choices": [
+        "Kann auf linear reduziert werden",
+        "Quadratisch",
+        "Die Funktion erfüllt nicht die notwendigen Voraussetzungen, um dynamische Programmierung anwenden zu können"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Welche dieser Aussagen ist falsch?",
+      "choices": [
+        "Es gibt Optimierungsprobleme, bei denen die Greedy-Methode nur für einige Fälle die optimale Lösung und für viele andere Fälle eine suboptimale Lösung erhält.",
+        "Für alle Optimierungsprobleme gibt es eine gierige Lösung, die unabhängig von der zu lösenden Instanz optimal ist.",
+        "Es gibt Optimierungsprobleme, für die mit einer Greedy-Strategie immer die optimale Lösung erzielt werden kann."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Angesichts der Wiederholungsbeziehung:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rho T(\\frac{'{'}n{'}'}{'{'}a{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n(Wo \\(p\\) Und \\(a\\) sind ganze Zahlen größer als 1 und \\(g(n)=n^k\\), was muss passieren, damit es erfüllt wird? \\(T(n)\\in\\Theta(n^k)\\)?",
+      "choices": ["\\(p>a^k\\)", "\\(p < a^k\\)", "\\(p=a^k\\)"],
+      "solution": 1
+    },
+    {
+      "title": "Was ist der Hauptunterschied zwischen einer Backtracking-Lösung und einer Branch and Pruning-Lösung für das Rucksackproblem?",
+      "choices": [
+        "Die Reihenfolge der Erkundung der Lösungen",
+        "Die asymptotischen Kosten im schlimmsten Fall",
+        "Die Tatsache, dass die Verzweigungs- und Beschneidungslösung mit einer gierigen suboptimalen Lösung beginnen kann, das Zurückverfolgen jedoch nicht"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Bestenfalls Zeitkomplexität (oder asymptotische Zeitkosten) ...",
+      "choices": [
+        "Es handelt sich um eine Funktion der Größe bzw. Größe des Problems, die für alle möglichen Werte davon definiert werden muss",
+        "S ist die Zeit, die der Algorithmus benötigt, um die kleinste darstellbare Größe zu lösen.",
+        "Die beiden vorherigen sind wahr"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Wann kann bei einem Optimierungsproblem die Backtracking-Methode angewendet werden?",
+      "choices": [
+        "Es ist eine notwendige (wenn auch nicht hinreichende) Bedingung, dass der Entscheidungsbereich diskret oder diskretisierbar ist.",
+        "Es ist eine notwendige und hinreichende Bedingung, dass der Entscheidungsbereich diskret oder diskretisierbar ist.",
+        "Es ist nicht nur eine notwendige Bedingung, dass der Entscheidungsbereich diskret bis diskretisierbar ist; "
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Die folgende Wiederholungsbeziehung drückt die Komplexität eines rekursiven Algorithmus aus, wobei g(n) eine Polynomfunktion ist:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ 2T(\\frac{'{'}n{'}'}{'{'}2{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\nSagen Sie, welche der folgenden Aussagen wahr ist:",
+      "choices": [
+        "Ja \\(g(n)\\in\\Theta(n)\\) Das Wiederholungsverhältnis stellt die zeitliche Komplexität des Quicksort-Sortieralgorithmus im besten Fall dar.",
+        "Ja \\(g(n)\\in\\Theta(n)\\) Das Wiederholungsverhältnis stellt die zeitliche Komplexität des Quicksort-Sortieralgorithmus im ungünstigsten Fall dar",
+        "Ja \\(g(n)\\in\\Theta(1)\\) Das Wiederholungsverhältnis stellt die zeitliche Komplexität des Quicksort-Sortieralgorithmus im besten Fall dar."
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Ein rekursiver Algorithmus, der auf dem Divide-and-Conquer-Schema basiert ...",
+      "choices": [
+        "Es wird niemals eine exponentielle Komplexität haben",
+        "Es ist umso effizienter, je gerechter die Aufteilung in Teilprobleme ist.",
+        "Die anderen Optionen sind wahr"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Der Zeitaufwand eines Algorithmus entspricht der folgenden Wiederholungsgleichung:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &n=0 \\\\ n+\\sum_{'{'}j=0{'}'}^{'{'}n-1{'}'}T(j) &n>1\\end{'{'}cases{'}'}\\)\n\nWelche asymptotischen Zeitkosten (oder Zeitkomplexität) wird der Algorithmus haben?",
+      "choices": ["\\(\\Omicron(n\\log(n))\\)", "\\(\\Omicron(2^n)\\)", "\\(\\Omicron(n^2)\\)"],
+      "solution": 1
+    },
+    {
+      "title": "Studieren Sie die Wiederholungsbeziehung:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rhoT(\\frac{'{'}n{'}'}{'{'}q{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n(Wo \\(p\\) Und \\(q\\) sind ganze Zahlen größer als 1). ",
+      "choices": ["Dynamische Programmierung", "Teile und herrsche", "Verzweigen und Beschneiden"],
+      "solution": 1
+    },
+    {
+      "title": "Wir nehmen den Mergesort-Algorithmus und teilen den Vektor nicht in zwei Teile, sondern in drei Teile. ",
+      "choices": [
+        "\\(\\Theta(\\log n)\\)",
+        "\\(\\Theta(n)\\)",
+        "Keine der beiden anderen Optionen ist wahr"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Für eines dieser drei Probleme gibt es keine triviale und effiziente Lösung, die dem Greedy-Schema folgt",
+      "choices": [
+        "Das Rucksackproblem besteht weiterhin",
+        "Das Problem des diskreten Rucksacks ohne Begrenzung der maximalen Rucksacklast",
+        "Das Problem der Veränderung"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Was versteht man unter „Problemgröße“?",
+      "choices": [
+        "Der maximale Wert, den jede Instanz dieses Problems annehmen kann",
+        "Die Anzahl der Parameter, aus denen das Problem besteht",
+        "Die Menge an Speicherplatz, die zum Codieren einer Instanz dieses Problems erforderlich ist"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Ja \\(\\lim\\limits_{'{'}n\\rarr\\infin{'}'}(\\frac{'{'}f(n){'}'}{'{'}n^2{'}'})=k\\) Und \\(k\\neq0\\), welche dieser drei Aussagen ist wahr?",
+      "choices": [
+        "\\(f(n)\\in\\Theta(n^2)\\)",
+        "\\(f(n)\\in\\Omega(n^3)\\)",
+        "\\(f(n)\\in\\Theta(n^3)\\)"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Wiederholungsbeziehungen...",
+      "choices": [
+        "Sie dienen dazu, die vorübergehenden Kosten einer Lösung zu reduzieren, wenn diese unerschwinglich ist",
+        "Sie drücken rekursiv den Zeitaufwand eines Algorithmus aus",
+        "Sie erscheinen nur, wenn die Lösung vom Typ „Teile und herrsche“ ist"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Die Sortieralgorithmen Quicksort und Mergesort haben Folgendes gemeinsam:",
+      "choices": [
+        "die pünktlich laufen \\(\\Omicron(n)\\)",
+        "Wer wendet die „Teile und herrsche“-Strategie an?",
+        "Dadurch wird der Vektor sortiert, ohne zusätzlichen Platz zu beanspruchen"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Welcher dieser drei Ausdrücke ist wahr?",
+      "choices": [
+        "\\(\\Omicron(2^{'{'}\\log(n){'}'})\\sub\\Omicron(n^2)\\sub\\Omicron(2^n)\\)",
+        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{\\log(n)})\\sube\\Omicron(2^n)\\)",
+        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{\\log(n)})\\sub\\Omicron(2^n)\\)"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Der Zeitaufwand des Einfügungssortierungsalgorithmus beträgt",
+      "choices": ["\\(\\Omicron(n\\log(n))\\)", "\\(\\Omicron(n^2)\\)", "\\(\\Omicron(n)\\)"],
+      "solution": 1
+    },
+    {
+      "title": "Haben \\(n\\) Wir wollen verschiedene pulverförmige Substanzen erzeugen und alle möglichen Mischungsmöglichkeiten mit einem Gesamtgewicht von nicht mehr als einem Gramm erzeugen, da unsere Waage nur bis zu 0,1 Gramm genau zählt. ",
+      "choices": [
+        "Das ist nicht möglich, da es sich bei Entscheidungen nicht um diskrete Werte handelt.",
+        "Ja, das geht ohne Probleme.",
+        "Aufgrund der unendlichen Anzahl an Kombinationsmöglichkeiten ist dies nicht möglich."
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Was ist die zeitliche Komplexität der folgenden Funktion im besten Fall?<pre><code>void examen(vector<int> &v) {'{'}\n\tint i=0,j,x,n=v.size();\n\tbool permuta = 1;\n\twhile(n>0 && permuta) {'{'}\n\t\ti=i+1;\n\t\tpermuta=0;\n\t\tfor(j=n-1; j>=i; j--)\n\t\t\tif(v[j] < v[j-1]) {'{'}\n\t\t\t\tx=v[j];\n\t\t\t\tpermuta=1;\n\t\t\t\tv[j]=v[j-1];\n\t\t\t\tv[j-1]=x;\n\t\t\t{'}'}\n\t{'}'}\n{'}'}</code></pre>",
+      "choices": [
+        "Für diese Funktion gibt es keinen besseren Fall",
+        "\\(\\Theta(n)\\)",
+        "\\(\\Theta(1)\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Welche dieser Aussagen ist falsch?",
+      "choices": [
+        "Iterative dynamische Programmieralgorithmen verwenden Memoisierung, um zu vermeiden, dass dieselben Teilprobleme erneut gelöst werden.",
+        "Die iterative dynamische Programmierlösung für das diskrete Rucksackproblem führt unnötige Berechnungen durch",
+        "Die Memoisierung verhindert, dass ein naiver rekursiver Algorithmus wiederholt dasselbe Problem löst"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Es sei die folgende Wiederholungsrelation\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ 2T(\\frac{'{'}n{'}'}{'{'}2{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\nJa \\(T(n)\\in\\Omicron(n)\\)In welchem ​​dieser drei Fälle können wir uns wiederfinden?",
+      "choices": ["\\(g(n)=n^2\\)", "\\(g(n)=1\\)", "\\(g(n)=n\\)"],
+      "solution": 1
+    },
+    {
+      "title": "Von den folgenden Ausdrücken sind entweder zwei wahr und einer falsch, oder zwei sind falsch und einer ist wahr. ",
+      "choices": [
+        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{'{'}\\log_2(n){'}'})\\sub\\Omicron(2^n)\\)",
+        "\\(\\Omicron(4^{\\log_2(n)})\\sube\\Omicron(n^2)\\sub\\Omicron(2^n)\\)",
+        "\\(\\Omicron(2^{\\log_2(n)})\\sub\\Omicron(n^2)\\sub\\Omicron(n!)\\)"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Ja \\(f\\in\\Theta(g_1)\\) Und \\(f\\in\\Theta(g_2)\\)",
+      "choices": [
+        "\\(f^2\\in\\Theta(g_1\\cdot g_2)\\)",
+        "Die beiden anderen Optionen sind beide wahr",
+        "\\(f\\in\\Theta(\\max{g_1,g_2})\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Die optimale Komplexität eines Verzweigungs- und Bereinigungsalgorithmus",
+      "choices": [
+        "Es ist immer exponentiell mit der Anzahl der zu treffenden Entscheidungen",
+        "Es kann ein Polynom mit der Anzahl der zu treffenden Entscheidungen sein",
+        "Normalerweise ist es ein Polynom mit der Anzahl der Alternativen für jede Entscheidung"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Das Problem der minimalen zusammengesetzten Funktion besteht darin, aus einer Menge gegebener Funktionen die minimale Folge von Zusammensetzungen dieser Funktionen zu finden, die die Transformation einer Zahl ermöglicht \\(\\) in einem anderen m. ",
+      "choices": [
+        "Verwendung eines Vektors boolescher Werte",
+        "Verwendung eines reellen Vektors",
+        "Dieses Problem kann durch Verzweigung und Bereinigung nicht gelöst werden, ohne eine Obergrenze für die Gesamtzahl der Funktionsanwendungen festzulegen."
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Die Funktion \\(\\gamma\\) einer positiven halben ganzen Zahl (eine Zahl ist eine halbe ganze Zahl, wenn sie durch Subtrahieren von 0,5 eine ganze Zahl ergibt) ist definiert als<pre><code>double gamma(double n) {'{'}\n\tif(n == 0.5)\n\t\treturn sqrt(PI);\n\treturn n * gamma(n-1);\n{'}'}</code></pre>Kann es mit iterativer dynamischer Programmierung berechnet werden?",
+      "choices": [
+        "Nein, da der Lagerindex eine reelle Zahl und keine ganze Zahl wäre",
+        "Ja, aber die Zeitkomplexität verbessert sich nicht",
+        "Nein, da wir die Zwischenergebnisse nicht im Lager speichern konnten"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Welcher dieser Ausdrücke ist falsch?",
+      "choices": [
+        "\\(n+n\\log(n)\\in\\Omega(n)\\)",
+        "\\(2n^2+3n+1\\in\\Omicron(n^3)\\)",
+        "\\(n+n\\log(n)\\in\\Theta(n)\\)"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Angesichts der Wiederholungsbeziehung:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ pT(\\frac{'{'}n{'}'}{'{'}a{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n(Wo \\(p\\) Und \\(a\\) sind ganze Zahlen größer als 1 und \\(g(n)=n^k\\)), was muss passieren, damit es erfüllt wird? \\(T(n)\\in\\Theta(n^k\\log(n))\\)?",
+      "choices": ["\\(p>a^k\\)", "\\(p=a^k\\)", "\\(p < a^k\\)"],
+      "solution": 1
+    },
+    {
+      "title": "Kann es bei einem Optimierungsproblem, das durch Backtracking gelöst wird, passieren, dass die Verwendung pessimistischer und optimistischer Grenzen nutzlos oder sogar schädlich ist?",
+      "choices": [
+        "Abhängig von der Art der Grenze verwerfen die pessimistischen Grenzen möglicherweise keine Knoten, aber die Verwendung optimistischer Grenzen garantiert die Reduzierung des Suchraums",
+        "Nein, sowohl optimistische als auch pessimistische Grenzen garantieren die Reduzierung des Lösungsraums und damit die Effizienz des Algorithmus.",
+        "Ja, da es möglich ist, dass trotz Verwendung dieser Dimensionen kein Knoten verworfen wird"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Sagen Sie, welches dieser asymptotischen Zeitkostenergebnisse falsch ist:",
+      "choices": [
+        "Die binäre Suche in einem geordneten Vektor erfordert im schlimmsten Fall eine Zeit in \\(\\Omicron(\\log(n))\\)",
+        "Das Sortieren eines Vektors mit dem Quicksort-Algorithmus erfordert im schlimmsten Fall Zeit \\(\\Omega(n^2)\\)",
+        "Das Sortieren eines Vektors mit dem Mergesort-Algorithmus erfordert im schlimmsten Fall eine gewisse Zeit \\(\\Omega(n^2)\\)"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Ein Problem kann durch Divide and Conquer gelöst werden, solange:",
+      "choices": [
+        "Beachten Sie das Optimalitätsprinzip",
+        "Erfüllen Sie den Reduktionssatz",
+        "Nichts des oben Genannten"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Mit welchem ​​Programmierschema erhalten wir Algorithmen, die den Bearbeitungsabstand zwischen zwei Ketten berechnen?",
+      "choices": ["Dynamische Programmierung", "Teilen und erobern", "Beide"],
+      "solution": 0
+    },
+    {
+      "title": "Welches Programmierschema eignet sich zur Lösung des binären Suchproblems?",
+      "choices": ["Teilen und erobern", "Dynamische Programmierung", "Weder"],
+      "solution": 0
+    },
+    {
+      "title": "Wann werden wir dynamische Programmierung anstelle von „Teile und herrsche“ nutzen?",
+      "choices": [
+        "Wenn die Platzkosten reduziert werden",
+        "Wenn die Effizienz steigt",
+        "Wenn die Effizienz steigt"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Ja \\(n\\) ist die Anzahl der Elemente des Vektors, die Kosten des Mergesort-Algorithmus betragen:",
+      "choices": [
+        "\\(\\Omicron(n^2)\\) Und \\(\\Omega(n\\log(n))\\)",
+        "\\(\\Theta(n\\log(n))\\)",
+        "\\(\\Theta(n^2)\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Nehmen wir angesichts des binären Suchalgorithmus an, dass wir die Liste der Elemente nicht in zwei gleich große Hälften aufteilen, sondern in zwei Teile mit den Größen 1/3 und 2/3. ",
+      "choices": [
+        "Es ist kleiner als das Original",
+        "Es ist größer als das Original",
+        "Es ist das gleiche wie das Original"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Damit ein Optimierungsproblem mithilfe dynamischer Programmierung gelöst werden kann, ist Folgendes erforderlich:",
+      "choices": [
+        "Beachten Sie das Optimalitätsprinzip",
+        "Erfüllen Sie den Reduktionssatz",
+        "Beachten Sie die beiden vorherigen"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Die Fibonacci-Zahlenreihe ist wie folgt definiert:\n\n\\(fib(n)=\\begin{'{'}cases{'}'}1 & n\\leq 1 \\\\ fib(n-1)+fib(n-2) & n>1 \\end{'{'}cases{'}'}\\)\n\nWelche der folgenden Implementierungen hat die niedrigsten Kosten?",
+      "choices": [
+        "Teile und herrsche",
+        "Dynamische Programmierung",
+        "Beide haben die gleichen asymptotischen Kosten"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Wo speichern wir bei der dynamischen Programmierung die Werte der gelösten Probleme?",
+      "choices": [
+        "In einem zweidimensionalen Vektor",
+        "Es kommt auf das Problem an",
+        "In einem eindimensionalen Vektor"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Welches Programmierschema ist geeignet, um das k-te Minimumproblem auf einem Vektor zu lösen?",
+      "choices": ["Dynamische Programmierung", "Teile und herrsche", "Weder"],
+      "solution": 1
+    },
+    {
+      "title": "Welches algorithmische Schema verwendet der Quicksort-Sortieralgorithmus?",
+      "choices": ["Dynamische Programmierung", "Teilen und erobern", "Zurückverfolgen"],
+      "solution": 1
+    },
+    {
+      "title": "Gegeben sei die rekursive Lösung des Problems, das k-te Minimum eines Vektors zu finden. ",
+      "choices": ["zwei oder keine", "Ein oder zwei", "Einer oder keiner"],
+      "solution": 2
+    },
+    {
+      "title": "Wenn wir dynamische Programmierung auf ein Problem anwenden, das auch durch Teilen und Erobern gelöst werden kann, können wir Folgendes sicherstellen:",
+      "choices": [
+        "Im Vergleich zur D&V-Lösung verringert sich der zeitliche Aufwand und der räumliche Aufwand steigt.",
+        "Im Vergleich zur D&V-Lösung steigen die zeitlichen Kosten und die räumlichen Kosten sinken.",
+        "Nichts des oben Genannten"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Wenn wir mit einem Problem konfrontiert werden, das eine rekursive Lösung darstellt, können wir immer Folgendes anwenden:",
+      "choices": [
+        "Teile und herrsche",
+        "Dynamische Programmierung",
+        "Eine der beiden oben genannten"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Die Fibonacci-Zahlenreihe ist wie folgt definiert:\n\n\\(fib(n)=\\begin{'{'}cases{'}'}1 & n\\leq 1 \\\\ fib(n-1)+fib(n-2) & n>1 \\end{'{'}cases{'}'}\\)\n\nUm diese Funktion zu implementieren, können wir ... verwenden.",
+      "choices": [
+        "Teile und herrsche",
+        "Dynamische Programmierung",
+        "Eine der beiden oben genannten"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Die Lösung des Problems, das k-te Minimum eines Vektors zu finden, implementiert die folgende Strategie:",
+      "choices": [
+        "Sortiert keine Elemente des Vektors",
+        "Sortieren Sie den Vektor teilweise",
+        "Sortieren Sie den Vektor vollständig"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "In welchem ​​der folgenden Fälle kann das Divide and Conquer-System nicht angewendet werden:",
+      "choices": [
+        "Wenn die Teilprobleme sehr unterschiedlich groß sind",
+        "Wenn das Problem das Optimalitätsprinzip nicht erfüllt",
+        "Es kann in beiden Fällen angewendet werden"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Dynamische Programmierung wendet zur Lösung eines Problems die folgende Strategie an:",
+      "choices": [
+        "Kleinere Probleme werden gelöst und durch Kombination der Lösungen werden Lösungen für immer größere Probleme erhalten, bis das ursprüngliche Problem erreicht wird.",
+        "Das zu lösende Problem wird in kleinere Teilprobleme zerlegt, die unabhängig voneinander gelöst werden, um schließlich die Lösungen der Teilprobleme zu kombinieren und die Lösung des ursprünglichen Problems zu erhalten.",
+        "Nichts des oben Genannten"
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Nehmen wir an, das Rucksackproblem sei durch dynamisches Programmieren gelöst und spezifiziert worden \\(n\\) Elementen und einem maximal transportierbaren Gewicht von \\(P\\). ",
+      "choices": ["Ja", "NEIN", "Es kommt auf die Werte von an \\(n\\) Und \\(P\\)"],
+      "solution": 1
+    },
+    {
+      "title": "Wir haben zwei Längenketten \\(m\\) Und \\(n\\). ",
+      "choices": ["\\((m-1)\\times(n-1)\\)", "\\(m\\times n\\)", "\\((m+1)\\times(n+1)\\)"],
+      "solution": 2
+    },
+    {
+      "title": "Ja \\(n\\) ist die Anzahl der Elemente eines Vektors. ",
+      "choices": [
+        "\\(\\Omega(n)\\) Und \\(\\Omicron(n\\log(n))\\)",
+        "\\(\\Omega(n)\\) Und \\(\\Omicron(n^2)\\)",
+        "Keines von beidem"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Ja \\(n\\) ist die Anzahl der Elemente eines Vektors. ",
+      "choices": ["\\(\\Omicron(n^3)\\)", "\\(\\Omicron(n)\\)", "Nichts des oben Genannten"],
+      "solution": 0
+    },
+    {
+      "title": "Wie können wir bei einer rekursiven Lösung eines Problems vermeiden, dass dieselben Teilprobleme mehrmals gelöst werden?",
+      "choices": [
+        "Lösen Sie die Teilprobleme vom größten zum kleinsten, speichern Sie das Ergebnis in einer Tabelle und initialisieren Sie es mit den kleinen Problemen",
+        "Lösen Sie die Teilprobleme vom größten zum kleinsten und speichern Sie Ihr Ergebnis in einer Tabelle, indem Sie es mit den größten Problemen initialisieren",
+        "Lösen Sie die Teilprobleme vom kleinsten zum größten, speichern Sie Ihr Ergebnis in einer Tabelle und initialisieren Sie es mit den kleinen Problemen"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Ein Optimierungsproblem, dessen Lösung durch eine Folge von Entscheidungen ausgedrückt werden kann, entspricht dem Optimalitätsprinzip, wenn bei gegebener optimaler Folge:",
+      "choices": [
+        "Es gibt mindestens eine Teilfolge dieser Lösung, die der optimalen Lösung des zugehörigen Teilproblems entspricht.",
+        "Es gibt eine Teilfolge dieser Lösung, die der optimalen Lösung des zugehörigen Teilproblems entspricht",
+        "Jede Teilfolge dieser Lösung entspricht der optimalen Lösung des zugehörigen Teilproblems."
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Ja \\(n\\) die Anzahl der Elemente eines Vektors ist, hat die kostengünstigste Lösung des binären Suchproblems die folgende Komplexität:",
+      "choices": [
+        "\\(\\Omega(\\log(n))\\) Und \\(\\Omicron(n\\log(n))\\)",
+        "\\(\\Omega(1)\\) Und \\(\\Omicron(\\log(n))\\)",
+        "\\(\\Theta(n\\log(n))\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Was ist das geeignete Programmierschema, um das k-te Minimumproblem auf einem Vektor zu lösen?",
+      "choices": ["Dynamische Programmierung", "Teilen und erobern", "Keiner von beiden."],
+      "solution": 1
+    },
+    {
+      "title": "Lässt sich das Rucksackproblem mit der Divide-and-Conquer-Strategie optimal lösen?",
+      "choices": [
+        "Nur beim Rucksack mit Unterteilung",
+        "Nur für den Fall des Rucksacks ohne Fraktionierung",
+        "Ja, es kann in beiden Fällen angewendet werden"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Ein Vektor aus ganzen Zahlen der Größe \\(n\\) Als Heap organisiert, hat die Zeitkomplexität im besten Fall das Löschen des ersten Elements und das Neuanordnen von:",
+      "choices": [
+        "Keine der beiden anderen Optionen ist richtig",
+        "Konstanten mit Vektorgröße",
+        "\\(\\Omicron(n)\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Sagen Sie, welches dieser asymptotischen Zeitkostenergebnisse falsch ist:",
+      "choices": [
+        "Das Sortieren eines Vektors mit dem Quicksort-Algorithmus erfordert im schlimmsten Fall Zeit \\(\\Omega(n^2)\\)",
+        "Das Sortieren eines Vektors mit dem Mergesort-Algorithmus erfordert im schlimmsten Fall eine gewisse Zeit \\(\\Omega(n^2)\\)",
+        "Die binäre Suche in einem geordneten Vektor erfordert im schlimmsten Fall eine Zeit in \\(\\log(n)\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Die Quicksort-Version, die das Element des Vektors, das die erste Position einnimmt, als Pivot verwendet",
+      "choices": [
+        "Es verhält sich schlechter, wenn der Vektor bereits sortiert ist",
+        "Es verhält sich besser, wenn der Vektor bereits sortiert ist",
+        "Die Tatsache, dass der Vektor zuvor geordnet war oder nicht, hat keinen Einfluss auf die zeitliche Komplexität dieses Algorithmus."
+      ],
+      "solution": 0
+    },
+    {
+      "title": "Von den folgenden Ausdrücken sind entweder zwei wahr und einer falsch, oder zwei sind falsch und einer wahr. ",
+      "choices": [
+        "\\(\\Theta(n^2)\\sub\\Theta(n^3)\\)",
+        "\\(\\Omega(n^2)\\sub\\Omega(n^3)\\)",
+        "\\(\\Omicron(n^2)\\sub\\Omicron(n^3)\\)"
+      ],
+      "solution": 2
+    },
+    {
+      "title": "Sei \\(f(n)\\) die Lösung der Wiederholungsrelation \\(f(n)=2*f(\\frac{'{'}n{'}'}{'{'}2{'}'})+n; f(1)\\). ",
+      "choices": [
+        "\\(f(n)\\in\\Theta(n)\\)",
+        "\\(f(n)\\in\\Theta(n\\log(n))\\)",
+        "\\(f(n)\\in\\Theta(n^2)\\)"
+      ],
+      "solution": 1
+    },
+    {
+      "title": "Ein Größenvektor ist verfügbar \\(n\\) deren Elemente im Voraus organisiert sind und einen Haufen bilden. ",
+      "choices": ["\\(\\Omicron(\\log(n))\\)", "\\(\\Omicron(n)\\)", "\\(\\Omicron(n\\log(n))\\)"],
+      "solution": 2
+    },
+    {
+      "title": "Gibt die Komplexität des folgenden Fragments als Funktion von n an:<pre><code>int a = 0;\nfor(int i = 0; i < n; i++)\n\tfor(int j = i; j > 0; j/=2)\n\t\ta += A[i][j];</code></pre>",
+      "choices": ["\\(\\Omicron(n\\log(n))\\)", "\\(\\Omicron(n)\\)", "\\(\\Omicron(n^2)\\)"],
+      "solution": 0
+    },
+    {
+      "title": "Sei f(n) die Lösung der Wiederholungsrelation... \\(f(n)=2f(n-1)+1; f(1)=1\\)\nGeben Sie an, welcher dieser drei Ausdrücke wahr ist:",
+      "choices": [
+        "\\(f(n)\\in\\Theta(n^2)\\)",
+        "\\(f(n)\\in\\Theta(2^n)\\)",
+        "\\(f(n)\\in\\Theta(n)\\)"
+      ],
+      "solution": 1
+    }
+  ]
+}

@@ -19,7 +19,7 @@
       "solution": 2
     },
     {
-      "title": "Se desea obtener todas las permutaciones de una lista compuesta por n elementos, ¿qué esquema es el más adecuado?",
+      "title": "Se desea obtener todas las permutaciones de una lista compuesta por \\(n\\) elementos, ¿qué esquema es el más adecuado?",
       "choices": [
         "Divide y vencerás, puesto que la división en sublistas se podría hacer en tiempo constante",
         "Ramificación y poda, puesto que con buenas funciones de cota es más eficiente para este problema que vuelta atrás",
@@ -28,11 +28,11 @@
       "solution": 2
     },
     {
-      "title": "Al resolver el problema del viajante de comercio mediante vuelta atrás y asumiendo un grafo de n vértices totalmente conexo, ¿cuál de estas es una buena cota pesimista al iniciar la búsqueda?",
+      "title": "Al resolver el problema del viajante de comercio mediante vuelta atrás y asumiendo un grafo de \\(n\\) vértices totalmente conexo, ¿cuál de estas es una buena cota pesimista al iniciar la búsqueda?",
       "choices": [
-        "Se ordenan las aristas restantes de menor a mayor distancia y se calcula la suma de las n aristas más cortas",
+        "Se ordenan las aristas restantes de menor a mayor distancia y se calcula la suma de las \\(n\\) aristas más cortas",
         "Se resuelve el problema usando un algoritmo voraz que añade cada vez al camino el vértice más cercano al último añadido",
-        "Se multiplica n por la distancia de la arista más corta que nos queda por considerar"
+        "Se multiplica \\(n\\) por la distancia de la arista más corta que nos queda por considerar"
       ],
       "solution": 1
     },
@@ -100,7 +100,7 @@
       "solution": 2
     },
     {
-      "title": "Cuando se resuelve un algoritmo de vuelta atrás un problema de n decisiones, en el que siempre hay como mínimo dos opciones para cada decisión, ¿cuál de las siguientes complejidades en el caso peor es la mejor que nos podemos encontrar?",
+      "title": "Cuando se resuelve un algoritmo de vuelta atrás un problema de \\(n\\) decisiones, en el que siempre hay como mínimo dos opciones para cada decisión, ¿cuál de las siguientes complejidades en el caso peor es la mejor que nos podemos encontrar?",
       "choices": ["\\(\\Omicron(2^n)\\)", "\\(\\Omicron(n^2)\\)", "\\(\\Omicron(n!)\\)"],
       "solution": 0
     },
@@ -536,7 +536,7 @@
       "solution": 1
     },
     {
-      "title": "Un problema de tamaño n puede transformarse en tiempo \\(\\Omicron(n^2)\\) en otro de tamaño \\(n-1\\). Por otro lado, la solución al problema cuando la talla es 1 requiere un tiempo constante. ¿Cuál de estas clases de coste temporal asintótico es la más ajustada?",
+      "title": "Un problema de tamaño \\(n\\) puede transformarse en tiempo \\(\\Omicron(n^2)\\) en otro de tamaño \\(n-1\\). Por otro lado, la solución al problema cuando la talla es 1 requiere un tiempo constante. ¿Cuál de estas clases de coste temporal asintótico es la más ajustada?",
       "choices": ["\\(\\Omicron(n^3)\\)", "\\(\\Omicron(2^n)\\)", "\\(\\Omicron(n^2)\\)"],
       "solution": 0
     },
@@ -554,7 +554,7 @@
       "choices": [
         "El problema de la mochila discreta",
         "El problema de las torres de Hanoi",
-        "El problema de cortar un tubo de longitud n en segmentos de longitud entera entre 1 y n de manera que se maximice el precio de acuerdo con una tabla que da el precio para cada longitud"
+        "El problema de cortar un tubo de longitud \\(n\\) en segmentos de longitud entera entre 1 y \\(n\\) de manera que se maximice el precio de acuerdo con una tabla que da el precio para cada longitud"
       ],
       "solution": 1
     },
@@ -590,7 +590,7 @@
       "choices": [
         "El árbol de recubrimiento mínimo para un grafo no dirigido con pesos",
         "El problema de la mochila discreta",
-        "El problema de la asignación de coste mínimo de n tareas a trabajadores cuando el coste de asignar la tarea \\(i\\) al trabajador \\(j\\), \\(C_{'{'}ij{'}'}\\) está tabulado en una matriz"
+        "El problema de la asignación de coste mínimo de \\(n\\) tareas a trabajadores cuando el coste de asignar la tarea \\(i\\) al trabajador \\(j\\), \\(C_{'{'}ij{'}'}\\) está tabulado en una matriz"
       ],
       "solution": 0
     },
@@ -690,7 +690,7 @@
       "solution": 1
     },
     {
-      "title": "En una cuadrícula se quiere dibujar el contorno de un cuadrado de n casillas de lado. ¿Cuál será la complejidad temporal del mejor algoritmo que pueda existir?",
+      "title": "En una cuadrícula se quiere dibujar el contorno de un cuadrado de \\(n\\) casillas de lado. ¿Cuál será la complejidad temporal del mejor algoritmo que pueda existir?",
       "choices": [
         "\\(\\Omicron(\\sqrt{'{'}n{'}'})\\)",
         "\\(\\Omicron(n^2)\\)",
@@ -754,7 +754,7 @@
       "solution": 1
     },
     {
-      "title": "El siguiente programa resuelve el problema de cortar un tubo de longitud n en segmentos de longitud entera entre 1 y n de manera que se maximice el precio de acuerdo con una tabla que da el precio para cada longitud, pero falta un trozo. ¿Qué debería ir en lugar de XXXXXXX?<pre><code>void fill(price r[]) {'{'}\n\tfor (index i=0; i <= n; i++) r[i] = -1;\n{'}'}\n\nprice cutrod(price p[], r[], length n) {'{'}\nprice q;\nif (r[n]>=0) return r[n];\nif (n==0) q=0;\nelse {'{'}\n\tq=-1;\n\tfor (index i=1; i<=n; i++)\n\tq=max(q,p[i]+cutrod(XXXXXXX));\n{'}'}\nr[n]=q;\nreturn q;\n{'}'}</code></pre>",
+      "title": "El siguiente programa resuelve el problema de cortar un tubo de longitud \\(n\\) en segmentos de longitud entera entre 1 y \\(n\\) de manera que se maximice el precio de acuerdo con una tabla que da el precio para cada longitud, pero falta un trozo. ¿Qué debería ir en lugar de XXXXXXX?<pre><code>void fill(price r[]) {'{'}\n\tfor (index i=0; i <= n; i++) r[i] = -1;\n{'}'}\n\nprice cutrod(price p[], r[], length n) {'{'}\nprice q;\nif (r[n]>=0) return r[n];\nif (n==0) q=0;\nelse {'{'}\n\tq=-1;\n\tfor (index i=1; i<=n; i++)\n\tq=max(q,p[i]+cutrod(XXXXXXX));\n{'}'}\nr[n]=q;\nreturn q;\n{'}'}</code></pre>",
       "choices": ["p,r.n-r[n]", "p,r-1,1", "p,r,n-i"],
       "solution": 2
     },
@@ -840,7 +840,7 @@
       "solution": 0
     },
     {
-      "title": "Se desea obtener todas las permutaciones de una lista compuesta por n elementos. ¿Qué esquema es el más adecuado?",
+      "title": "Se desea obtener todas las permutaciones de una lista compuesta por \\(n\\) elementos. ¿Qué esquema es el más adecuado?",
       "choices": [
         "Divide y vencerás, puesto que la división en sublistas se podría hacer en tiempo constante",
         "Vuelta atrás, es el esquema más eficiente para este problema",
@@ -870,7 +870,7 @@
       "title": "Un algoritmo recursivo basado en el esquema divide y vencerás",
       "choices": [
         "Las otras dos opciones son ambas verdaderas",
-        "Alcanza su máxima eficiencia cuando el problema de tamaño n se divide en a problemas de tamaño \\(\\frac{'{'}n{'}'}{'{'}a{'}'}\\)",
+        "Alcanza su máxima eficiencia cuando el problema de tamaño \\(n\\) se divide en a problemas de tamaño \\(\\frac{'{'}n{'}'}{'{'}a{'}'}\\)",
         "Nunca tendrá un coste temporal asintótico (0 complejidad temporal) exponencial"
       ],
       "solution": 1
@@ -994,7 +994,7 @@
       "solution": 2
     },
     {
-      "title": "Dado el problema de las torres de Hanoi resuelto mediante divide y vencerás, ¿cuál de las siguientes relaciones de recurrencia expresa mejor su complejidad temporal para el caso general, siendo n el número de discos?",
+      "title": "Dado el problema de las torres de Hanoi resuelto mediante divide y vencerás, ¿cuál de las siguientes relaciones de recurrencia expresa mejor su complejidad temporal para el caso general, siendo \\(n\\) el número de discos?",
       "choices": ["\\(T(n)=T(n-1)+n\\)", "\\(T(n)=2T(n-1)+1\\)", "\\(T(n)=2T(n-1)+n\\)"],
       "solution": 1
     },
@@ -1008,7 +1008,7 @@
       "solution": 1
     },
     {
-      "title": "Un tubo de n centímetros de largo se puede cortar en segmentos de 1 centímetro, 2 centímetros, etc. Existe una lista de los precios a los que se venden los segmentos de cada longitud. Una de las maneras de cortar el tubo es la que más ingresos nos producirá. Se quiere resolver el problema mediante vuelta atrás. ¿Cuál sería la forma más adecuada de representar las posibles soluciones?",
+      "title": "Un tubo de \\(n\\) centímetros de largo se puede cortar en segmentos de 1 centímetro, 2 centímetros, etc. Existe una lista de los precios a los que se venden los segmentos de cada longitud. Una de las maneras de cortar el tubo es la que más ingresos nos producirá. Se quiere resolver el problema mediante vuelta atrás. ¿Cuál sería la forma más adecuada de representar las posibles soluciones?",
       "choices": [
         "Un vector de booleanos",
         "Una tabla que indique, para cada posición donde se va a cortar, cada uno de los posibles valores acumulados",
@@ -1118,7 +1118,7 @@
       "solution": 2
     },
     {
-      "title": "Se desea ordenar una lista enlazada de n elementos haciendo uso del algoritmo Mergesort. En este caso, al tratarse de una lista, la complejidad temporal asintótica de realizar la división en subproblemas resulta ser lineal con el tamaño de esa lista. ¿Cuál sería entonces el coste temporal de realizar dicha ordenación?",
+      "title": "Se desea ordenar una lista enlazada de \\(n\\) elementos haciendo uso del algoritmo Mergesort. En este caso, al tratarse de una lista, la complejidad temporal asintótica de realizar la división en subproblemas resulta ser lineal con el tamaño de esa lista. ¿Cuál sería entonces el coste temporal de realizar dicha ordenación?",
       "choices": [
         "\\(\\Theta(n^2)\\)",
         "\\(\\Theta(n\\log(n))\\)",
@@ -1226,11 +1226,11 @@
       "solution": 2
     },
     {
-      "title": "Tenemos un conjunto de n enteros positivos y queremos encontrar el subconjunto de tamaño m de suma mínima",
+      "title": "Tenemos un conjunto de \\(n\\) enteros positivos y queremos encontrar el subconjunto de tamaño \\(m\\) de suma mínima",
       "choices": [
         "Una técnica voraz daría una solución óptima",
         "Lo más adecuado sería usar una técnica de ramificación y poda, aunque en el peor caso el coste temporal asintótico (0 complejidad temporal) sería exponencial",
-        "Para encontrar la solución habría que probar con todas las combinaciones posibles de m enteros, con lo que la técnica de ramificación y poda no aporta nada con respecto a vuelta atrás"
+        "Para encontrar la solución habría que probar con todas las combinaciones posibles de \\(m\\) enteros, con lo que la técnica de ramificación y poda no aporta nada con respecto a vuelta atrás"
       ],
       "solution": 0
     },
@@ -1467,7 +1467,7 @@
       "solution": 1
     },
     {
-      "title": "Tenemos n sustancias diferentes en polvo y deseamos generar todas las distintas formas de mezclarlas con un peso total que no exceda un gramo, ya que nuestra balanza sólo cuenta hasta 0.1 gramos de precisión. ¿Puedo utilizar retroalimentación (vuelta atrás)?",
+      "title": "Tenemos \\(n\\) sustancias diferentes en polvo y deseamos generar todas las distintas formas de mezclarlas con un peso total que no exceda un gramo, ya que nuestra balanza sólo cuenta hasta 0.1 gramos de precisión. ¿Puedo utilizar retroalimentación (vuelta atrás)?",
       "choices": [
         "No se puede debido a que las decisiones no son valores discretos.",
         "Sí se puede sin problemas.",
@@ -1522,7 +1522,7 @@
       "solution": 1
     },
     {
-      "title": "El problema de la función compuesta mínima consiste en encontrar, a partir de un conjunto de funciones dadas, la secuencia mínima de composiciones de éstas que permita transformar un número n en otro m. Se quiere resolver mediante ramificación y poda. ¿Cuál sería la forma más adecuada de representar las posibles soluciones?",
+      "title": "El problema de la función compuesta mínima consiste en encontrar, a partir de un conjunto de funciones dadas, la secuencia mínima de composiciones de éstas que permita transformar un número \\(\\) en otro m. Se quiere resolver mediante ramificación y poda. ¿Cuál sería la forma más adecuada de representar las posibles soluciones?",
       "choices": [
         "Mediante un vector de booleanos",
         "Mediante un vector de reales",
@@ -1600,7 +1600,7 @@
       "solution": 1
     },
     {
-      "title": "Si n es el número de elementos del vector, el coste del algoritmo Mergesort es:",
+      "title": "Si \\(n\\) es el número de elementos del vector, el coste del algoritmo Mergesort es:",
       "choices": [
         "\\(\\Omicron(n^2)\\) y \\(\\Omega(n\\log(n))\\)",
         "\\(\\Theta(n\\log(n))\\)",
@@ -1706,17 +1706,17 @@
       "solution": 0
     },
     {
-      "title": "Supongamos el problema de la mochila resuelto mediante programación dinámica y particularizado para n elementos y un peso máximo transportable de P. ¿Es necesario calcular valores para toda la matriz auxiliar para obtener el resultado?",
-      "choices": ["Sí", "No", "Depende de los valores de n y P"],
+      "title": "Supongamos el problema de la mochila resuelto mediante programación dinámica y particularizado para \\(n\\) elementos y un peso máximo transportable de \\(\\). ¿Es necesario calcular valores para toda la matriz auxiliar para obtener el resultado?",
+      "choices": ["Sí", "No", "Depende de los valores de \\(n\\) y \\(P\\)"],
       "solution": 1
     },
     {
-      "title": "Disponemos de dos cadenas de longitudes m y n. Si resolvemos el problema de la distancia de edición mediante programación dinámica, ¿de qué tamaño debemos definir la matriz que necesitaremos?",
+      "title": "Disponemos de dos cadenas de longitudes \\(m\\) y \\(n\\). Si resolvemos el problema de la distancia de edición mediante programación dinámica, ¿de qué tamaño debemos definir la matriz que necesitaremos?",
       "choices": ["\\((m-1)\\times(n-1)\\)", "\\(m\\times n\\)", "\\((m+1)\\times(n+1)\\)"],
       "solution": 2
     },
     {
-      "title": "Si n es el número de elementos de un vector. La solución de menor coste al problema de encontrar su k-ésimo mínimo tiene la siguiente complejidad:",
+      "title": "Si \\(n\\) es el número de elementos de un vector. La solución de menor coste al problema de encontrar su k-ésimo mínimo tiene la siguiente complejidad:",
       "choices": [
         "\\(\\Omega(n)\\) y \\(\\Omicron(n\\log(n))\\)",
         "\\(\\Omega(n)\\) y \\(\\Omicron(n^2)\\)",
@@ -1725,7 +1725,7 @@
       "solution": 1
     },
     {
-      "title": "Si n es el número de elementos de un vector. Podemos encontrar una solución al problema de encontrar su k-ésimo que esté acotada superiormente por:",
+      "title": "Si \\(n\\) es el número de elementos de un vector. Podemos encontrar una solución al problema de encontrar su k-ésimo que esté acotada superiormente por:",
       "choices": ["\\(\\Omicron(n^3)\\)", "\\(\\Omicron(n)\\)", "Ninguna de las anteriores"],
       "solution": 0
     },
@@ -1748,7 +1748,7 @@
       "solution": 2
     },
     {
-      "title": "Si n es el número de elementos de un vector, la solución de menor coste al problema de la búsqueda binaria tiene la siguiente complejidad:",
+      "title": "Si \\(n\\) es el número de elementos de un vector, la solución de menor coste al problema de la búsqueda binaria tiene la siguiente complejidad:",
       "choices": [
         "\\(\\Omega(\\log(n))\\) y \\(\\Omicron(n\\log(n))\\)",
         "\\(\\Omega(1)\\) y \\(\\Omicron(\\log(n))\\)",
@@ -1771,7 +1771,7 @@
       "solution": 1
     },
     {
-      "title": "Un vector de enteros de tamaño n organizado como montículo (heap) tiene complejidad temporal en el mejor caso de borrar el primer elemento y reorganizarlo de:",
+      "title": "Un vector de enteros de tamaño \\(n\\) organizado como montículo (heap) tiene complejidad temporal en el mejor caso de borrar el primer elemento y reorganizarlo de:",
       "choices": [
         "Ninguna de las otras dos opciones es correcta",
         "Constantes con el tamaño del vector",
@@ -1816,7 +1816,7 @@
       "solution": 1
     },
     {
-      "title": "Se dispone de un vector de tamaño n cuyos elementos están de antemano organizados formando un montículo (heap). ¿Cuál sería la complejidad temporal de reorganizar el vector para que quede ordenado?",
+      "title": "Se dispone de un vector de tamaño \\(n\\) cuyos elementos están de antemano organizados formando un montículo (heap). ¿Cuál sería la complejidad temporal de reorganizar el vector para que quede ordenado?",
       "choices": ["\\(\\Omicron(\\log(n))\\)", "\\(\\Omicron(n)\\)", "\\(\\Omicron(n\\log(n))\\)"],
       "solution": 2
     },

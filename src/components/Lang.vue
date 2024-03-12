@@ -21,7 +21,7 @@
     </svg>
     <transition name="dropdown-content">
       <div
-        class="origin-top-right absolute right-0 mt-4 bg-dark-room rounded-xl p-2 flex flex-col align-center justify-center z-50 border border-gray-darker cursor-default gap-0.5"
+        class="origin-top-right absolute right-0 mt-4 bg-dark-room rounded-xl p-1.5 flex flex-col align-center justify-center z-50 border border-gray-darker cursor-default gap-0.5"
         @click.stop
         v-if="active"
       >
@@ -29,11 +29,11 @@
           v-for="(locale, localeCode) in locales"
           :key="localeCode"
           class="px-2 py-1 w-36 h-8 hover:bg-night rounded-xl items-center justify-start flex flex-row gap-2"
-          :class="{ 'bg-night': localeCode === activeLocale }"
+          :class="{ 'bg-night pointer-events-none': localeCode === activeLocale }"
           @click="changeLocale(localeCode)"
         >
           <div
-            class="uppercase text-[9px] text-xs tracking-widest border-gray-darker border rounded-full w-8 flex items-center justify-center text-gray-light"
+            class="uppercase text-[9px] text-xs tracking-widest border-gray-darker border rounded-full px-2 flex items-center justify-center text-gray-light"
           >
             {{ localeCode }}
           </div>
