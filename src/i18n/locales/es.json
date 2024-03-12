@@ -1339,8 +1339,8 @@
       "solution": 1
     },
     {
-      "title": "Dada la relación de recurrencia:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rhoT(\\frac{'{'}n{'}'}{'{'}a{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n(donde \\(p\\) y \\(a\\) son enteros mayores que 1 y \\(g(n)=n^k\\), ¿qué tiene qué ocurrir para que se cumpla \\(T(n)\\in\\Theta(n^k)\\)?",
-      "choices": ["\\(p>a^k\\)", "\\(p<a^k\\)", "\\(p=a^k\\)"],
+      "title": "Dada la relación de recurrencia:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rho T(\\frac{'{'}n{'}'}{'{'}a{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n(donde \\(p\\) y \\(a\\) son enteros mayores que 1 y \\(g(n)=n^k\\), ¿qué tiene qué ocurrir para que se cumpla \\(T(n)\\in\\Theta(n^k)\\)?",
+      "choices": ["\\(p>a^k\\)", "\\(p < a^k\\)", "\\(p=a^k\\)"],
       "solution": 1
     },
     {
