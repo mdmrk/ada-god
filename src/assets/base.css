@@ -14,7 +14,7 @@
 }
 
 body {
-  @apply min-h-svh leading-[1.6rem] overflow-x-hidden scroll-smooth text-[15px] bg-night antialiased font-sans;
+  @apply min-h-svh leading-[1.6rem] overflow-x-hidden scroll-smooth text-[15px] bg-night font-sans;
 }
 
 #app {
@@ -35,11 +35,7 @@ main {
 }
 
 footer {
-  @apply flex flex-row items-center justify-center h-12;
-
-  a {
-    @apply text-gray-dark underline text-sm;
-  }
+  @apply flex flex-row items-center justify-center h-16;
 }
 
 ul {

@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@hsorby/vue3-katex": "^0.6.0-rc.7",
-    "@types/node": "^20.11.26",
+    "@types/node": "^20.11.27",
     "katex": "^0.16.9",
     "vue": "^3.4.21",
     "vue-i18n": "^9.10.1",

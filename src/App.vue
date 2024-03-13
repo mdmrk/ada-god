@@ -1,23 +1,23 @@
 <script lang="ts">
+import Header from '@/components/Header.vue'
 import HomeView from '@/views/HomeView.vue'
-import Lang from '@/components/Lang.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   components: {
+    Header,
     HomeView,
-    Lang
+    Footer
   }
 }
 </script>
 
 <template>
-  <header>
-    <nav><Lang /></nav>
-  </header>
+  <header><Header /></header>
   <main>
     <HomeView />
   </main>
   <footer>
-    <a href="https://github.com/mdmrk/ada-god" target="_blank">github.com/mdmrk/ada-god</a>
+    <Footer />
   </footer>
 </template>
