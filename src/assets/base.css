@@ -83,7 +83,11 @@ button:focus {
 }
 
 .grad-choice {
-  box-shadow: rgba(0, 0, 0, 0.35) inset 0px 0px 0px 3px;
+  box-shadow: rgba(0, 0, 0, 0.45) inset 0px 0px 0px 3px;
+}
+
+.grad-choice-light {
+  box-shadow: rgba(120, 120, 120, 0.35) inset 0px 0px 0px 3px;
 }
 
 .grad-hover {

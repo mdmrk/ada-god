@@ -49,7 +49,8 @@
       title: question.title,
       choices: question.choices,
       solution: question.solution,
-      answer
+      answer,
+      selection
     }"
   />
 </template>
@@ -68,7 +69,9 @@ export default {
     return {
       questionIdx,
       hits: 0,
-      fails: 0
+      fails: 0,
+      selectedChoice: 0,
+      choiceSelectionActive: false
     }
   },
   methods: {
@@ -95,12 +98,19 @@ export default {
     },
     answer() {
       return this.answers[this.realIdx]
+    },
+    selection() {
+      return this.choiceSelectionActive ? this.selectedChoice : undefined
     }
   },
   components: {
     Question
   },
   mounted() {
+    window.addEventListener('click', (event) => {
+      this.choiceSelectionActive = false
+    })
+
     window.addEventListener('keydown', (event) => {
       switch (event.key) {
         case 'd':
@@ -111,6 +121,29 @@ export default {
         case 'a':
         case 'ArrowLeft':
           this.prevQuestion()
+          break
+
+        case 'w':
+        case 'ArrowUp':
+        case 's':
+        case 'ArrowDown':
+          if (!this.choiceSelectionActive) {
+            this.choiceSelectionActive = true
+            break
+          }
+          if (this.answer !== undefined) break
+          const sign = ['w', 'ArrowUp'].includes(event.key) ? -1 : 1
+          const choicesLength = this.question.choices.length
+
+          this.selectedChoice = (this.selectedChoice + sign + choicesLength) % choicesLength
+          break
+        case ' ':
+        case 'Enter':
+          if (!this.choiceSelectionActive) {
+            this.choiceSelectionActive = true
+            break
+          }
+          this.setAnswer(this.selectedChoice)
           break
       }
     })

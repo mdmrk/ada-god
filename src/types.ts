@@ -4,6 +4,7 @@ export interface IQuestion {
   readonly choices: string[]
   readonly solution: number
   answer?: number
+  selection?: number
 }
 
 export interface IChoice {
@@ -11,4 +12,5 @@ export interface IChoice {
   readonly choice: string
   readonly solution: number
   answer?: number
+  selection?: number
 }

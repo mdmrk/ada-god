@@ -37,6 +37,9 @@ export default {
         }
       } else {
         style.push('cursor-pointer hover:bg-dark-room hover:bg-opacity-60')
+        if (this.data.selection === this.data.id) {
+          style.push('grad-choice-light')
+        }
       }
       return style.join(' ')
     }
