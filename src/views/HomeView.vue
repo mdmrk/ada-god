@@ -100,6 +100,21 @@ export default {
   components: {
     Question
   },
+  mounted() {
+    window.addEventListener('keydown', (event) => {
+      switch (event.key) {
+        case 'd':
+        case 'ArrowRight':
+          this.nextQuestion()
+          break
+
+        case 'a':
+        case 'ArrowLeft':
+          this.prevQuestion()
+          break
+      }
+    })
+  },
   setup() {
     const { tm } = useI18n()
     const questionsAmount = tm('questions').length
