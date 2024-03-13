@@ -1031,7 +1031,7 @@
       "title": "下列表达式中，要么两个为真，一个为假，要么两个为假，一个为真。",
       "choices": [
         "\\(n+n\\log(n)\\in\\Omega(n)\\)",
-        "\\(\\Omicron(2^{\\log(n)}\\sub\\Omicron(n^2))\\)",
+        "\\(\\Omicron(2^{'{'}\\log(n){'}'}\\sub\\Omicron(n^2))\\)",
         "\\(\\Theta(n)\\sub\\Theta(n^2)\\)"
       ],
       "solution": 2
@@ -1302,7 +1302,7 @@
       "solution": 1
     },
     {
-      "title": "研究递推关系：\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rhoT(\\frac{'{'}n{'}'}{'{'}q{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n（在哪里 \\(p\\) 和 \\(q\\) 是大于 1 的整数）。",
+      "title": "研究递推关系：\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rho T(\\frac{'{'}n{'}'}{'{'}q{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n（在哪里 \\(p\\) 和 \\(q\\) 是大于 1 的整数）。",
       "choices": ["动态规划", "分而治之", "分枝和修剪"],
       "solution": 1
     },
@@ -1356,8 +1356,8 @@
       "title": "这三种表述哪一个是正确的？",
       "choices": [
         "\\(\\Omicron(2^{'{'}\\log(n){'}'})\\sub\\Omicron(n^2)\\sub\\Omicron(2^n)\\)",
-        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{\\log(n)})\\sube\\Omicron(2^n)\\)",
-        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{\\log(n)})\\sub\\Omicron(2^n)\\)"
+        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{'{'}\\log(n){'}'})\\sube\\Omicron(2^n)\\)",
+        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{'{'}\\log(n){'}'})\\sub\\Omicron(2^n)\\)"
       ],
       "solution": 0
     },

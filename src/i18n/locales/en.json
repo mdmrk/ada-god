@@ -1099,7 +1099,7 @@
       "title": "Of the following expressions, either two are true and one is false, or two are false and one is true. ",
       "choices": [
         "\\(n+n\\log(n)\\in\\Omega(n)\\)",
-        "\\(\\Omicron(2^{\\log(n)}\\sub\\Omicron(n^2))\\)",
+        "\\(\\Omicron(2^{'{'}\\log(n){'}'}\\sub\\Omicron(n^2))\\)",
         "\\(\\Theta(n)\\sub\\Theta(n^2)\\)"
       ],
       "solution": 2
@@ -1390,7 +1390,7 @@
       "solution": 1
     },
     {
-      "title": "Study the recurrence relationship:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rhoT(\\frac{'{'}n{'}'}{'{'}q{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n(where \\(p\\) and \\(q\\) are integers greater than 1). ",
+      "title": "Study the recurrence relationship:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rho T(\\frac{'{'}n{'}'}{'{'}q{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n(where \\(p\\) and \\(q\\) are integers greater than 1). ",
       "choices": ["Dynamic programming", "Divide and conquer", "Branching and pruning"],
       "solution": 1
     },
@@ -1452,8 +1452,8 @@
       "title": "Which of these three expressions is true?",
       "choices": [
         "\\(\\Omicron(2^{'{'}\\log(n){'}'})\\sub\\Omicron(n^2)\\sub\\Omicron(2^n)\\)",
-        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{\\log(n)})\\sube\\Omicron(2^n)\\)",
-        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{\\log(n)})\\sub\\Omicron(2^n)\\)"
+        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{'{'}\\log(n){'}'})\\sube\\Omicron(2^n)\\)",
+        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{'{'}\\log(n){'}'})\\sub\\Omicron(2^n)\\)"
       ],
       "solution": 0
     },

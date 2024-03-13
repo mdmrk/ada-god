@@ -1099,7 +1099,7 @@
       "title": "Из следующих выражений либо два истинны, а одно ложно, либо два ложны и одно истинно. ",
       "choices": [
         "\\(n+n\\log(n)\\in\\Omega(n)\\)",
-        "\\(\\Omicron(2^{\\log(n)}\\sub\\Omicron(n^2))\\)",
+        "\\(\\Omicron(2^{'{'}\\log(n){'}'}\\sub\\Omicron(n^2))\\)",
         "\\(\\Theta(n)\\sub\\Theta(n^2)\\)"
       ],
       "solution": 2
@@ -1390,7 +1390,7 @@
       "solution": 1
     },
     {
-      "title": "Изучите рекуррентные отношения:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rhoT(\\frac{'{'}n{'}'}{'{'}q{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n(где \\(p\\) и \\(q\\) являются целыми числами больше 1). ",
+      "title": "Изучите рекуррентные отношения:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rho T(\\frac{'{'}n{'}'}{'{'}q{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n(где \\(p\\) и \\(q\\) являются целыми числами больше 1). ",
       "choices": ["Динамическое программирование", "Разделяй и властвуй", "Ветвление и обрезка"],
       "solution": 1
     },
@@ -1452,8 +1452,8 @@
       "title": "Какое из этих трех выражений верно?",
       "choices": [
         "\\(\\Omicron(2^{'{'}\\log(n){'}'})\\sub\\Omicron(n^2)\\sub\\Omicron(2^n)\\)",
-        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{\\log(n)})\\sube\\Omicron(2^n)\\)",
-        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{\\log(n)})\\sub\\Omicron(2^n)\\)"
+        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{'{'}\\log(n){'}'})\\sube\\Omicron(2^n)\\)",
+        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{'{'}\\log(n){'}'})\\sub\\Omicron(2^n)\\)"
       ],
       "solution": 0
     },

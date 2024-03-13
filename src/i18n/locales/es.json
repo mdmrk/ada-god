@@ -1103,7 +1103,7 @@
       "title": "De las siguientes expresiones, o bien dos son verdaderas y una es falsa, o bien dos son falsas y una es verdadera. Marca la que (en este sentido) es distinta a las otras dos.",
       "choices": [
         "\\(n+n\\log(n)\\in\\Omega(n)\\)",
-        "\\(\\Omicron(2^{\\log(n)}\\sub\\Omicron(n^2))\\)",
+        "\\(\\Omicron(2^{'{'}\\log(n){'}'}\\sub\\Omicron(n^2))\\)",
         "\\(\\Theta(n)\\sub\\Theta(n^2)\\)"
       ],
       "solution": 2
@@ -1394,7 +1394,7 @@
       "solution": 1
     },
     {
-      "title": "Estudiad la relación de recurrencia:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rhoT(\\frac{'{'}n{'}'}{'{'}q{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n(donde \\(p\\) y \\(q\\) son enteros mayores que 1). Di cuál de los siguientes esquemas algorítmicos produce de manera natural relaciones de recurrencia así.",
+      "title": "Estudiad la relación de recurrencia:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rho T(\\frac{'{'}n{'}'}{'{'}q{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n(donde \\(p\\) y \\(q\\) son enteros mayores que 1). Di cuál de los siguientes esquemas algorítmicos produce de manera natural relaciones de recurrencia así.",
       "choices": ["Programación dinámica", "Divide y vencerás", "Ramificación y poda"],
       "solution": 1
     },
@@ -1456,8 +1456,8 @@
       "title": "¿Cuál de estas tres expresiones es cierta?",
       "choices": [
         "\\(\\Omicron(2^{'{'}\\log(n){'}'})\\sub\\Omicron(n^2)\\sub\\Omicron(2^n)\\)",
-        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{\\log(n)})\\sube\\Omicron(2^n)\\)",
-        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{\\log(n)})\\sub\\Omicron(2^n)\\)"
+        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{'{'}\\log(n){'}'})\\sube\\Omicron(2^n)\\)",
+        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{'{'}\\log(n){'}'})\\sub\\Omicron(2^n)\\)"
       ],
       "solution": 0
     },

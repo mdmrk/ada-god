@@ -1103,7 +1103,7 @@
       "title": "Von den folgenden Ausdrücken sind entweder zwei wahr und einer falsch, oder zwei sind falsch und einer ist wahr. ",
       "choices": [
         "\\(n+n\\log(n)\\in\\Omega(n)\\)",
-        "\\(\\Omicron(2^{\\log(n)}\\sub\\Omicron(n^2))\\)",
+        "\\(\\Omicron(2^{'{'}\\log(n){'}'}\\sub\\Omicron(n^2))\\)",
         "\\(\\Theta(n)\\sub\\Theta(n^2)\\)"
       ],
       "solution": 2
@@ -1394,7 +1394,7 @@
       "solution": 1
     },
     {
-      "title": "Studieren Sie die Wiederholungsbeziehung:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rhoT(\\frac{'{'}n{'}'}{'{'}q{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n(Wo \\(p\\) Und \\(q\\) sind ganze Zahlen größer als 1). ",
+      "title": "Studieren Sie die Wiederholungsbeziehung:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rho T(\\frac{'{'}n{'}'}{'{'}q{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n(Wo \\(p\\) Und \\(q\\) sind ganze Zahlen größer als 1). ",
       "choices": ["Dynamische Programmierung", "Teile und herrsche", "Verzweigen und Beschneiden"],
       "solution": 1
     },
@@ -1456,8 +1456,8 @@
       "title": "Welcher dieser drei Ausdrücke ist wahr?",
       "choices": [
         "\\(\\Omicron(2^{'{'}\\log(n){'}'})\\sub\\Omicron(n^2)\\sub\\Omicron(2^n)\\)",
-        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{\\log(n)})\\sube\\Omicron(2^n)\\)",
-        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{\\log(n)})\\sub\\Omicron(2^n)\\)"
+        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{'{'}\\log(n){'}'})\\sube\\Omicron(2^n)\\)",
+        "\\(\\Omicron(n^2)\\sub\\Omicron(2^{'{'}\\log(n){'}'})\\sub\\Omicron(2^n)\\)"
       ],
       "solution": 0
     },
