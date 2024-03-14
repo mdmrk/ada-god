@@ -82,6 +82,7 @@ export default {
       this.questionIdx = this.questionIdx - 1 < 0 ? this.questions.length - 1 : this.questionIdx - 1
     },
     setAnswer(answer: number) {
+      if (this.answers[this.realIdx] !== undefined) return
       this.answers[this.realIdx] = answer
       this.question.solution === answer ? this.hits++ : this.fails++
     }
@@ -127,11 +128,11 @@ export default {
         case 'ArrowUp':
         case 's':
         case 'ArrowDown':
+          if (this.answer !== undefined) break
           if (!this.choiceSelectionActive) {
             this.choiceSelectionActive = true
             break
           }
-          if (this.answer !== undefined) break
           const sign = ['w', 'ArrowUp'].includes(event.key) ? -1 : 1
           const choicesLength = this.question.choices.length
 
