@@ -3,7 +3,7 @@ import Key from '@/components/Key.vue'
 
 export default {
   methods: {
-    isPC() {
+    isMobile() {
       let check = false
       ;(function (a) {
         if (
@@ -16,7 +16,7 @@ export default {
         )
           check = true
       })(navigator.userAgent || navigator.vendor)
-      return !check
+      return check
     }
   },
   components: {
@@ -26,7 +26,7 @@ export default {
 </script>
 <template>
   <div>
-    <div v-show="isPC" class="absolute bottom-6 left-6">
+    <div v-show="!isMobile()" class="absolute bottom-6 left-6">
       <div class="flex flex-col items-center gap-1">
         <Key
           ><svg
