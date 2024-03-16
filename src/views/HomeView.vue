@@ -113,6 +113,9 @@ export default {
     })
 
     window.addEventListener('keydown', (event) => {
+      if (document.activeElement instanceof HTMLElement) {
+        document.activeElement.blur()
+      }
       switch (event.key) {
         case 'd':
         case 'ArrowRight':
