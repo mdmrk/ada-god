@@ -18,7 +18,7 @@ export default {
   },
   computed: {
     style() {
-      var style = []
+      const style = []
 
       if (this.data.answer !== undefined) {
         style.push("pointer-events-none")
