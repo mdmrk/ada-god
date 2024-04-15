@@ -45,14 +45,14 @@
 </template>
 
 <script lang="ts">
-import i18n, { availableLocales } from '@/i18n'
+import i18n, { availableLocales } from "@/i18n"
 
 export default {
-  name: 'LangItem',
+  name: "LangItem",
   data() {
     return {
       active: false,
-      locales: availableLocales
+      locales: availableLocales,
     }
   },
   methods: {
@@ -64,15 +64,15 @@ export default {
     },
     changeLocale(lang: keyof typeof availableLocales) {
       i18n.global.locale.value = lang
-      document.querySelector('html')!.setAttribute('lang', lang)
-      localStorage.setItem('user-locale', lang)
-    }
+      document.querySelector("html")!.setAttribute("lang", lang)
+      localStorage.setItem("user-locale", lang)
+    },
   },
   computed: {
     activeLocale() {
       return i18n.global.locale.value
-    }
-  }
+    },
+  },
 }
 </script>
 

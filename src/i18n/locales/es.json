@@ -101,7 +101,11 @@
     },
     {
       "title": "Cuando se resuelve un algoritmo de vuelta atrás un problema de \\(n\\) decisiones, en el que siempre hay como mínimo dos opciones para cada decisión, ¿cuál de las siguientes complejidades en el caso peor es la mejor que nos podemos encontrar?",
-      "choices": ["\\(\\Omicron(2^n)\\)", "\\(\\Omicron(n^2)\\)", "\\(\\Omicron(n!)\\)"],
+      "choices": [
+        "\\(\\Omicron(2^n)\\)",
+        "\\(\\Omicron(n^2)\\)",
+        "\\(\\Omicron(n!)\\)"
+      ],
       "solution": 0
     },
     {
@@ -350,7 +354,11 @@
     },
     {
       "title": "Al aplicar vuelta atrás a la solución de problemas, obtenemos algoritmos con costes computacionales:",
-      "choices": ["Exponenciales", "Polinómicos", "Los dos son correctos. Depende del problema"],
+      "choices": [
+        "Exponenciales",
+        "Polinómicos",
+        "Los dos son correctos. Depende del problema"
+      ],
       "solution": 0
     },
     {
@@ -537,7 +545,11 @@
     },
     {
       "title": "Un problema de tamaño \\(n\\) puede transformarse en tiempo \\(\\Omicron(n^2)\\) en otro de tamaño \\(n-1\\). Por otro lado, la solución al problema cuando la talla es 1 requiere un tiempo constante. ¿Cuál de estas clases de coste temporal asintótico es la más ajustada?",
-      "choices": ["\\(\\Omicron(n^3)\\)", "\\(\\Omicron(2^n)\\)", "\\(\\Omicron(n^2)\\)"],
+      "choices": [
+        "\\(\\Omicron(n^3)\\)",
+        "\\(\\Omicron(2^n)\\)",
+        "\\(\\Omicron(n^2)\\)"
+      ],
       "solution": 0
     },
     {
@@ -877,7 +889,11 @@
     },
     {
       "title": "Cuando la descomposición de un problema de lugar a subproblemas de tamaño similar al original, muchos de los cuales se repiten, ¿qué esquema es a priori más apropiado?",
-      "choices": ["Programación dinámica", "Divide y vencerás", "Ramificación y poda"],
+      "choices": [
+        "Programación dinámica",
+        "Divide y vencerás",
+        "Ramificación y poda"
+      ],
       "solution": 0
     },
     {
@@ -995,7 +1011,11 @@
     },
     {
       "title": "Dado el problema de las torres de Hanoi resuelto mediante divide y vencerás, ¿cuál de las siguientes relaciones de recurrencia expresa mejor su complejidad temporal para el caso general, siendo \\(n\\) el número de discos?",
-      "choices": ["\\(T(n)=T(n-1)+n\\)", "\\(T(n)=2T(n-1)+1\\)", "\\(T(n)=2T(n-1)+n\\)"],
+      "choices": [
+        "\\(T(n)=T(n-1)+n\\)",
+        "\\(T(n)=2T(n-1)+1\\)",
+        "\\(T(n)=2T(n-1)+n\\)"
+      ],
       "solution": 1
     },
     {
@@ -1018,7 +1038,11 @@
     },
     {
       "title": "¿Cuál sería la complejidad temporal de la siguiente función tras aplicar programación dinámica?<pre><code>double f(int n, int m) {'{'}\n\tif(n == 0) return 1;\n\treturn m * f(n-1,m) * f(n-2,m);\n{'}'}</code></pre>",
-      "choices": ["\\(\\Theta(n^2)\\)", "\\(\\Theta(n\\times m)\\)", "\\(\\Theta(n)\\)"],
+      "choices": [
+        "\\(\\Theta(n^2)\\)",
+        "\\(\\Theta(n\\times m)\\)",
+        "\\(\\Theta(n)\\)"
+      ],
       "solution": 2
     },
     {
@@ -1032,7 +1056,11 @@
     },
     {
       "title": "El coste temporal asintótico de insertar un elemento en un vector ordenado de forma que continue ordenado es:",
-      "choices": ["\\(\\Omicron(\\log(n))\\)", "\\(\\Omega(n^2)\\)", "\\(\\Omicron(n)\\)"],
+      "choices": [
+        "\\(\\Omicron(\\log(n))\\)",
+        "\\(\\Omega(n^2)\\)",
+        "\\(\\Omicron(n)\\)"
+      ],
       "solution": 2
     },
     {
@@ -1087,7 +1115,11 @@
     },
     {
       "title": "Dada la siguiente función:<pre><code>int exa(string &cad, int pri, int ult) {'{'}\n\tif(pri>=ult)\n\t\treturn 1;\n\telse\n\t\tif (cad[pri]==cad[ult])\n\t\t\treturn exa(cad, pri+1, ult-1);\n\t\telse\n\t\t\treturn 0;\n{'}'}</code></pre>¿Cuál es su complejidad temporal asintótica?",
-      "choices": ["\\(\\Omicron(n)\\)", "\\(\\Omicron(\\log(n))\\)", "\\(\\Omicron(n^2)\\)"],
+      "choices": [
+        "\\(\\Omicron(n)\\)",
+        "\\(\\Omicron(\\log(n))\\)",
+        "\\(\\Omicron(n^2)\\)"
+      ],
       "solution": 0
     },
     {
@@ -1390,12 +1422,20 @@
     },
     {
       "title": "El coste temporal de un algoritmo se ajusta a la siguiente ecuación de recurrencia:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &n=0 \\\\ n+\\sum_{'{'}j=0{'}'}^{'{'}n-1{'}'}T(j) &n>1\\end{'{'}cases{'}'}\\)\n\n¿Qué coste temporal asintótico (o complejidad temporal) tendrá el algoritmo?",
-      "choices": ["\\(\\Omicron(n\\log(n))\\)", "\\(\\Omicron(2^n)\\)", "\\(\\Omicron(n^2)\\)"],
+      "choices": [
+        "\\(\\Omicron(n\\log(n))\\)",
+        "\\(\\Omicron(2^n)\\)",
+        "\\(\\Omicron(n^2)\\)"
+      ],
       "solution": 1
     },
     {
       "title": "Estudiad la relación de recurrencia:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rho T(\\frac{'{'}n{'}'}{'{'}q{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n(donde \\(p\\) y \\(q\\) son enteros mayores que 1). Di cuál de los siguientes esquemas algorítmicos produce de manera natural relaciones de recurrencia así.",
-      "choices": ["Programación dinámica", "Divide y vencerás", "Ramificación y poda"],
+      "choices": [
+        "Programación dinámica",
+        "Divide y vencerás",
+        "Ramificación y poda"
+      ],
       "solution": 1
     },
     {
@@ -1463,7 +1503,11 @@
     },
     {
       "title": "El coste temporal del algoritmo de ordenación por inserción es",
-      "choices": ["\\(\\Omicron(n\\log(n))\\)", "\\(\\Omicron(n^2)\\)", "\\(\\Omicron(n)\\)"],
+      "choices": [
+        "\\(\\Omicron(n\\log(n))\\)",
+        "\\(\\Omicron(n^2)\\)",
+        "\\(\\Omicron(n)\\)"
+      ],
       "solution": 1
     },
     {
@@ -1477,7 +1521,11 @@
     },
     {
       "title": "¿Cuál es la complejidad temporal en el mejor de los casos de la siguiente función?<pre><code>void examen(vector<int> &v) {'{'}\n\tint i=0,j,x,n=v.size();\n\tbool permuta = 1;\n\twhile(n>0 && permuta) {'{'}\n\t\ti=i+1;\n\t\tpermuta=0;\n\t\tfor(j=n-1; j>=i; j--)\n\t\t\tif(v[j] < v[j-1]) {'{'}\n\t\t\t\tx=v[j];\n\t\t\t\tpermuta=1;\n\t\t\t\tv[j]=v[j-1];\n\t\t\t\tv[j-1]=x;\n\t\t\t{'}'}\n\t{'}'}\n{'}'}</code></pre>",
-      "choices": ["Esta función no tiene caso mejor", "\\(\\Theta(n)\\)", "\\(\\Theta(1)\\)"],
+      "choices": [
+        "Esta función no tiene caso mejor",
+        "\\(\\Theta(n)\\)",
+        "\\(\\Theta(1)\\)"
+      ],
       "solution": 1
     },
     {
@@ -1587,7 +1635,11 @@
     },
     {
       "title": "¿Qué esquema de programación es el adecuado para resolver el problema de la búsqueda binaria?",
-      "choices": ["Divide y Vencerás", "Programación Dinámica", "Ninguno de los dos"],
+      "choices": [
+        "Divide y Vencerás",
+        "Programación Dinámica",
+        "Ninguno de los dos"
+      ],
       "solution": 0
     },
     {
@@ -1646,7 +1698,11 @@
     },
     {
       "title": "¿Qué esquema de programación es el adecuado para resolver el problema k-ésimo mínimo en un vector?",
-      "choices": ["Programación dinámica", "Divide y vencerás", "Ninguno de los dos"],
+      "choices": [
+        "Programación dinámica",
+        "Divide y vencerás",
+        "Ninguno de los dos"
+      ],
       "solution": 1
     },
     {
@@ -1670,12 +1726,20 @@
     },
     {
       "title": "Ante un problema que presenta una solución recursiva siempre podemos aplicar:",
-      "choices": ["Divide y vencerás", "Programación Dinámica", "Cualquiera de las dos anteriores"],
+      "choices": [
+        "Divide y vencerás",
+        "Programación Dinámica",
+        "Cualquiera de las dos anteriores"
+      ],
       "solution": 0
     },
     {
       "title": "La serie de números de Fibonacci se define de la siguiente forma:\n\n\\(fib(n)=\\begin{'{'}cases{'}'}1 & n\\leq 1 \\\\ fib(n-1)+fib(n-2) & n>1 \\end{'{'}cases{'}'}\\)\n\nPara implementar esta función podemos emplear...",
-      "choices": ["Divide y vencerás", "Programación dinámica", "Cualquiera de las dos anteriores"],
+      "choices": [
+        "Divide y vencerás",
+        "Programación dinámica",
+        "Cualquiera de las dos anteriores"
+      ],
       "solution": 2
     },
     {
@@ -1712,7 +1776,11 @@
     },
     {
       "title": "Disponemos de dos cadenas de longitudes \\(m\\) y \\(n\\). Si resolvemos el problema de la distancia de edición mediante programación dinámica, ¿de qué tamaño debemos definir la matriz que necesitaremos?",
-      "choices": ["\\((m-1)\\times(n-1)\\)", "\\(m\\times n\\)", "\\((m+1)\\times(n+1)\\)"],
+      "choices": [
+        "\\((m-1)\\times(n-1)\\)",
+        "\\(m\\times n\\)",
+        "\\((m+1)\\times(n+1)\\)"
+      ],
       "solution": 2
     },
     {
@@ -1726,7 +1794,11 @@
     },
     {
       "title": "Si \\(n\\) es el número de elementos de un vector. Podemos encontrar una solución al problema de encontrar su k-ésimo que esté acotada superiormente por:",
-      "choices": ["\\(\\Omicron(n^3)\\)", "\\(\\Omicron(n)\\)", "Ninguna de las anteriores"],
+      "choices": [
+        "\\(\\Omicron(n^3)\\)",
+        "\\(\\Omicron(n)\\)",
+        "Ninguna de las anteriores"
+      ],
       "solution": 0
     },
     {
@@ -1758,7 +1830,11 @@
     },
     {
       "title": "¿Cuál es el esquema de programación adecuado para resolver el problema k-ésimo mínimo en un vector?",
-      "choices": ["Programación Dinámica", "Divide y Vencerás", "Ningún uno de los dos."],
+      "choices": [
+        "Programación Dinámica",
+        "Divide y Vencerás",
+        "Ningún uno de los dos."
+      ],
       "solution": 1
     },
     {
@@ -1817,12 +1893,20 @@
     },
     {
       "title": "Se dispone de un vector de tamaño \\(n\\) cuyos elementos están de antemano organizados formando un montículo (heap). ¿Cuál sería la complejidad temporal de reorganizar el vector para que quede ordenado?",
-      "choices": ["\\(\\Omicron(\\log(n))\\)", "\\(\\Omicron(n)\\)", "\\(\\Omicron(n\\log(n))\\)"],
+      "choices": [
+        "\\(\\Omicron(\\log(n))\\)",
+        "\\(\\Omicron(n)\\)",
+        "\\(\\Omicron(n\\log(n))\\)"
+      ],
       "solution": 2
     },
     {
       "title": "Indica cuál es la complejidad, en función de n, del fragmento siguiente:<pre><code>int a = 0;\nfor(int i = 0; i < n; i++)\n\tfor(int j = i; j > 0; j/=2)\n\t\ta += A[i][j];</code></pre>",
-      "choices": ["\\(\\Omicron(n\\log(n))\\)", "\\(\\Omicron(n)\\)", "\\(\\Omicron(n^2)\\)"],
+      "choices": [
+        "\\(\\Omicron(n\\log(n))\\)",
+        "\\(\\Omicron(n)\\)",
+        "\\(\\Omicron(n^2)\\)"
+      ],
       "solution": 0
     },
     {

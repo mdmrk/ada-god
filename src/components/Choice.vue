@@ -5,44 +5,47 @@
 </template>
 
 <script lang="ts">
-import type { PropType } from 'vue'
-import type { IChoice } from '@/types'
+import type { PropType } from "vue"
+import type { IChoice } from "@/types"
 
 export default {
-  name: 'ChoiceItem',
+  name: "ChoiceItem",
   props: {
     data: {
       type: Object as PropType<IChoice>,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
     style() {
       var style = []
 
       if (this.data.answer !== undefined) {
-        style.push('pointer-events-none')
+        style.push("pointer-events-none")
         if (this.data.answer === this.data.id) {
-          style.push('grad-choice')
+          style.push("grad-choice")
         }
         if (this.data.solution === this.data.id) {
           if (this.data.answer === undefined) {
-            style.push('grad-wrong')
+            style.push("grad-wrong")
           } else {
-            style.push('grad-correct')
+            style.push("grad-correct")
           }
         }
-        if (this.data.answer === this.data.id && this.data.solution !== this.data.id) {
-          style.push('grad-wrong')
+        if (
+          this.data.answer === this.data.id &&
+          this.data.solution !== this.data.id
+        ) {
+          style.push("grad-wrong")
         }
       } else {
-        style.push('cursor-pointer hover:bg-dark-room hover:bg-opacity-60')
+        style.push("cursor-pointer hover:bg-dark-room hover:bg-opacity-60")
         if (this.data.selection === this.data.id) {
-          style.push('grad-choice-light')
+          style.push("grad-choice-light")
         }
       }
-      return style.join(' ')
-    }
-  }
+      return style.join(" ")
+    },
+  },
 }
 </script>

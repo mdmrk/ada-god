@@ -56,11 +56,11 @@
 </template>
 
 <script lang="ts">
-import { randomizeQuestions } from '@/utils'
-import Question from '@/components/Question.vue'
-import type { IQuestion } from '@/types'
-import { useI18n } from 'vue-i18n'
-import { ref } from 'vue'
+import { randomizeQuestions } from "@/utils"
+import Question from "@/components/Question.vue"
+import type { IQuestion } from "@/types"
+import { useI18n } from "vue-i18n"
+import { ref } from "vue"
 
 const questionIdx = import.meta.env.PROD ? 0 : 0
 
@@ -71,28 +71,32 @@ export default {
       hits: 0,
       fails: 0,
       selectedChoice: 0,
-      choiceSelectionActive: false
+      choiceSelectionActive: false,
     }
   },
   methods: {
     nextQuestion() {
-      this.questionIdx = this.questionIdx + 1 >= this.questions.length ? 0 : this.questionIdx + 1
+      this.questionIdx =
+        this.questionIdx + 1 >= this.questions.length ? 0 : this.questionIdx + 1
     },
     prevQuestion() {
-      this.questionIdx = this.questionIdx - 1 < 0 ? this.questions.length - 1 : this.questionIdx - 1
+      this.questionIdx =
+        this.questionIdx - 1 < 0
+          ? this.questions.length - 1
+          : this.questionIdx - 1
     },
     setAnswer(answer: number) {
       if (this.answers[this.realIdx] !== undefined) return
       this.answers[this.realIdx] = answer
       this.question.solution === answer ? this.hits++ : this.fails++
-    }
+    },
   },
   computed: {
     realIdx() {
       return this.questionsOrder[this.questionIdx]
     },
     questions() {
-      return this.$tm('questions') as IQuestion[]
+      return this.$tm("questions") as IQuestion[]
     },
     question() {
       return this.questions[this.realIdx]
@@ -102,47 +106,48 @@ export default {
     },
     selection() {
       return this.choiceSelectionActive ? this.selectedChoice : undefined
-    }
+    },
   },
   components: {
-    Question
+    Question,
   },
   mounted() {
-    window.addEventListener('click', (event) => {
+    window.addEventListener("click", (event) => {
       this.choiceSelectionActive = false
     })
 
-    window.addEventListener('keydown', (event) => {
+    window.addEventListener("keydown", (event) => {
       if (document.activeElement instanceof HTMLElement) {
         document.activeElement.blur()
       }
       switch (event.key) {
-        case 'd':
-        case 'ArrowRight':
+        case "d":
+        case "ArrowRight":
           this.nextQuestion()
           break
 
-        case 'a':
-        case 'ArrowLeft':
+        case "a":
+        case "ArrowLeft":
           this.prevQuestion()
           break
 
-        case 'w':
-        case 'ArrowUp':
-        case 's':
-        case 'ArrowDown':
+        case "w":
+        case "ArrowUp":
+        case "s":
+        case "ArrowDown":
           if (this.answer !== undefined) break
           if (!this.choiceSelectionActive) {
             this.choiceSelectionActive = true
             break
           }
-          const sign = ['w', 'ArrowUp'].includes(event.key) ? -1 : 1
+          const sign = ["w", "ArrowUp"].includes(event.key) ? -1 : 1
           const choicesLength = this.question.choices.length
 
-          this.selectedChoice = (this.selectedChoice + sign + choicesLength) % choicesLength
+          this.selectedChoice =
+            (this.selectedChoice + sign + choicesLength) % choicesLength
           break
-        case ' ':
-        case 'Enter':
+        case " ":
+        case "Enter":
           if (!this.choiceSelectionActive) {
             this.choiceSelectionActive = true
             break
@@ -154,12 +159,12 @@ export default {
   },
   setup() {
     const { tm } = useI18n()
-    const questionsAmount = tm('questions').length
+    const questionsAmount = tm("questions").length
 
     return {
       answers: ref(Array<number>(questionsAmount)),
-      questionsOrder: randomizeQuestions(questionsAmount)
+      questionsOrder: randomizeQuestions(questionsAmount),
     }
-  }
+  },
 }
 </script>

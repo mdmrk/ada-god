@@ -101,7 +101,11 @@
     },
     {
       "title": "Wenn ein Backtracking-Algorithmus ein Problem löst \\(n\\) Entscheidungen, bei denen es immer mindestens zwei Optionen für jede Entscheidung gibt. Welche der folgenden Worst-Case-Komplexitäten ist die beste, der wir begegnen können?",
-      "choices": ["\\(\\Omicron(2^n)\\)", "\\(\\Omicron(n^2)\\)", "\\(\\Omicron(n!)\\)"],
+      "choices": [
+        "\\(\\Omicron(2^n)\\)",
+        "\\(\\Omicron(n^2)\\)",
+        "\\(\\Omicron(n!)\\)"
+      ],
       "solution": 0
     },
     {
@@ -450,7 +454,11 @@
     },
     {
       "title": "Angesichts des rekursiven Backtracking-Problems generiert jeder rekursive Aufruf wie viele neue rekursive Aufrufe?:\n \\(\\Nu\\).  \\(\\Mu\\) mit \\(\\Nu\\) Zeilen, in denen jeder Schüler in die entsprechende Zeile eine Ganzzahl geschrieben hat (zwischen \\(-1\\) Und \\(\\Nu-1\\) das gibt besagte Priorität an (einen Wert). \\(-1\\) zeigt an, dass Sie nicht mit der Person in der entsprechenden Spalte zusammen sein wollen oder können. \\(0\\) zeigt Gleichgültigkeit an und je höher der Wert, desto größer die Präferenz für diese Person.  \\(\\Mu\\) bereits erstellt ist, entwerfen Sie einen Algorithmus, der das Problem optimal löst.",
-      "choices": ["Ein oder zwei", "Einer oder keiner", "Nichts des oben Genannten"],
+      "choices": [
+        "Ein oder zwei",
+        "Einer oder keiner",
+        "Nichts des oben Genannten"
+      ],
       "solution": 2
     },
     {
@@ -537,7 +545,11 @@
     },
     {
       "title": "Ein Größenproblem \\(n\\) lässt sich in Zeit umwandeln \\(\\Omicron(n^2)\\) in einer anderen Größe \\(n-1\\). ",
-      "choices": ["\\(\\Omicron(n^3)\\)", "\\(\\Omicron(2^n)\\)", "\\(\\Omicron(n^2)\\)"],
+      "choices": [
+        "\\(\\Omicron(n^3)\\)",
+        "\\(\\Omicron(2^n)\\)",
+        "\\(\\Omicron(n^2)\\)"
+      ],
       "solution": 0
     },
     {
@@ -677,7 +689,11 @@
     },
     {
       "title": "Die bekannteste Lösung des kontinuierlichen Rucksackproblems folgt dem Schema",
-      "choices": ["Teile und herrsche", "Gefräßig", "Verzweigen und Beschneiden"],
+      "choices": [
+        "Teile und herrsche",
+        "Gefräßig",
+        "Verzweigen und Beschneiden"
+      ],
       "solution": 1
     },
     {
@@ -709,7 +725,11 @@
     },
     {
       "title": "Sagen Sie, welcher dieser drei Algorithmen kein „Teile-und-herrsche“-Algorithmus ist:",
-      "choices": ["Schnelle Sorte", "Zusammenführen, sortieren", "Prims Algorithmus"],
+      "choices": [
+        "Schnelle Sorte",
+        "Zusammenführen, sortieren",
+        "Prims Algorithmus"
+      ],
       "solution": 2
     },
     {
@@ -877,7 +897,11 @@
     },
     {
       "title": "Wenn die Zerlegung eines Problems zu Teilproblemen ähnlicher Größe wie das Original führt, von denen sich viele wiederholen, welches Schema ist a priori angemessener?",
-      "choices": ["Dynamische Programmierung", "Teile und herrsche", "Verzweigen und Beschneiden"],
+      "choices": [
+        "Dynamische Programmierung",
+        "Teile und herrsche",
+        "Verzweigen und Beschneiden"
+      ],
       "solution": 0
     },
     {
@@ -995,7 +1019,11 @@
     },
     {
       "title": "Welche der folgenden Wiederholungsbeziehungen drückt angesichts des durch „Teile und Herrsche“ gelösten Problems der Türme von Hanoi ihre Zeitkomplexität für den allgemeinen Fall am besten aus? \\(n\\) die Anzahl der Festplatten?",
-      "choices": ["\\(T(n)=T(n-1)+n\\)", "\\(T(n)=2T(n-1)+1\\)", "\\(T(n)=2T(n-1)+n\\)"],
+      "choices": [
+        "\\(T(n)=T(n-1)+n\\)",
+        "\\(T(n)=2T(n-1)+1\\)",
+        "\\(T(n)=2T(n-1)+n\\)"
+      ],
       "solution": 1
     },
     {
@@ -1018,7 +1046,11 @@
     },
     {
       "title": "Wie hoch wäre die zeitliche Komplexität der folgenden Funktion nach Anwendung der dynamischen Programmierung?<pre><code>double f(int n, int m) {'{'}\n\tif(n == 0) return 1;\n\treturn m * f(n-1,m) * f(n-2,m);\n{'}'}</code></pre>",
-      "choices": ["\\(\\Theta(n^2)\\)", "\\(\\Theta(n\\times m)\\)", "\\(\\Theta(n)\\)"],
+      "choices": [
+        "\\(\\Theta(n^2)\\)",
+        "\\(\\Theta(n\\times m)\\)",
+        "\\(\\Theta(n)\\)"
+      ],
       "solution": 2
     },
     {
@@ -1032,7 +1064,11 @@
     },
     {
       "title": "Der asymptotische Zeitaufwand für das Einfügen eines Elements in einen geordneten Vektor, damit dieser geordnet bleibt, beträgt:",
-      "choices": ["\\(\\Omicron(\\log(n))\\)", "\\(\\Omega(n^2)\\)", "\\(\\Omicron(n)\\)"],
+      "choices": [
+        "\\(\\Omicron(\\log(n))\\)",
+        "\\(\\Omega(n^2)\\)",
+        "\\(\\Omicron(n)\\)"
+      ],
       "solution": 2
     },
     {
@@ -1087,7 +1123,11 @@
     },
     {
       "title": "Gegeben sei die folgende Funktion:<pre><code>int exa(string &cad, int pri, int ult) {'{'}\n\tif(pri>=ult)\n\t\treturn 1;\n\telse\n\t\tif (cad[pri]==cad[ult])\n\t\t\treturn exa(cad, pri+1, ult-1);\n\t\telse\n\t\t\treturn 0;\n{'}'}</code></pre>Was ist seine asymptotische Zeitkomplexität?",
-      "choices": ["\\(\\Omicron(n)\\)", "\\(\\Omicron(\\log(n))\\)", "\\(\\Omicron(n^2)\\)"],
+      "choices": [
+        "\\(\\Omicron(n)\\)",
+        "\\(\\Omicron(\\log(n))\\)",
+        "\\(\\Omicron(n^2)\\)"
+      ],
       "solution": 0
     },
     {
@@ -1390,12 +1430,20 @@
     },
     {
       "title": "Der Zeitaufwand eines Algorithmus entspricht der folgenden Wiederholungsgleichung:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &n=0 \\\\ n+\\sum_{'{'}j=0{'}'}^{'{'}n-1{'}'}T(j) &n>1\\end{'{'}cases{'}'}\\)\n\nWelche asymptotischen Zeitkosten (oder Zeitkomplexität) wird der Algorithmus haben?",
-      "choices": ["\\(\\Omicron(n\\log(n))\\)", "\\(\\Omicron(2^n)\\)", "\\(\\Omicron(n^2)\\)"],
+      "choices": [
+        "\\(\\Omicron(n\\log(n))\\)",
+        "\\(\\Omicron(2^n)\\)",
+        "\\(\\Omicron(n^2)\\)"
+      ],
       "solution": 1
     },
     {
       "title": "Studieren Sie die Wiederholungsbeziehung:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rho T(\\frac{'{'}n{'}'}{'{'}q{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n(Wo \\(p\\) Und \\(q\\) sind ganze Zahlen größer als 1). ",
-      "choices": ["Dynamische Programmierung", "Teile und herrsche", "Verzweigen und Beschneiden"],
+      "choices": [
+        "Dynamische Programmierung",
+        "Teile und herrsche",
+        "Verzweigen und Beschneiden"
+      ],
       "solution": 1
     },
     {
@@ -1463,7 +1511,11 @@
     },
     {
       "title": "Der Zeitaufwand des Einfügungssortierungsalgorithmus beträgt",
-      "choices": ["\\(\\Omicron(n\\log(n))\\)", "\\(\\Omicron(n^2)\\)", "\\(\\Omicron(n)\\)"],
+      "choices": [
+        "\\(\\Omicron(n\\log(n))\\)",
+        "\\(\\Omicron(n^2)\\)",
+        "\\(\\Omicron(n)\\)"
+      ],
       "solution": 1
     },
     {
@@ -1655,7 +1707,11 @@
     },
     {
       "title": "Welches algorithmische Schema verwendet der Quicksort-Sortieralgorithmus?",
-      "choices": ["Dynamische Programmierung", "Teilen und erobern", "Zurückverfolgen"],
+      "choices": [
+        "Dynamische Programmierung",
+        "Teilen und erobern",
+        "Zurückverfolgen"
+      ],
       "solution": 1
     },
     {
@@ -1719,12 +1775,20 @@
     },
     {
       "title": "Nehmen wir an, das Rucksackproblem sei durch dynamisches Programmieren gelöst und spezifiziert worden \\(n\\) Elementen und einem maximal transportierbaren Gewicht von \\(P\\). ",
-      "choices": ["Ja", "NEIN", "Es kommt auf die Werte von an \\(n\\) Und \\(P\\)"],
+      "choices": [
+        "Ja",
+        "NEIN",
+        "Es kommt auf die Werte von an \\(n\\) Und \\(P\\)"
+      ],
       "solution": 1
     },
     {
       "title": "Wir haben zwei Längenketten \\(m\\) Und \\(n\\). ",
-      "choices": ["\\((m-1)\\times(n-1)\\)", "\\(m\\times n\\)", "\\((m+1)\\times(n+1)\\)"],
+      "choices": [
+        "\\((m-1)\\times(n-1)\\)",
+        "\\(m\\times n\\)",
+        "\\((m+1)\\times(n+1)\\)"
+      ],
       "solution": 2
     },
     {
@@ -1738,7 +1802,11 @@
     },
     {
       "title": "Ja \\(n\\) ist die Anzahl der Elemente eines Vektors. ",
-      "choices": ["\\(\\Omicron(n^3)\\)", "\\(\\Omicron(n)\\)", "Nichts des oben Genannten"],
+      "choices": [
+        "\\(\\Omicron(n^3)\\)",
+        "\\(\\Omicron(n)\\)",
+        "Nichts des oben Genannten"
+      ],
       "solution": 0
     },
     {
@@ -1770,7 +1838,11 @@
     },
     {
       "title": "Was ist das geeignete Programmierschema, um das k-te Minimumproblem auf einem Vektor zu lösen?",
-      "choices": ["Dynamische Programmierung", "Teilen und erobern", "Keiner von beiden."],
+      "choices": [
+        "Dynamische Programmierung",
+        "Teilen und erobern",
+        "Keiner von beiden."
+      ],
       "solution": 1
     },
     {
@@ -1829,12 +1901,20 @@
     },
     {
       "title": "Ein Größenvektor ist verfügbar \\(n\\) deren Elemente im Voraus organisiert sind und einen Haufen bilden. ",
-      "choices": ["\\(\\Omicron(\\log(n))\\)", "\\(\\Omicron(n)\\)", "\\(\\Omicron(n\\log(n))\\)"],
+      "choices": [
+        "\\(\\Omicron(\\log(n))\\)",
+        "\\(\\Omicron(n)\\)",
+        "\\(\\Omicron(n\\log(n))\\)"
+      ],
       "solution": 2
     },
     {
       "title": "Gibt die Komplexität des folgenden Fragments als Funktion von n an:<pre><code>int a = 0;\nfor(int i = 0; i < n; i++)\n\tfor(int j = i; j > 0; j/=2)\n\t\ta += A[i][j];</code></pre>",
-      "choices": ["\\(\\Omicron(n\\log(n))\\)", "\\(\\Omicron(n)\\)", "\\(\\Omicron(n^2)\\)"],
+      "choices": [
+        "\\(\\Omicron(n\\log(n))\\)",
+        "\\(\\Omicron(n)\\)",
+        "\\(\\Omicron(n^2)\\)"
+      ],
       "solution": 0
     },
     {

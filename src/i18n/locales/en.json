@@ -101,7 +101,11 @@
     },
     {
       "title": "When a backtracking algorithm solves a problem \\(n\\) decisions, in which there are always at least two options for each decision, which of the following worst-case complexities is the best we can encounter?",
-      "choices": ["\\(\\Omicron(2^n)\\)", "\\(\\Omicron(n^2)\\)", "\\(\\Omicron(n!)\\)"],
+      "choices": [
+        "\\(\\Omicron(2^n)\\)",
+        "\\(\\Omicron(n^2)\\)",
+        "\\(\\Omicron(n!)\\)"
+      ],
       "solution": 0
     },
     {
@@ -250,7 +254,11 @@
     },
     {
       "title": "The problem of shift assignment has a solution:\n \\(\\Nu\\).  \\(\\Mu\\) with \\(\\Nu\\) rows, where each student has written in their corresponding row an integer (between \\(-1\\) and \\(\\Nu-1\\) that indicates said priority (a value \\(-1\\) indicates that you do not want or cannot be with the person in the corresponding column. \\(0\\) indicates indifference and, the higher the value, the greater the preference for that person).  \\(\\Mu\\) is already created, design an algorithm that solves the problem optimally.",
-      "choices": ["Optimize through backtracking", "Approximate (sub-optimal) via greedy", "Both"],
+      "choices": [
+        "Optimize through backtracking",
+        "Approximate (sub-optimal) via greedy",
+        "Both"
+      ],
       "solution": 2
     },
     {
@@ -533,7 +541,11 @@
     },
     {
       "title": "A size problem \\(n\\) can be transformed into time \\(\\Omicron(n^2)\\) in another size \\(n-1\\). ",
-      "choices": ["\\(\\Omicron(n^3)\\)", "\\(\\Omicron(2^n)\\)", "\\(\\Omicron(n^2)\\)"],
+      "choices": [
+        "\\(\\Omicron(n^3)\\)",
+        "\\(\\Omicron(2^n)\\)",
+        "\\(\\Omicron(n^2)\\)"
+      ],
       "solution": 0
     },
     {
@@ -873,7 +885,11 @@
     },
     {
       "title": "When the decomposition of a problem results in subproblems of similar size to the original, many of which are repeated, which scheme is a priori more appropriate?",
-      "choices": ["Dynamic programming", "Divide and conquer", "Branching and pruning"],
+      "choices": [
+        "Dynamic programming",
+        "Divide and conquer",
+        "Branching and pruning"
+      ],
       "solution": 0
     },
     {
@@ -991,7 +1007,11 @@
     },
     {
       "title": "Given the Towers of Hanoi problem solved by divide and conquer, which of the following recurrence relations best expresses its time complexity for the general case, being \\(n\\) the number of disks?",
-      "choices": ["\\(T(n)=T(n-1)+n\\)", "\\(T(n)=2T(n-1)+1\\)", "\\(T(n)=2T(n-1)+n\\)"],
+      "choices": [
+        "\\(T(n)=T(n-1)+n\\)",
+        "\\(T(n)=2T(n-1)+1\\)",
+        "\\(T(n)=2T(n-1)+n\\)"
+      ],
       "solution": 1
     },
     {
@@ -1014,7 +1034,11 @@
     },
     {
       "title": "What would be the time complexity of the following function after applying dynamic programming?<pre><code>double f(int n, int m) {'{'}\n\tif(n == 0) return 1;\n\treturn m * f(n-1,m) * f(n-2,m);\n{'}'}</code></pre>",
-      "choices": ["\\(\\Theta(n^2)\\)", "\\(\\Theta(n\\times m)\\)", "\\(\\Theta(n)\\)"],
+      "choices": [
+        "\\(\\Theta(n^2)\\)",
+        "\\(\\Theta(n\\times m)\\)",
+        "\\(\\Theta(n)\\)"
+      ],
       "solution": 2
     },
     {
@@ -1028,7 +1052,11 @@
     },
     {
       "title": "The asymptotic time cost of inserting an element into an ordered vector so that it remains ordered is:",
-      "choices": ["\\(\\Omicron(\\log(n))\\)", "\\(\\Omega(n^2)\\)", "\\(\\Omicron(n)\\)"],
+      "choices": [
+        "\\(\\Omicron(\\log(n))\\)",
+        "\\(\\Omega(n^2)\\)",
+        "\\(\\Omicron(n)\\)"
+      ],
       "solution": 2
     },
     {
@@ -1083,7 +1111,11 @@
     },
     {
       "title": "Given the following function:<pre><code>int exa(string &cad, int pri, int ult) {'{'}\n\tif(pri>=ult)\n\t\treturn 1;\n\telse\n\t\tif (cad[pri]==cad[ult])\n\t\t\treturn exa(cad, pri+1, ult-1);\n\t\telse\n\t\t\treturn 0;\n{'}'}</code></pre>What is its asymptotic time complexity?",
-      "choices": ["\\(\\Omicron(n)\\)", "\\(\\Omicron(\\log(n))\\)", "\\(\\Omicron(n^2)\\)"],
+      "choices": [
+        "\\(\\Omicron(n)\\)",
+        "\\(\\Omicron(\\log(n))\\)",
+        "\\(\\Omicron(n^2)\\)"
+      ],
       "solution": 0
     },
     {
@@ -1386,12 +1418,20 @@
     },
     {
       "title": "The time cost of an algorithm fits the following recurrence equation:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &n=0 \\\\ n+\\sum_{'{'}j=0{'}'}^{'{'}n-1{'}'}T(j) &n>1\\end{'{'}cases{'}'}\\)\n\nWhat asymptotic time cost (or time complexity) will the algorithm have?",
-      "choices": ["\\(\\Omicron(n\\log(n))\\)", "\\(\\Omicron(2^n)\\)", "\\(\\Omicron(n^2)\\)"],
+      "choices": [
+        "\\(\\Omicron(n\\log(n))\\)",
+        "\\(\\Omicron(2^n)\\)",
+        "\\(\\Omicron(n^2)\\)"
+      ],
       "solution": 1
     },
     {
       "title": "Study the recurrence relationship:\n\n\\(T(n)=\\begin{'{'}cases{'}'}1 &\\text{'{'}si {'}'} n\\leq 1 \\\\ \\rho T(\\frac{'{'}n{'}'}{'{'}q{'}'})+g(n) &\\text{'{'}en otro caso{'}'}\\end{'{'}cases{'}'}\\)\n\n(where \\(p\\) and \\(q\\) are integers greater than 1). ",
-      "choices": ["Dynamic programming", "Divide and conquer", "Branching and pruning"],
+      "choices": [
+        "Dynamic programming",
+        "Divide and conquer",
+        "Branching and pruning"
+      ],
       "solution": 1
     },
     {
@@ -1459,7 +1499,11 @@
     },
     {
       "title": "The time cost of the insertion sort algorithm is",
-      "choices": ["\\(\\Omicron(n\\log(n))\\)", "\\(\\Omicron(n^2)\\)", "\\(\\Omicron(n)\\)"],
+      "choices": [
+        "\\(\\Omicron(n\\log(n))\\)",
+        "\\(\\Omicron(n^2)\\)",
+        "\\(\\Omicron(n)\\)"
+      ],
       "solution": 1
     },
     {
@@ -1473,7 +1517,11 @@
     },
     {
       "title": "What is the best-case time complexity of the following function?<pre><code>void examen(vector<int> &v) {'{'}\n\tint i=0,j,x,n=v.size();\n\tbool permuta = 1;\n\twhile(n>0 && permuta) {'{'}\n\t\ti=i+1;\n\t\tpermuta=0;\n\t\tfor(j=n-1; j>=i; j--)\n\t\t\tif(v[j] < v[j-1]) {'{'}\n\t\t\t\tx=v[j];\n\t\t\t\tpermuta=1;\n\t\t\t\tv[j]=v[j-1];\n\t\t\t\tv[j-1]=x;\n\t\t\t{'}'}\n\t{'}'}\n{'}'}</code></pre>",
-      "choices": ["This function has no better case", "\\(\\Theta(n)\\)", "\\(\\Theta(1)\\)"],
+      "choices": [
+        "This function has no better case",
+        "\\(\\Theta(n)\\)",
+        "\\(\\Theta(1)\\)"
+      ],
       "solution": 1
     },
     {
@@ -1666,12 +1714,20 @@
     },
     {
       "title": "When faced with a problem that presents a recursive solution we can always apply:",
-      "choices": ["Divide and conquer", "Dynamic Programming", "Any of the two above"],
+      "choices": [
+        "Divide and conquer",
+        "Dynamic Programming",
+        "Any of the two above"
+      ],
       "solution": 0
     },
     {
       "title": "The Fibonacci number series is defined as follows:\n\n\\(fib(n)=\\begin{'{'}cases{'}'}1 & n\\leq 1 \\\\ fib(n-1)+fib(n-2) & n>1 \\end{'{'}cases{'}'}\\)\n\nTo implement this function we can use...",
-      "choices": ["Divide and conquer", "Dynamic programming", "Any of the two above"],
+      "choices": [
+        "Divide and conquer",
+        "Dynamic programming",
+        "Any of the two above"
+      ],
       "solution": 2
     },
     {
@@ -1703,12 +1759,20 @@
     },
     {
       "title": "Let us suppose the knapsack problem solved by dynamic programming and particularized to \\(n\\) elements and a maximum transportable weight of \\(P\\). ",
-      "choices": ["Yeah", "No", "It depends on the values ​​of \\(n\\) and \\(P\\)"],
+      "choices": [
+        "Yeah",
+        "No",
+        "It depends on the values ​​of \\(n\\) and \\(P\\)"
+      ],
       "solution": 1
     },
     {
       "title": "We have two length chains \\(m\\) and \\(n\\). ",
-      "choices": ["\\((m-1)\\times(n-1)\\)", "\\(m\\times n\\)", "\\((m+1)\\times(n+1)\\)"],
+      "choices": [
+        "\\((m-1)\\times(n-1)\\)",
+        "\\(m\\times n\\)",
+        "\\((m+1)\\times(n+1)\\)"
+      ],
       "solution": 2
     },
     {
@@ -1722,7 +1786,11 @@
     },
     {
       "title": "Yeah \\(n\\) is the number of elements of a vector. ",
-      "choices": ["\\(\\Omicron(n^3)\\)", "\\(\\Omicron(n)\\)", "None of the above"],
+      "choices": [
+        "\\(\\Omicron(n^3)\\)",
+        "\\(\\Omicron(n)\\)",
+        "None of the above"
+      ],
       "solution": 0
     },
     {
@@ -1754,7 +1822,11 @@
     },
     {
       "title": "What is the appropriate programming scheme to solve the kth minimum problem on a vector?",
-      "choices": ["Dynamic Programming", "Divide and Conquer", "Neither one of the two."],
+      "choices": [
+        "Dynamic Programming",
+        "Divide and Conquer",
+        "Neither one of the two."
+      ],
       "solution": 1
     },
     {
@@ -1813,12 +1885,20 @@
     },
     {
       "title": "A vector of size is available \\(n\\) whose elements are organized in advance forming a heap. ",
-      "choices": ["\\(\\Omicron(\\log(n))\\)", "\\(\\Omicron(n)\\)", "\\(\\Omicron(n\\log(n))\\)"],
+      "choices": [
+        "\\(\\Omicron(\\log(n))\\)",
+        "\\(\\Omicron(n)\\)",
+        "\\(\\Omicron(n\\log(n))\\)"
+      ],
       "solution": 2
     },
     {
       "title": "Indicates the complexity, as a function of n, of the following fragment:<pre><code>int a = 0;\nfor(int i = 0; i < n; i++)\n\tfor(int j = i; j > 0; j/=2)\n\t\ta += A[i][j];</code></pre>",
-      "choices": ["\\(\\Omicron(n\\log(n))\\)", "\\(\\Omicron(n)\\)", "\\(\\Omicron(n^2)\\)"],
+      "choices": [
+        "\\(\\Omicron(n\\log(n))\\)",
+        "\\(\\Omicron(n)\\)",
+        "\\(\\Omicron(n^2)\\)"
+      ],
       "solution": 0
     },
     {

@@ -1,10 +1,10 @@
 <script lang="ts">
-import Lang from '@/components/Lang.vue'
+import Lang from "@/components/Lang.vue"
 
 export default {
   components: {
-    Lang
-  }
+    Lang,
+  },
 }
 </script>
 <template>
