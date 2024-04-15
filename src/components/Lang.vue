@@ -64,7 +64,7 @@ export default {
     },
     changeLocale(lang: keyof typeof availableLocales) {
       i18n.global.locale.value = lang
-      document.querySelector("html")!.setAttribute("lang", lang)
+      document.querySelector("html")?.setAttribute("lang", lang)
       localStorage.setItem("user-locale", lang)
     },
   },

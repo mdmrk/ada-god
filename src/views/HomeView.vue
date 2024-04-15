@@ -56,11 +56,11 @@
 </template>
 
 <script lang="ts">
-import { randomizeQuestions } from "@/utils"
 import Question from "@/components/Question.vue"
 import type { IQuestion } from "@/types"
-import { useI18n } from "vue-i18n"
+import { randomizeQuestions } from "@/utils"
 import { ref } from "vue"
+import { useI18n } from "vue-i18n"
 
 const questionIdx = import.meta.env.PROD ? 0 : 0
 
@@ -134,7 +134,7 @@ export default {
         case "w":
         case "ArrowUp":
         case "s":
-        case "ArrowDown":
+        case "ArrowDown": {
           if (this.answer !== undefined) break
           if (!this.choiceSelectionActive) {
             this.choiceSelectionActive = true
@@ -146,6 +146,7 @@ export default {
           this.selectedChoice =
             (this.selectedChoice + sign + choicesLength) % choicesLength
           break
+        }
         case " ":
         case "Enter":
           if (!this.choiceSelectionActive) {

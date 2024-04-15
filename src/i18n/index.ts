@@ -1,8 +1,8 @@
 import { createI18n } from "vue-i18n"
-import es from "./locales/es.json"
-import en from "./locales/en.json"
-import ru from "./locales/ru.json"
 import de from "./locales/de.json"
+import en from "./locales/en.json"
+import es from "./locales/es.json"
+import ru from "./locales/ru.json"
 import zh from "./locales/zh.json"
 
 export default createI18n({
