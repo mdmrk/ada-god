@@ -1,19 +1,14 @@
 <template>
   <div class="flex flex-col gap-2">
-    <p class="question-title" v-katex:auto v-html="$rt(data.title)"></p>
+    <p class="question-title" v-katex:auto v-html="data.title"></p>
     <ul>
-      <Choice
-        v-for="(choice, index) in data.choices"
-        :key="data.id + index"
-        :data="{
-          id: index,
-          choice,
-          solution: data.solution,
-          answer: data.answer,
-          selection: data.selection
-        }"
-        @click="setAnswer(index)"
-      />
+      <Choice v-for="(choice, index) in data.choices" :key="data.id + index" :data="{
+        id: index,
+        choice,
+        solution: data.solution,
+        answer: data.answer,
+        selection: data.selection
+      }" @click="setAnswer(index)" />
     </ul>
   </div>
 </template>

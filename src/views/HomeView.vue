@@ -1,39 +1,21 @@
 <template>
   <div class="flex flex-row gap-2">
     <button class="arrow-button" aria-label="Previous Question" @click="prevQuestion">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="icon icon-tabler icon-tabler-arrow-big-left-filled"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left-filled" width="24"
+        height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
         <path
           d="M9.586 4l-6.586 6.586a2 2 0 0 0 0 2.828l6.586 6.586a2 2 0 0 0 2.18 .434l.145 -.068a2 2 0 0 0 1.089 -1.78v-2.586h7a2 2 0 0 0 2 -2v-4l-.005 -.15a2 2 0 0 0 -1.995 -1.85l-7 -.001v-2.585a2 2 0 0 0 -3.414 -1.414z"
-          stroke-width="0"
-        />
+          stroke-width="0" />
       </svg>
     </button>
     <button class="arrow-button" aria-label="Next Question" @click="nextQuestion">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="icon icon-tabler icon-tabler-arrow-big-right-filled"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right-filled" width="24"
+        height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
         <path
           d="M12.089 3.634a2 2 0 0 0 -1.089 1.78l-.001 2.586h-6.999a2 2 0 0 0 -2 2v4l.005 .15a2 2 0 0 0 1.995 1.85l6.999 -.001l.001 2.587a2 2 0 0 0 3.414 1.414l6.586 -6.586a2 2 0 0 0 0 -2.828l-6.586 -6.586a2 2 0 0 0 -2.18 -.434l-.145 .068z"
-          stroke-width="0"
-        />
+          stroke-width="0" />
       </svg>
     </button>
   </div>
@@ -42,17 +24,14 @@
     <span class="text-green">{{ hits }}</span>
     <span class="text-red">{{ fails }}</span>
   </div>
-  <Question
-    @set-answer="setAnswer"
-    :data="{
-      id: questionIdx,
-      title: question.title,
-      choices: question.choices,
-      solution: question.solution,
-      answer,
-      selection
-    }"
-  />
+  <Question @set-answer="setAnswer" :data="{
+    id: questionIdx,
+    title: question.title,
+    choices: question.choices,
+    solution: question.solution,
+    answer,
+    selection
+  }" />
 </template>
 
 <script lang="ts">
@@ -60,14 +39,17 @@ import Question from "@/components/Question.vue"
 import type { IQuestion } from "@/types"
 import { randomizeQuestions } from "@/utils"
 import { ref } from "vue"
-import { useI18n } from "vue-i18n"
+import { questions } from "@/assets/data.json"
 
+const questionsOrder = randomizeQuestions(questions.length)
 const questionIdx = import.meta.env.PROD ? 0 : 0
 
 export default {
   data() {
     return {
+      questions,
       questionIdx,
+      answers: Array<number>(questions.length),
       hits: 0,
       fails: 0,
       selectedChoice: 0,
@@ -93,10 +75,7 @@ export default {
   },
   computed: {
     realIdx() {
-      return this.questionsOrder[this.questionIdx]
-    },
-    questions() {
-      return this.$tm("questions") as IQuestion[]
+      return questionsOrder[this.questionIdx]
     },
     question() {
       return this.questions[this.realIdx]
@@ -157,15 +136,6 @@ export default {
           break
       }
     })
-  },
-  setup() {
-    const { tm } = useI18n()
-    const questionsAmount = tm("questions").length
-
-    return {
-      answers: ref(Array<number>(questionsAmount)),
-      questionsOrder: randomizeQuestions(questionsAmount),
-    }
   },
 }
 </script>
