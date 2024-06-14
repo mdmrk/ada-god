@@ -28,75 +28,39 @@ export default {
   <div>
     <div v-show="!isMobile()" class="absolute bottom-6 left-6">
       <div class="flex flex-col items-center gap-1">
-        <Key
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up"
-          >
+        <Key><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-linecap="round"
+            stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M12 5l0 14" />
             <path d="M18 11l-6 -6" />
-            <path d="M6 11l6 -6" /></svg
-        ></Key>
+            <path d="M6 11l6 -6" />
+          </svg></Key>
         <div class="flex flex-row gap-1">
-          <Key
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"
-            >
+          <Key><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-linecap="round"
+              stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M5 12l14 0" />
               <path d="M5 12l6 6" />
-              <path d="M5 12l6 -6" /></svg
-          ></Key>
-          <Key
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-down"
-            >
+              <path d="M5 12l6 -6" />
+            </svg></Key>
+          <Key><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-linecap="round"
+              stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-down">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M12 5l0 14" />
               <path d="M18 13l-6 6" />
-              <path d="M6 13l6 6" /></svg
-          ></Key>
-          <Key
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
-            >
+              <path d="M6 13l6 6" />
+            </svg></Key>
+          <Key><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-linecap="round"
+              stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M5 12l14 0" />
               <path d="M13 18l6 -6" />
-              <path d="M13 6l6 6" /></svg
-          ></Key>
+              <path d="M13 6l6 6" />
+            </svg></Key>
         </div>
       </div>
     </div>
   </div>
-  <a
-    href="https://github.com/mdmrk/ada-god"
-    target="_blank"
-    class="text-gray-dark underline text-sm"
-    >github.com/mdmrk/ada-god</a
-  >
+  <a href="https://github.com/mdmrk/ada-god" target="_blank"
+    class="text-gray-dark underline text-sm">github.com/mdmrk/ada-god</a>
 </template>
