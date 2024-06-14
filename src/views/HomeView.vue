@@ -38,8 +38,8 @@
 import Question from "@/components/Question.vue"
 import type { IQuestion } from "@/types"
 import { randomizeQuestions } from "@/utils"
-import { ref } from "vue"
 import { questions } from "@/assets/data.json"
+import { ref } from "vue"
 
 const questionsOrder = randomizeQuestions(questions.length)
 const questionIdx = import.meta.env.PROD ? 0 : 0
