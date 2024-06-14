@@ -11,7 +11,7 @@ export default {
         yellow: "#d4fc79",
         green: "#96e6a1",
         red: "#f5576c",
-        pink: "#f093fb",
+        pink: "#FF3659",
         night: "#0f172a",
         "dark-room": "#1e293b",
         "gray-light": "#cbd5e1",
